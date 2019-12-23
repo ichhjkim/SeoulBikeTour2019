@@ -1,0 +1,536 @@
+{% extends 'bike/base.html' %}
+
+{% load static %}
+
+{% block script %}
+<script type="text/javascript">
+    
+    // 기본 변수들 
+    var theStartMarker = null;
+    var theEndMarkers = []; //도착지리스트
+    var firstPositionMarker = null;
+    var walkPaths = []; //이동경로리스트
+    var infoWindows = [];
+    var bikeMarkers800 = []
+
+    //my base data - 관광지, 따릉이 대여소
+    const djangoDataSpots = "{{ spots|escapejs }}"
+    const spotList = JSON.parse(djangoDataSpots)
+    const djangoDataBikeLocations = "{{ bikelocations|escapejs }}"
+    const bikeLocationList = JSON.parse(djangoDataBikeLocations)
+
+    // rating 변수
+    var measureStar = [];
+    var measureBikeLocationsList = [];
+    var measureDistanceList = [];
+
+
+    // base0. 시작하자마자 실행하는 함수
+    function startMap() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (pos) {
+                initGooglemap(pos.coords.longitude, pos.coords.latitude);
+            })
+        } else {
+            console.log("이 브라우저에서는 Geolocation이 지원되지 않습니다. 서울시청을 기준으로 표시합니다.")
+            initGooglemap(126.9779, 37.5663)
+        }
+    }
+
+    // base1. 맵을 띄우는 함수
+    function initGooglemap(_lng, _lat) {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: _lat, lng: _lng },
+            zoom: 15,
+            mapTypeId: 'roadmap'
+        });
+        firstPositionMarker = new google.maps.Marker({
+            position: {
+                lat: _lat, lng: _lng,
+            },
+            icon: "{% static 'img/now.png'%}",
+            map: map
+        });
+        measureRating()
+        measureBikeLocations()
+        // EventListener 
+        // 현재 위치기반으로 출발지 설정
+        var recentStart = document.querySelector('#recentStart');
+        recentStart.addEventListener('click', function () {
+            startMarker(map, _lng, _lat);
+        });
+        // 가까운 관광지 추천
+        var nearEnd = document.querySelector('#nearEnd');
+        nearEnd.addEventListener('click', function () {
+            if (theStartMarker === null) {
+                alert('Please select start point')
+                return
+            }
+            clearBikeMarkers()
+            recommendClosestSpot(map, theStartMarker.getPosition().lng(), theStartMarker.getPosition().lat());
+        });
+
+        // 추천 관광지 6개
+        var recommendSpots = document.querySelector('#recommendSpots');
+        recommendSpots.addEventListener('click', function () {
+            if (theStartMarker === null) {
+                alert('Please set a starting point.')
+                return
+            }
+            clearBikeMarkers()
+            recommendSpots6(map, theStartMarker.getPosition().lng(), theStartMarker.getPosition().lat());
+        });
+
+        // 800m 따릉이 체크
+        var checkBikeLocation = document.querySelector('#bikeLocation');
+        checkBikeLocation.addEventListener('click', function () {
+            if (theStartMarker === null) {
+                alert('Please set a starting point.')
+                return
+            }
+            map.setCenter(theStartMarker.getPosition())
+            clearBikeMarkers()
+            loadBikeLocation800(map, theStartMarker.getPosition().lng(), theStartMarker.getPosition().lat());
+        });
+
+        // 사용자 검색위치기반 출발지 설정
+        google(map)
+    }
+
+    // 자전거 마커 정리하기
+    function clearBikeMarkers(){
+        for (let bm = 0; bm < bikeMarkers800.length; bm++) {
+                bikeMarkers800[bm].setMap(null)
+            }
+            bikeMarkers800 = []
+    }
+    // 도착지 마커 정리하기
+    function clearEndMarkers() {
+        if (theEndMarkers.length > 0) {
+            for (let i = 0; i < theEndMarkers.length; i++) {
+                theEndMarkers[i].setMap(null)
+            }
+            theEndMarkers = []
+        }
+    }
+    // 경로 정리하기
+    function clearPath() {
+        if (walkPaths.length > 0) {
+            for (let i = 0; i < walkPaths.length; i++) {
+                walkPaths[i].setMap(null)
+            }
+            walkPaths = []
+        }
+    }
+    // 0단계, 출발지 마커 찍기
+    function startMarker(map, s_lng, s_lat) {
+        // 0.시작 마커 생성
+        map.setCenter({ lng: s_lng, lat: s_lat })
+        if (theStartMarker !== null) {
+            theStartMarker.setMap(null)
+            theStartMarker = null
+        }
+        clearEndMarkers()
+        clearPath()
+
+        theStartMarker = new google.maps.Marker({
+            position: {
+                lat: s_lat, lng: s_lng,
+            },
+            icon: "{% static 'img/start.png' %}",
+            map: map
+        });
+        firstPositionMarker.setVisible(false)
+    };
+
+    // 800m이내 따릉이 대여소 보여주기
+    function loadBikeLocation800(map, s_lng, s_lat) {
+        console.log('aa')
+        console.log(bikeLocationList)
+        for (let k = 0; k < bikeLocationList.length; k++) {
+            let mk2_lat = bikeLocationList[k]['fields']['mapy']
+            let mk2_lng = bikeLocationList[k]['fields']['mapx']
+            let distanceTwopoints = haversine_distance(s_lat, s_lng, mk2_lat, mk2_lng)
+            if (distanceTwopoints <= 0.8) {
+                let pos = {
+                    lat: parseFloat(mk2_lat),
+                    lng: parseFloat(mk2_lng)
+                };
+                let possibleBikeNum = bikeLocationList[k]['fields']['possiblebikenum']
+                addBikeLocationMarker(pos, map, possibleBikeNum)
+            }
+        }    
+    }
+
+    function addBikeLocationMarker(location, map, bikeNum) {
+        // custom
+        var color;
+        if (bikeNum <= 3) color = "{% static 'img/redBike.png' %}"
+        else if (bikeNum <= 6) color = "{% static 'img/blueBike.png' %}"
+        else color = "{% static 'img/greenBike.png' %}"
+
+        let tempMarker = new google.maps.Marker({
+            position: location,
+            icon: {
+                url: color,
+            },
+            map: map
+        });
+        var infoWindow = new google.maps.InfoWindow({
+            content: `<b>${bikeNum}</b> bicycles available`
+        })
+        infoWindows.push(infoWindow)
+        tempMarker.addListener('click', function () {
+            for(let i=0;i<infoWindows.length;i++){
+                infoWindows[i].close()
+            }
+            infoWindow.open(map, tempMarker);
+        });
+        bikeMarkers800.push(tempMarker)
+    }
+
+    // 1. 가장 가까운 관광지 추천
+    function recommendClosestSpot(map, s_lng, s_lat) {
+        var e_lat;
+        var e_lng;
+        var sum_location = 100000000000000000;
+        var spotName;
+        var spotInfo;
+        for (let i = 0; i < spotList.length; i++) {
+            mk2_lat = spotList[i]['fields']['mapy']
+            mk2_lng = spotList[i]['fields']['mapx']
+            let distanceTwopoints = haversine_distance(s_lat, s_lng, mk2_lat, mk2_lng)
+            if (sum_location > distanceTwopoints) {
+                sum_location = distanceTwopoints
+                e_lng = spotList[i]['fields']['mapx'];
+                e_lat = spotList[i]['fields']['mapy'];
+                spotName = spotList[i]['fields']['name']
+                spotInfo = spotList[i]['fields'];
+            }
+        }
+        clearEndMarkers()
+        clearPath()
+        let tempMarker = addEndMarker(map, e_lng, e_lat, spotName, "E", spotInfo);
+        tempMarker.addListener('click', function () {
+                connectPath(map, s_lng, s_lat, e_lng, e_lat)
+            });
+        new google.maps.event.trigger(tempMarker, "click");
+    };
+
+    //6개의 spot 추천
+    function recommendSpots6(map, s_lng, s_lat) {
+        measureDistance(s_lng, s_lat)
+        let rankList = []
+        for (let i = 0; i < measureStar.length; i++) {
+            let rank = measureStar[i].tier + measureDistanceList[i].tier + measureBikeLocationsList[i].tier
+            rankList.push({ pk: measureStar[i].pk, rank: rank, dist: measureDistanceList[i].distance })
+        }
+        rankList.sort((a, b) => (a.rank > b.rank) ? 1 : -1)
+        let possibleRecommendList = []
+        let rankbound = rankList[0].rank
+
+        // 최소의 갯수를 만족하는 랭크리스트로 넘어가자
+        for (let i = 0; i < rankList.length; i++) {
+            if (rankbound < rankList[i].rank) {
+                if (possibleRecommendList.length > 6) break
+                else {
+                    rankbound += 1
+                }
+            }
+            if (rankbound == rankList[i].rank) {
+                possibleRecommendList.push({ pk: rankList[i].pk, rank: rankList[i].rank, dist: rankList[i].dist })
+            }
+        }
+
+        clearEndMarkers()
+        clearPath()
+        possibleRecommendList.sort((a, b) => (a.rank - b.rank) ||(a.dist - b.dist) )
+        if (possibleRecommendList.length > 10){
+            possibleRecommendList = possibleRecommendList.slice(0,9)
+        }
+        for (let i = 0; i < possibleRecommendList.length; i++) {
+            if (i >= 26) continue
+            let labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            let destSpot = spotList[possibleRecommendList[i].pk - 1]
+            let e_lng = destSpot['fields']['mapx'];
+            let e_lat = destSpot['fields']['mapy'];
+            let spotName = destSpot['fields']['name']
+            let spotInfo = destSpot['fields']
+            let tempMarker = addEndMarker(map, e_lng, e_lat, spotName, labels[i], spotInfo);
+            if (i == 0) {
+                 map.setCenter({lat: e_lat, lng: e_lng});
+            }
+
+            tempMarker.addListener('click', function () {
+                connectPath(map, s_lng, s_lat, e_lng, e_lat)
+            });
+
+        }
+
+    };
+
+    // 2. 선택된 도착지 마커 찍기        
+    function addEndMarker(map, e_lng, e_lat, spotName, labelName, spotInfo) {
+        // map.setCenter(theStartMarker.getPosition())
+        let theEndMarker = new google.maps.Marker({
+            position: {
+                lat: e_lat, lng: e_lng,
+            },
+            label: labelName,
+            icon: "{% static 'img/end.png' %}",
+            map: map
+        });
+        let categoryList = spotInfo['category'].split(' ')
+        let categoryInfo = ''
+        for(let ci=0;ci<categoryList.length;ci++){
+            categoryInfo += `<span class="badge badge-default m-1"><h6 class="text-center">#${categoryList[ci]}</h6></span>`
+        }
+        var contentInfo =
+            '<div id="content">' +
+            '<div>' +
+            `<h4 class="text-center" style="font-family: 'Lilita One', cursive;">${spotInfo['name']}</h4>` +
+            '<div class="text-center">' +
+            `<img class="card-img-top text-center m-2" src="${spotInfo['imagelink']}" alt="${spotInfo['name']}" style="width: 50%; height: 50%;">` +
+            '<div id="bodyContent" class="m-2">' +
+            categoryInfo + 
+            //`<h6 class="text-center">#${spotInfo['category'].replace(/\s+/g, ' #')}</h6>` +
+            `<div id="elevation_chart"></div>`+
+            `<h6 class="card-text text-center">rating: ${spotInfo['rating']}</h6>` +
+            `<h6 class="card-text text-center">${spotInfo['explain']}</h6>` +
+            `<br>` +
+            `<p class="text-center">${spotInfo['address']}</p>` +
+            '</div>' +
+            '</div>' +
+            '</div>' + 
+            '</div>';
+        var infoWindow = new google.maps.InfoWindow({
+            content: contentInfo,
+        })
+        infoWindows.push(infoWindow)
+        theEndMarker.addListener('click', function () {
+            for(let i=0;i<infoWindows.length;i++){
+                infoWindows[i].close()
+            }
+            infoWindow.open(map, theEndMarker);
+        });
+
+        theEndMarkers.push(theEndMarker)
+        return theEndMarker
+    };
+
+    // 3.경로 연결
+    function connectPath(map, s_lng, s_lat, e_lng, e_lat) {
+        // find with skt
+        // using tmap api
+        var prtcl;
+        var headers = {};
+        headers["appKey"] = "{{tkey}}";
+        $.ajax({
+            type: "POST",
+            headers: headers,
+            url: "https://apis.openapi.sk.com/tmap/routes/pedestrian?version=1&format=json",
+            async: false,
+            contentType: "application/json",
+            data: JSON.stringify({
+                "reqCoordType": "WGS84GEO",
+                "resCoordType": "WGS84GEO",
+                "startName": "출발",
+                "startX": s_lng.toFixed(6),
+                "startY": s_lat.toFixed(6),
+                "startTime": "201711121314",
+                "endName": "도착",
+                "endX": e_lng.toFixed(6),
+                "endY": e_lat.toFixed(6),
+                "searchOption": "0",
+                "trafficInfo": "N",
+            }),
+            success: function (response) {
+
+                prtcl = response;
+                var style_red = {
+                    fillColor: "#FF0000",
+                    fillOpacity: 0.2,
+                    strokeColor: "#FF0000",
+                    strokeWidth: 3,
+                    strokeDashstyle: "solid",
+                    pointRadius: 2,
+                    title: "this is a red line"
+                };
+                var walkCoordinates = []
+                for (let j = 0; j < prtcl.features.length; j++) {
+                    let sktcoordinate = prtcl.features[j].geometry
+                    if (sktcoordinate.type == "Point") {
+                        let pos = {
+                            lat: sktcoordinate.coordinates[1],
+                            lng: sktcoordinate.coordinates[0]
+                        };
+                        walkCoordinates.push(pos)
+                    }
+                }
+                let walkPath = new google.maps.Polyline({
+                    path: walkCoordinates,
+                    geodesic: true,
+                    strokeColor: '#FF0000',
+                    strokeOpacity: 1.0,
+                    strokeWeight: 2
+                });
+                walkPath.setMap(map);
+                walkPaths.push(walkPath)
+
+                // elevation path? with walkPath
+                var elevator = new google.maps.ElevationService;
+                // Draw the path, using the Visualization API and the Elevation service.
+                displayPathElevation(walkCoordinates, elevator, map);
+            },
+            error: function (request, status, error) {
+                console.log("code:" + request.status + "\n" + "message:" + request.responseText +
+                    "\n" + "error:" + error);
+            }
+        });
+    }
+
+    function displayPathElevation(path, elevator, map) {
+        // Display a polyline of the elevation path.
+        // 맵에 같이 구현함.
+        // new google.maps.Polyline({
+        // path: path,
+        // strokeColor: '#0000CC',
+        // strokeOpacity: 0.4,
+        // map: map
+        // });
+        elevator.getElevationAlongPath({
+            'path': path,
+            'samples': 256
+        }, plotElevation);
+    }
+
+    function plotElevation(elevations, status) {
+        var chartDiv = document.getElementById('elevation_chart');
+        if (status !== 'OK') {
+            // Show the error code inside the chartDiv.
+            chartDiv.innerHTML = 'Cannot show elevation: request failed because ' +
+                status;
+            return;
+        }
+        // Create a new chart in the elevation_chart DIV.
+        var chart = new google.visualization.LineChart(chartDiv);
+
+        // Extract the data from which to populate the chart.
+        // Because the samples are equidistant, the 'Sample'
+        // column here does double duty as distance along the
+        // X axis.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Sample');
+        data.addColumn('number', 'Elevation');
+        for (var i = 0; i < elevations.length; i++) {
+            data.addRow(['', elevations[i].elevation]);
+        }
+
+        // Draw the chart using the data within its DIV.
+        chart.draw(data, {
+            height: 150,
+            legend: 'none',
+            titleY: 'Elevation (m)'
+        });
+    }
+
+    // BASE. 검색시 구글 함수 실행
+    function google(map) {
+        var input = document.getElementById('searchStart');
+        var searchBox = new google.maps.places.SearchBox(input);
+        searchBox.addListener('places_changed', function () {
+            var places = searchBox.getPlaces();
+            if (places.length == 0) {
+                return;
+            } else {
+                if (!places[0].geometry) {
+                    console.log("Returned place contains no geometry");
+                    return
+                } else {
+                    let place = places[0];
+                    if (place.geometry.viewport) {
+                        startMarker(map, place.geometry.viewport.ka.g, place.geometry.viewport.pa.g);
+                    }
+                }
+            }
+        });
+
+    }
+    // 거리 계산하기
+    function measureDistance(_lng, _lat) {
+        measureDistanceList = []
+        var subDistance = [];
+        for (let i = 0; i < spotList.length; i++) {
+            var t = haversine_distance(_lat, _lng, spotList[i]['fields']['mapy'], spotList[i]['fields']['mapx']);
+            subDistance.push({ pk: i + 1, distance: t })
+        }
+        // array 베열 첫값에 거리가 저장됨 == 거리 저장
+        subDistance.sort(function (a, b) {
+            return a.distance - b.distance;
+        });
+
+        for (let i = 0; i < subDistance.length; i++) {
+            let tier = parseInt(i / 30) + 1
+            if (tier > 10) {
+                tier = 10
+            }
+            if (subDistance[i].distance > 7) tier=10
+            measureDistanceList.push({ pk: subDistance[i].pk, distance: subDistance[i].distance, tier: tier })
+        }
+        measureDistanceList.sort((a, b) => (a.pk > b.pk) ? 1 : -1)
+    }
+
+    //실제 거리 - 마커를 가지고 올 경우는 저걸로 하면 되지만, 그럼 데이터를 많이 사용하므로 
+    // 그냥 좌표를 받는 걸로 하자. pos
+    function haversine_distance(mk1_lat, mk1_lng, mk2_lat, mk2_lng) {
+        //var R = 3958.8; // Radius of the Earth in miles
+        var R = 6371.0710 // in kilometer
+        //var rlat1 = mk1.position.lat() * (Math.PI / 180); // Convert degrees to radians
+        //var rlat2 = mk2.position.lat() * (Math.PI / 180); // Convert degrees to radians
+        var rlat1 = mk1_lat * (Math.PI / 180)
+        var rlat2 = mk2_lat * (Math.PI / 180)
+        var difflat = rlat2 - rlat1; // Radian difference (latitudes)
+        //var difflon = (mk2.position.lng() - mk1.position.lng()) * (Math.PI / 180); // Radian difference (longitudes)
+        var difflon = (mk2_lng - mk1_lng) * (Math.PI / 180); // Radian difference (longitudes)
+        var d = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat / 2) * Math.sin(difflat / 2) + Math.cos(rlat1) * Math.cos(rlat2) * Math.sin(difflon / 2) * Math.sin(difflon / 2)));
+        return d;
+    }
+
+    function measureRating() {
+        var t = 0
+        for (let i = 0; i < spotList.length; i++) {
+            t = 10 - parseInt(spotList[i]['fields']['rating'] * 2)
+            measureStar.push({ 'pk': i + 1, 'tier': t });
+        }
+        measureStar.sort((a, b) => (a.pk > b.pk) ? 1 : -1)
+    }
+    // bikeLocatinos check near spots
+    function measureBikeLocations() {
+        measureBikeLocationsList = []
+        let bikeLocNumList = [];
+        for (let i = 0; i < spotList.length; i++) {
+            let tempNum = 0
+            for (let j = 0; j < bikeLocationList.length; j++) {
+                let mk1_lat = spotList[i]['fields']['mapy']
+                let mk1_lng = spotList[i]['fields']['mapx']
+                let mk2_lat = bikeLocationList[j]['fields']['mapy']
+                let mk2_lng = bikeLocationList[j]['fields']['mapx']
+                if (haversine_distance(mk1_lat, mk1_lng, mk2_lat, mk2_lng) <= 0.8) {
+                    tempNum += 1
+                }
+                if (tempNum > 7) tempNum = 7
+                // 평균대여소 거리 넣음?
+                
+            }
+            bikeLocNumList.push({ pk: i + 1, value: tempNum })
+        }
+        bikeLocNumList.sort((a, b) => (a.value > b.value) ? -1 : 1)
+        for (k = 0; k < bikeLocNumList.length; k++) {
+            let t = parseInt(k / parseInt(bikeLocNumList.length / 10)) + 1
+            if (t > 10) t = 10
+            measureBikeLocationsList.push({ pk: bikeLocNumList[k].pk, tier: t })
+        }
+        measureBikeLocationsList.sort((a, b) => (a.pk > b.pk) ? 1 : -1)
+    }
+</script>
+{% endblock script %}

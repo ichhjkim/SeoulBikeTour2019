@@ -1,0 +1,4426 @@
+[
+    {
+        "pk": 1,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Olympic Park",
+            "rating": 4.6,
+            "explain": "Olympic park from 1988 Seoul games",
+            "mapy": 37.52068679999999,
+            "mapx": 127.12149409999999,
+            "imagelink": "https://lh4.googleusercontent.com/proxy/bPmJRXDTNG-GWmbL6zOpJigzgFY141L4YDRyVMpKpxZUneCAEQCTt6xDC2gFIej0XIU6tetiZOuy9xrAnyacOssop3DBf3olPj3bnby3l3kjA_Fc53tcn1cs2tIlE9HwwruKUe2MnLH5DDAheRckgGgR4uo=w464-h260-n-k-no",
+            "address": "424 Olympic-ro, Oryun-dong, Songpa-gu, Seoul, South Korea",
+            "category": "Outdoors Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hangang Park",
+            "rating": 4.1,
+            "explain": "Park",
+            "mapy": 37.509781200000006,
+            "mapx": 126.994744,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcQE59d4vH5ZpsmXvgH8jGNi4lxhoZQtDnxPtM0GhIHe6T0VEHlvMyHfEaaEvRuUewqAqqQLTFuqbtQnmA",
+            "address": "40 Sinbanpo-ro 11-gil, Banpo 2(i)-dong, Seocho-gu, Seoul, South Korea",
+            "category": "Outdoors Art&Culture Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yeouido Park",
+            "rating": 4.3,
+            "explain": "Park, ice skating, and garden",
+            "mapy": 37.523816,
+            "mapx": 126.918916,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcTF7lAorTF5UZjEoN8oB7Kexa2z9QRzDcD4Wb3ETjhvmQvKUnqc0uoMS9JmEQp9AsLhP5ehzXYT-mJkUQ",
+            "address": "68 Yeouigongwon-ro, Yeoui-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Ilsan Lake Park",
+            "rating": 4.5,
+            "explain": "Waterside park with trails, art & events",
+            "mapy": 37.6567441,
+            "mapx": 126.7662508,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcSccGgWoZf3bzr4Pz4KNw01TLt-zjiIMqnK4KksCWSamlU1rZU87kDv97UyycD-8rf_Nqvr3Fmmv31Q0g",
+            "address": "595 Hosu-ro, Janghang-dong, Ilsandong-gu, Goyang-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bukhansan National Park",
+            "rating": 4.6,
+            "explain": "Mountain park with trails & temples",
+            "mapy": 37.6197679,
+            "mapx": 126.99558390000001,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcSKt4FaTYm9vqPE1fhyb0Y4blaeyns1cJgq8jAkLVsUB1VLKt4vQrxS6FBNkZ7KyQTRsMY_9ygOJCj6Xw",
+            "address": "262 Bogukmun-ro, Jeongneung-dong, Seongbuk-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "World Cup Park",
+            "rating": 4.4,
+            "explain": "Massive park with a golf course & river",
+            "mapy": 37.5639074,
+            "mapx": 126.8973166,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcRwUh3-pDPtAe25xVnL7Asx4E9W1uHiJM4AytVPyYR2LZi6FOuckUsfCAkP6wVbr6YFL3U3lF9okVElgQ",
+            "address": "243-60 Woldeukeom-ro, Seongsan 2(i)-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Outdoors History"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Haneul Park",
+            "rating": 4.4,
+            "explain": "Park with tall grass & scenic views",
+            "mapy": 37.5674467,
+            "mapx": 126.88545500000001,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcTzidYEJ8x_eNTdL3B8s1QlDvYzSj3wZdy7p_yOL-Fa5_H5wFVx96swARSozykzAZGoAbX4wavdkq15vg",
+            "address": "487-48 Sangam-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Outdoors Art&Culture Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Children's Grand Park, Seoul",
+            "rating": 4.4,
+            "explain": "Amusement park, playground & zoo",
+            "mapy": 37.5482248,
+            "mapx": 127.08083740000001,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/aimNj15a29jOyryYrjd8lXYV9a-4JXHek7GSVJcBTYgmieZUiKvSC8zN1f6QBqEUN7H4pM-bvFBnoIwGjnYAVuF1pfoMSsFimko0UZXWjoZqpyTN34vFH2giq4dfcmsAWV-Pt62oRWSyx88ojADXRasy0xA=w464-h260-n-k-no",
+            "address": "216 Neungdong-ro, Neung-dong, Gwangjin-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Namsan",
+            "rating": 4.5,
+            "explain": "Mountain, autumn leaf color, and park",
+            "mapy": 37.55375859999999,
+            "mapx": 126.9809696,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcRF3GjVhrU4N9jAUKtOJ802eFORBDmlzEXqO1fyCgilS4YMSoUte5zWgcnk1z3G03bvSnZJQAtcREB3Gw",
+            "address": "Namsan, Hoehyeondong 1(il)-ga, Seoul",
+            "category": "Outdoors Art&Culture Kind-friendly Nightview SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Grand Park",
+            "rating": 4.3,
+            "explain": "Entertainment area with zoos & exhibits",
+            "mapy": 37.427524700000006,
+            "mapx": 127.0170252,
+            "imagelink": "https://lh6.googleusercontent.com/-JJtH8kOdzwc/WCrLPI-Tc5I/AAAAAAAAyF0/Dr2Ds6vzOukmffk6M2sevRZEnEmnuwP6wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "102 Daegongwongwangjang-ro, Makgye-dong, Gwacheon-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Naksan Park",
+            "rating": 4.5,
+            "explain": "Park and art",
+            "mapy": 37.580657099999996,
+            "mapx": 127.00748349999999,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcSdup9ddQ-dKg33Yzp-Zy64PQv3HIArpARAlFywoxKU37fo5GKoDNCo0FhN_M_qZX6y1RIvW_Mba8FspA",
+            "address": "41 Naksan-gil, Ihwa-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Cheonggyecheon",
+            "rating": 4.2,
+            "explain": "Urban park space with a restored stream",
+            "mapy": 37.5713521,
+            "mapx": 127.0246275,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/33kvnI7scqpdrd1P8OsAPSCWQEHIHZ8mJ6ykJIEXrq_UbLwAGSvVCw2TioqIH-kbBs7ISm8NNabr3zTdO0RpGU6LZThFEvPAdSa3mPIn1EY9umXpdTNWBIXG24d7VdQipbTiCZDyAEauIzF2s-3MS1_3ShY=w464-h260-n-k-no",
+            "address": "Cheonggyecheon-ro, Yongsin-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors Art&Culture Kind-friendly SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hongneung Arboretum",
+            "rating": 4.4,
+            "explain": "Scenic destination with nature trails",
+            "mapy": 37.593532700000004,
+            "mapx": 127.04396229999999,
+            "imagelink": "https://lh6.googleusercontent.com/-1XiMgDKGBoQ/XLBY9zY3s4I/AAAAAAABNlI/hQqZSFJMRh84H7U8SigqRSWP-FWaZvErgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "57 Hoegi-ro, Cheongnyangri-dong, Dongdaemun-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seonyudo, Seoul",
+            "rating": 4.5,
+            "explain": "Park and garden",
+            "mapy": 37.5437306,
+            "mapx": 126.89964450000001,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcSH_UdPyzmLMGxXnICf_Jy1y7cYJ4lelDFcfjGLxmtfizYZldH0oOy7YdGMnEcu30zwMM9VTRHP0Esptg",
+            "address": "1 Dangsan-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bukhansan",
+            "rating": 4.6,
+            "explain": "Triple-peaked mountain, a local landmark",
+            "mapy": 37.660833000000004,
+            "mapx": 126.993333,
+            "imagelink": "https://lh5.googleusercontent.com/proxy/kcYL5RY-n5su7J9V-HV-3WoorobhpRtietrm6E-FcMZvAMUHr9ZhVND5nL_qIp5DDqlDpMi4Md9giZ3vQWOucHf3iKjkmjx3dRoPGcb69Qkob9-Ww3--1KfnVL3EKzrZXhMlPu8m8WDxItqMZQTeedcSeok=w464-h260-n-k-no",
+            "address": "Bukhansan, Ui-dong, Seoul",
+            "category": "Outdoors Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Namsan Mountain Park",
+            "rating": 4.5,
+            "explain": "Park",
+            "mapy": 37.5509895,
+            "mapx": 126.9908991,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcTG6D-KwO2xl_b5NesabKFmtK5HLxKZ4Zgj-sWp5pkF5CRPIwc9_USPKpYILRI5nkWraB2V2EslLeaHaQ",
+            "address": "231 Samil-daero, Yongsan 2(i)ga-dong, Jung-gu, Seoul, South Korea",
+            "category": "Outdoors Nightview Sunrise SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Banpo Hangang Park",
+            "rating": 4.3,
+            "explain": "Park",
+            "mapy": 37.509781200000006,
+            "mapx": 126.994744,
+            "imagelink": "https://lh3.googleusercontent.com/-rHPgQWagwGE/XRIAGsnJzuI/AAAAAAABSjg/yDZCOAt--YsHYCdSGg9tIwcmOKh6p2UrQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "40 Sinbanpo-ro 11-gil, Banpo 2(i)-dong, Seocho-gu, Seoul, South Korea",
+            "category": "Outdoors Nightview"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Tapgol Park",
+            "rating": 3.7,
+            "explain": "Public park with 10-story, stone pagoda",
+            "mapy": 37.5711455,
+            "mapx": 126.98832949999999,
+            "imagelink": "https://lh4.googleusercontent.com/-yhFWkMyII6M/XaF0ZeIvSnI/AAAAAAAAiv0/fBbJ0tslDtgpdGXojZBJgKloERrdxWVXQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "99 Jong-ro, Jongno 2(i)-ga, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors History Kind-friendly"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Ttukseom Han River Park",
+            "rating": 4.4,
+            "explain": "Park and sledding",
+            "mapy": 37.5291281,
+            "mapx": 127.0713459,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcTxeUg8L3EOAch05vHbEiTJlxhA4DggXoWMTL2c2atAayHFwsC32qnpZycIzwdTiCVyv3x4ymQOGdwr4g",
+            "address": "South Korea, Seoul, Gwangjin-gu, Jayang-dong, 704-1",
+            "category": "Outdoors Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Color Park",
+            "rating": 4.5,
+            "explain": "Expansive riverside park with a pool",
+            "mapy": 37.5284017,
+            "mapx": 126.93430120000001,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcSPbyFBmGlAkyn3xqEWWB_jOkD9g5N9TqBahmcj4QfPN7kzRcFkQFN0J1bbzI3HeBkEKoZ4P1Ezx0Xrmg",
+            "address": "330 Yeouidong-ro, Yeoeuido-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Boramae Park",
+            "rating": 4.4,
+            "explain": "Spacious, grassy recreational area",
+            "mapy": 37.4932343,
+            "mapx": 126.9197115,
+            "imagelink": "https://lh6.googleusercontent.com/-moC91Yo8X7o/XXssL72qu9I/AAAAAAAAZI4/pK4WA7gPqAMgT9zKaKGxuc149PmhV0vmwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "33 Yeouidaebang-ro 20-gil, Sindaebang 2(i)-dong, Dongjak-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gwanaksan",
+            "rating": 4.5,
+            "explain": "Mountaineering, autumn leaf color, climbing, mountain, and park",
+            "mapy": 37.442938500000004,
+            "mapx": 126.9610024,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcS63ARPqVCXyDQ9rfDa0iBaxlgUFeopsSVtk_FmNh3YjmpbTenwqeXXB2mqSasEBCm8VEgB4VokSjYxZg",
+            "address": "Gwanaksan, Jungang-dong, Gwacheon-si",
+            "category": "Outdoors Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Secret Garden",
+            "rating": 4.8,
+            "explain": "Palace, garden, and autumn leaf color",
+            "mapy": 37.5170736,
+            "mapx": 127.03652109999999,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcSbBpErtsVqmBSTpFmArqtbQHCqbG4bB7IXRtiyTM17UxwkO8ruYsIB4sGS-b9YHWFHgpn5RrIZDF0hWA",
+            "address": "South Korea, KR \uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uac15\ub0a8\uad6c \uc5b8\uc8fc\ub85c 134\uae38 11-5 \ub9ac\uc2a4\ucef4\ube4c\ub529 1\uce35",
+            "category": "Outdoors History Art&Culture"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Fortress Wall of Seoul",
+            "rating": 4.6,
+            "explain": "History, park, and mountain",
+            "mapy": 37.5779633,
+            "mapx": 127.0084459,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcQshAWytVKZDVBDX8-y38Vpq3yXyKpAfOhnhaf6UCbrTYxGqKzMlCzpFF7IBBGR0c7MfLa_SnWb9aQrjw",
+            "address": "622-83 Changsin-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors History Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Land",
+            "rating": 4.2,
+            "explain": "Korea's first theme park, opened in 1988",
+            "mapy": 37.4341563,
+            "mapx": 127.0201267,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcSyfpENLfXblXAydzlzTP-Gcp_S0n8VNl9XqroRPtcnKT3jkxoo8VnCXGBg3prpDprQvsfL60nI9mxFKQ",
+            "address": "181 Gwangmyeong-ro, Makgye-dong, Gwacheon-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Noeul Park",
+            "rating": 4.6,
+            "explain": "Park and camping",
+            "mapy": 37.57357639999999,
+            "mapx": 126.87528449999999,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcRmnOX9q-1D9L28qJSRbzU--F43gRbGShUg3XYVIRfiLxMXhkMmup2Tfe_ozbMiQbyNGRmY5zETZ_IqGA",
+            "address": "486-6 Sangam-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Marronnier Park",
+            "rating": 4.2,
+            "explain": "Park and art",
+            "mapy": 37.5805009,
+            "mapx": 127.00282450000002,
+            "imagelink": "https://lh4.googleusercontent.com/-lZGUKDezp4M/XV18IhfhE-I/AAAAAAAAP_s/DWyb1I-oELk6VxOJ3lyuSpK3YWtcl0SfACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "1 Daehak-ro 8-gil, Ihwa-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Dosan Park",
+            "rating": 4.3,
+            "explain": "Park",
+            "mapy": 37.5244813,
+            "mapx": 127.03536670000001,
+            "imagelink": "https://lh3.googleusercontent.com/--VxYc-4BUaw/WSgTqfsz4UI/AAAAAAABeRU/te3qjyHBaj0UJyUwBd0fEMNC_Rje59DqACLIB/w464-h260-n-k-no/",
+            "address": "20 Dosan-daero 45-gil, Sinsa-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bundang Central Park",
+            "rating": 4.5,
+            "explain": "Big recreational area with a bike trail",
+            "mapy": 37.377078499999996,
+            "mapx": 127.12379009999998,
+            "imagelink": "https://lh3.googleusercontent.com/-gJqPJ7IWPXU/XaGSis9jlkI/AAAAAAABP4E/fdDDKk6HcXQa6DXfkACNcUYt7jnMV_3AwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "550 Seongnam-daero, Sunae-dong, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Dobongsan",
+            "rating": 4.6,
+            "explain": "Lush peak with big rocks & an old temple",
+            "mapy": 37.7004635,
+            "mapx": 127.01568429999999,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcTlLWpSCLqa-woKDCYLFut-A5YnmdT-5zMXF9hJVsnzS4yHz5JOjzJsfEZwoi5FlehkO4cChDeoJVDy2g",
+            "address": "Dobongsan, Dobong 1(il)-dong, Seoul",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gyeongui Line Forest Park",
+            "rating": 4.4,
+            "explain": "Park",
+            "mapy": 37.558886799999996,
+            "mapx": 126.9254274,
+            "imagelink": "https://lh5.googleusercontent.com/-dprE1hTzn_g/Wlgn22LnHAI/AAAAAAABuAs/c_5cAGqfsronPVbE9E1_e81-wjmjZN_dQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "147-89 Donggyo-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Outdoors SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "N Seoul Tower",
+            "rating": 4.4,
+            "explain": "Tower with city views & a restaurant",
+            "mapy": 37.5511694,
+            "mapx": 126.98822659999998,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/uNI79ZyOCsBsGaBWfQq4jpon9OQHYU9vxSR2VT7yjhgSzh5y-KcDToXbermJS7nKRLMab10JirhscpXUQ0vib30jmjwOyHFYMWNNGn4Se7vh_8As3PJOw9Qh14Hg2D8oV8bU1L3YEOnDTyq43t3koaKiE2w6MBBd4ooau0Y5Yj8l=w464-h260-n-k-no",
+            "address": "105 Namsangongwon-gil, Yongsan 2(i)ga-dong, Yongsan-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Inwangsan",
+            "rating": 4.6,
+            "explain": "Mountain, hiking, tiger, and mountaineering",
+            "mapy": 37.5849489,
+            "mapx": 126.95930420000002,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcTYX882TZ2ZGACt-D01VrzDmJInL6uPnlw2ORBrBOzSDx6QtqDrrt4LQeIE1Q0gcH1xUdM-AcWD4d85ng",
+            "address": "Inwangsan, Ogin-dong, Seoul",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seokchon Lake Park",
+            "rating": 4.5,
+            "explain": "Park, autumn leaf color, and lake",
+            "mapy": 37.5097431,
+            "mapx": 127.10301840000001,
+            "imagelink": "https://lh3.googleusercontent.com/-0wFmT4NeAQA/VSpeyLB2nUI/AAAAAAAABmE/n-supt8hDDEiGDm3v_O2V-f6XHJASHFkQCJkC/w464-h260-n-k-no/",
+            "address": "47 Jamsil-dong, Songpa-gu, Seoul, South Korea",
+            "category": "Outdoors Art&Culture"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoullo 7017",
+            "rating": 4.1,
+            "explain": "Garden and park",
+            "mapy": 37.5565311,
+            "mapx": 126.9752311,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcRdak2X6VJnV7fq44AT7R2Y93UQdmTYGnuCjkVRoErjHyB1fu4NakByXx85NGf8fsug_LudPQjFwVuBag",
+            "address": "18 Toegye-ro, Namdaemunno 5(o)-ga, Jung-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Mureungdowon Arboretum",
+            "rating": 4.4,
+            "explain": "Park",
+            "mapy": 37.504907,
+            "mapx": 126.8161883,
+            "imagelink": "https://lh5.googleusercontent.com/-dZ7lu75NX9c/WcMX6dUCB7I/AAAAAAAAAJQ/sCzRt234oxoCICPIT6FJUX20GjqMevS5ACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "381 Chunui-dong, Wonmi-gu, Bucheon-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "West Seoul Lake Park",
+            "rating": 4.4,
+            "explain": "City green space with paths & picnicking",
+            "mapy": 37.527671999999995,
+            "mapx": 126.829852,
+            "imagelink": "https://lh4.googleusercontent.com/--eZEIEXvoHQ/WbFILlCSGrI/AAAAAAAAFME/ZGBOtX7OQUUzR-2LciXNBsZMGHuY_Z20wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "20 Nambusunhwan-ro 64-gil, Sinwol 3(sam)-dong, Yangcheon-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Woongjin Play Doci",
+            "rating": 4.0,
+            "explain": "Indoor skiing & a water park",
+            "mapy": 37.500122,
+            "mapx": 126.74425420000001,
+            "imagelink": "https://lh4.googleusercontent.com/-6tJddBcNK2w/WhJnE1j99uI/AAAAAAABaWk/fNK1kDLPmmUrZDFVsZYxdhCK-RMCIkW4gCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Gyeonggi-do, Bucheon-si, Wonmi-gu, Jomaru-ro, 2 KR",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Deoksugung",
+            "rating": 4.5,
+            "explain": "Palace with a Royal Guard ceremony",
+            "mapy": 37.5658049,
+            "mapx": 126.97514609999999,
+            "imagelink": "https://lh6.googleusercontent.com/proxy/y6O4pjuN0rgxx9dR49uIBC3e3Ko9_vP6RH_1pR5mEPatmp0STM35M8atOZEkuuryKvFBeF-537PAu-WMD_QFRjfj87pVT1Od7ljIAscifQOjlJo71bDlWd6FwbUCj9ENsaQGQ0LkKEn1QDvIiMPqGS_EhgctW8YNo05egx9WwKjy=w464-h260-n-k-no",
+            "address": "99 Sejong-daero, Jeong-dong, Jung-gu, Seoul, South Korea",
+            "category": "Outdoors History Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yongsan Family Park",
+            "rating": 4.5,
+            "explain": "Park",
+            "mapy": 37.5216852,
+            "mapx": 126.9839703,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcQZZTj74OAXEJZq0ExvvHzIfH9HstePwKC61zNK1-Z2sUn2YKYeSKeuSXMmt_6hWia_L_au1r6LVbyfWA",
+            "address": "185 Seobinggo-ro, Yongsandong 6(yuk)-ga, Yongsan-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Ihwa Mural Village",
+            "rating": 4.0,
+            "explain": "Outdoor network of murals & sculptures",
+            "mapy": 37.5779788,
+            "mapx": 127.0071915,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcTWxE9p3RdQov59gz6iP5a-yXeBYVnrAEHBhcvH8sIT6EsP5IhmTDv2Vog0U_0y01cBin89G9Af3UmORw",
+            "address": "49 Naksan 4-gil, Ihwa-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors Art&Culture"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc0bc\uccad\uacf5\uc6d0",
+            "rating": 4.4,
+            "explain": "Park and autumn leaf color",
+            "mapy": 37.59039310000001,
+            "mapx": 126.9859125,
+            "imagelink": "https://lh5.googleusercontent.com/-S245RDLoiog/XTUJLFSWaoI/AAAAAAAAHO4/oazUkowAdV44-2nhlqVnGkvk7Fr1jNH2QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Samcheong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seodaemun Independence Park",
+            "rating": 4.4,
+            "explain": "Historic ruins, a museum & exhibits",
+            "mapy": 37.5740613,
+            "mapx": 126.95636029999999,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcS3CeHfGtHKmAGCs2cmRBi-KQyk7kxGemH7D7iB86KK_x5WuPxGXwku_WzX-W0fPBnJX5Nl6Zt2u4bA8A",
+            "address": "247 Tongil-ro, Hyeonjeo-dong, Seodaemun-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul World Cup Stadium",
+            "rating": 4.3,
+            "explain": "Well-known stadium with a mall & cinema",
+            "mapy": 37.5682588,
+            "mapx": 126.8972774,
+            "imagelink": "https://lh6.googleusercontent.com/-VeT5NCYb63s/XUp6aAVGsbI/AAAAAAAAMeE/3nEU-msCHTgAH7KLgmalcoB9f2D2QXsnQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "240 Woldeukeom-ro, Seongsan 2(i)-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Outdoors Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yangjae Citizens' Forest",
+            "rating": 4.4,
+            "explain": "Large park with recreational facilities",
+            "mapy": 37.4706864,
+            "mapx": 127.0355777,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcQ0A9sDDOn4ux8eWAZ8Ch6TALQ3n93508P4B4P6vhJSeTLt2KOVMvFGPlx_sTzLpsng9kUFC4tE1TvNfQ",
+            "address": "236 Yangjae 2(i)-dong, Seocho-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Mongchontoseong",
+            "rating": 4.5,
+            "explain": "Park, archaeological site, history, and historic site",
+            "mapy": 37.521928100000004,
+            "mapx": 127.122853,
+            "imagelink": "https://lh5.googleusercontent.com/-b_YNwmDvX2Q/XQJQYUnaxXI/AAAAAAAAANA/RtB6C77QCnEwV2ppvFVh17mh8icF2KILgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "424 Olympic-ro, Oryun-dong, Songpa-gu, Seoul, South Korea",
+            "category": "Outdoors History Kind-friendly"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Namhansanseong",
+            "rating": 4.3,
+            "explain": "Autumn leaf color, mountaineering, history, historic site, and mountain",
+            "mapy": 37.481567999999996,
+            "mapx": 127.18480009999999,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcTuI17cJ1fm9De-n-Yo8Tp4g-5TJW-48_aH7xfcCVeUEsfXACLLXvDuZ0gkpoQ6ibAiRDjibKNyugj4Bw",
+            "address": "661 Sanseong-ri, Jungbu-myeon, Gwangju-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors History Art&Culture Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Lotte World",
+            "rating": 4.2,
+            "explain": "Adventure & water park with an aquarium",
+            "mapy": 37.5111158,
+            "mapx": 127.09816699999999,
+            "imagelink": "https://lh4.googleusercontent.com/proxy/K96bOuzEbzd-zxjXkC5OQ_Uu6UH4gzfDLQ-6EqkZMGOanjKrpHJY1u159xisHd7XLr2OTNiveae88IkDuawC6BkfNLsRMH9SVcIhGIFrzTnSPmPfl8YFGCJ6rdzSmk2I34RpCoL3CE4mpLD-7biLwz5vOnsAx_wpB6cRcmMaw-sL=w464-h260-n-k-no",
+            "address": "240 Olympic-ro, Jamsil-dong, Songpa-gu, Seoul, South Korea",
+            "category": "Outdoors Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Pureun Arboretum",
+            "rating": 4.4,
+            "explain": "Garden and park",
+            "mapy": 37.48398359999999,
+            "mapx": 126.8255942,
+            "imagelink": "https://lh4.googleusercontent.com/-jqVIDrITJ0c/XYWr6_N9nSI/AAAAAAAAI7g/JhwuEcXEZeo9tIiZ5wS2JtDGJ7Q_WvjdwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "96-4 Hang-dong, Guro-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Guri Hangang Park",
+            "rating": 4.1,
+            "explain": "Park",
+            "mapy": 37.574647799999994,
+            "mapx": 127.13620390000001,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcQUiE2fHIhdjJQgDm7SG9QSsNpTuuQWVhuC3iGifR6BHhAU7_ovBEBvBLyUp0y5ottTIU9bbtnEIVE7wQ",
+            "address": "Topyeong-dong, Guri-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors Nightview"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc7a5\ud765\uc790\uc0dd\uc218\ubaa9\uc6d0",
+            "rating": 3.3,
+            "explain": "Arboretum",
+            "mapy": 37.743790399999995,
+            "mapx": 126.9496895,
+            "imagelink": "https://lh5.googleusercontent.com/-PVxootyA6Ow/XNaUqPvwATI/AAAAAAAAS2Q/2oeO5QrOD8441ZUnWLZst26bFAf7LCUZACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "\uc0b0162-1 Seokhyeon-ri, Jangheung-myeon, Yangju-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Nakseongdae",
+            "rating": 4.3,
+            "explain": "Tranquil place & a general's birthplace",
+            "mapy": 37.4711007,
+            "mapx": 126.95998999999999,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcSYMpCcd708LGlNn1Bt6-mM7uzD2XWNUNSevxnFIpDXt29doKg8aXAtUVbWOztfHyPu53ruvVs5wBN7ww",
+            "address": "77 Nakseongdae-ro, Bongcheon-dong, Gwanak-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Mangwon Hangang Park",
+            "rating": 4.3,
+            "explain": "Park",
+            "mapy": 37.5557262,
+            "mapx": 126.8945702,
+            "imagelink": "https://lh6.googleusercontent.com/-0hPhY66Ducs/XVv85XXV5ZI/AAAAAAAAtQ0/3nfdCZCwzkwn12sldJzWja95-Qzvs-t_QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc \ub9c8\ud3ec\uad6c \ub9c8\ud3ec\ub098\ub8e8\uae38 467 (\ub9dd\uc6d0\ub3d9) \ub9dd\uc6d0\ud55c\uac15\uacf5\uc6d0 \ub0b4",
+            "category": "Outdoors Nightview"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc2e0\uad6c\ub300\ud559\uad50\uc2dd\ubb3c\uc6d0",
+            "rating": 4.0,
+            "explain": "Garden",
+            "mapy": 37.433886,
+            "mapx": 127.08146299999999,
+            "imagelink": "https://lh3.googleusercontent.com/-5SLwJOvXiY4/XTqtEMt6z2I/AAAAAAAAORs/0yDh7gbz70Ipctlq0hA_p4XJQRvQSLVigCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Gyeonggi-do, Seongnam-si, Sujeong-gu, \uc801 \ud478\ub9ac \ub85c 9 \uc0c1\uc801\ub3d9 123-1)",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seonyudo Park",
+            "rating": 4.4,
+            "explain": "Park",
+            "mapy": 37.5437306,
+            "mapx": 126.89964450000001,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcRc0recpdCtqahYO54I1ugxbWTGHqUZgSevPM8v-IpU16Z8KrV-OTUpBrd30Wc0MBIUG5Vq-ysDBuCsCw",
+            "address": "1 Dangsan-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Montmarte Park",
+            "rating": 4.3,
+            "explain": "Park",
+            "mapy": 37.49509949999999,
+            "mapx": 127.0035246,
+            "imagelink": "https://lh4.googleusercontent.com/-tOHZtTSA70s/XYyXKM5Z2KI/AAAAAAAAA9k/4JkFPu1fzDkKGYKIqR4lx5v4Aj17WnSDwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Seocho-dong, Seocho-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Changgyeonggung Palace",
+            "rating": 4.6,
+            "explain": "Royal palace built in the 15th century",
+            "mapy": 37.5787708,
+            "mapx": 126.99486979999999,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/57gl0BM3J7QPNRa6cXdVzE39eKCbdV8lFzCv5XdyDzq2ddzeVK1NF0_-p03aAEzFIees08ERx_w9q8OOb2A2CbnPh_z1Yy8XwKI-3oCQ1RzluE_XMCMppSCKvesfCfQaujb5Hy9lfZmmG5o50Ton6tcQ1D7iR-VutKYX8migdhm2=w464-h260-n-k-no",
+            "address": "185 Changgyeonggung-ro, Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors History Art&Culture Kind-friendly Local-favorites Nightview"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jangchungdan Park",
+            "rating": 4.3,
+            "explain": "Park",
+            "mapy": 37.557730799999995,
+            "mapx": 127.00430049999999,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcQtGsMuOH0Zlo4BYdJMgN3B0ApA-1_cTczc6RvSQ0OPSfs4ifqtgyuDMgeebSmqM1Qd3uZQ1gARNXBiow",
+            "address": "Jangchungdong 2(i)-ga, Jung-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gyeongbokgung Palace",
+            "rating": 4.6,
+            "explain": "Historic palace with tours & a museum",
+            "mapy": 37.579617,
+            "mapx": 126.97704099999999,
+            "imagelink": "https://lh6.googleusercontent.com/proxy/OgpZZyyaQtQq30C5KM7IEb9kxDBVrlyOMy1GzCmZpNoBguS2vFv0gDtlqPwgzIPFoFEsK3eTQKhW74_VLypckQDH-tzcqBV-we8CTGSeQ8H509isTSFBG4TsA_xvHayw6ZvrxqrjMXeaNkgOZx5YAV_oayQ=w464-h260-n-k-no",
+            "address": "161 Sajik-ro, Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors History Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Cheonggyesan",
+            "rating": 4.1,
+            "explain": "Mountaineering, autumn leaf color, mountain, and hiking",
+            "mapy": 37.4141657,
+            "mapx": 127.0415787,
+            "imagelink": "https://lh6.googleusercontent.com/proxy/IBb2T8EdWi1ZgCmD2jQ6VKsxUSl1XhoUU6Gj3n4bjZWBZ-SnVJxC43i0fYQdMvfokNAHqu3UIIgGbeayxuh-wodtfPrH2jcT_Sq_1FO4nrDP7tyIVDuZjZ0ZdYX-m9xmiawkKr7XJXDvbFeoiufmVyohBI6BgsxIFYg=w464-h260-n-k-no",
+            "address": "Cheonggyesan, Sangjeok-dong, Seongnam-si",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hyochang Park",
+            "rating": 4.2,
+            "explain": "City park & former royal cemetery",
+            "mapy": 37.545048200000004,
+            "mapx": 126.9603142,
+            "imagelink": "https://lh3.googleusercontent.com/-aNV3WAgl2Mc/W0MufpdYFgI/AAAAAAAAcEQ/8u3iKvmrEX0LjwrUy6imfLV-kNc4X1CigCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "177-18 Hyochangwon-ro, Hyochang-dong, Yongsan-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Ichon Hangang Riverside Park",
+            "rating": 4.3,
+            "explain": "Park",
+            "mapy": 37.5159703,
+            "mapx": 126.9758314,
+            "imagelink": "https://lh4.googleusercontent.com/-97a9pIqy-fg/XZdYlROC8II/AAAAAAAAnxM/mFG8mA5w0WgEv2SmqBAxgkGaPO9xq7m-QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "62 Ichon-ro 72-gil, Ichon-dong, Yongsan-gu, Seoul, South Korea",
+            "category": "Outdoors Nightview"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "North Seoul Dream Forest",
+            "rating": 4.5,
+            "explain": "Sprawling park with trails & art center",
+            "mapy": 37.6214313,
+            "mapx": 127.0406246,
+            "imagelink": "https://lh5.googleusercontent.com/-fgznBtNepmI/WJlQ8cTSjDI/AAAAAAAAAF4/RSt8fEK6ooM2dhKu_-BOaR787RUlC9vjgCLIB/w464-h260-n-k-no/",
+            "address": "173 Wolgye-ro, Beon-dong, Gangbuk-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ub3d9\ub300\ubb38\uc131\uacfd\uacf5\uc6d0",
+            "rating": 4.4,
+            "explain": "Park",
+            "mapy": 37.571923600000005,
+            "mapx": 127.00907749999999,
+            "imagelink": "https://lh4.googleusercontent.com/-BKRLtTMvN5E/XU_cWRSqTGI/AAAAAAABS5M/tL5754eQjKYyYeA0i1x9AgjkhO8jOqP6gCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "70 Jongno 6(yuk)-ga, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Waryong Park",
+            "rating": 4.3,
+            "explain": "Park",
+            "mapy": 37.5905876,
+            "mapx": 126.9906065,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcR_qM5O4xaWjTDgwiCDYLQtKVZDxmRthRqt00T9fzCVjZwQBrF6zdq_vrGeqWqQ1sgrnln6fIm26IWp5w",
+            "address": "192 Waryonggongwon-gil, Myeongnyun 3(sam)ga-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 66,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Forest",
+            "rating": 4.5,
+            "explain": "Huge, tree-filled park with a lake",
+            "mapy": 37.544387799999996,
+            "mapx": 127.03744240000002,
+            "imagelink": "https://lh5.googleusercontent.com/proxy/KL9Azz3-v7Exflb717Kn7ueaOfLOYmWr_pjK4EJ2qqFJfphutMdmD4a9_LvfNrUrKETBZgZ9ZbeKyqo71GfsYBw_vETsI7JiAbjfpPujfoQny2Wr9vmxFYnNzxCnKJd26Lhq5101H-KKPc3mhH45pkBfobU=w464-h260-n-k-no",
+            "address": "273 Ttukseom-ro, Seongsu-dong 1(il)-ga, Seongdong-gu, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 67,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Achasan",
+            "rating": 4.3,
+            "explain": "Peak with city views & easy hiking trail",
+            "mapy": 37.5715087,
+            "mapx": 127.1037627,
+            "imagelink": "https://lh5.googleusercontent.com/proxy/Kz4mHGBZ5QNRxMUVbvTqkLIjzLBlxX7217FrNySk6X7V7b26gh1pawsFgOUdrEM_YaOsboeMVaZAeKst-ZlF8wSOSBPtufMEQQLTBGZ89CYdu6-DA98J6d7VAnrL4WQDjTBK5IhZPTjMcMzFnpSPx44d0pVPFbatcpg=w464-h260-n-k-no",
+            "address": "Achasan, Gyomun 1(il)-dong, Guri-si",
+            "category": "Outdoors History Kind-friendly"
+        }
+    },
+    {
+        "pk": 68,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gwangnaru Hangang Park",
+            "rating": 4.1,
+            "explain": "Park",
+            "mapy": 37.5487859,
+            "mapx": 127.12003840000001,
+            "imagelink": "https://lh4.googleusercontent.com/-pNKNWQrKXJ8/WVhEvHnxMaI/AAAAAAAARfA/N3LRaQcggYEVr03N2nD4aKnM8QZoMkrnQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uac15\ub3d9\uad6c \uc120\uc0ac\ub85c 83-66 (\uc554\uc0ac\ub3d9)",
+            "category": "Outdoors Nightview"
+        }
+    },
+    {
+        "pk": 69,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoripul Park",
+            "rating": 4.3,
+            "explain": "Park",
+            "mapy": 37.4906,
+            "mapx": 126.9997196,
+            "imagelink": "https://lh3.googleusercontent.com/-SbGVNjhCWcI/Wu5Ujxr9oyI/AAAAAAAAsUA/-YtI7U0TWMA1yo5KaYHlr5LamY_6ZhSxACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "165 Bangbae-dong, Seocho-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 70,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yongma Waterfall Park",
+            "rating": 4.4,
+            "explain": "Park, climbing, and rock climbing",
+            "mapy": 37.575593,
+            "mapx": 127.08858700000002,
+            "imagelink": "https://lh5.googleusercontent.com/-nTcBXd7fLls/XSlOHLtc-fI/AAAAAAAABbc/GLLRw1aCpHY-CkkoFBv2iDZlxP7VKeNZwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Myeonmok 4(sa)-dong, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 71,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Anyang Art Park",
+            "rating": 4.1,
+            "explain": "Park and art",
+            "mapy": 37.4188889,
+            "mapx": 126.9202778,
+            "imagelink": "https://lh3.googleusercontent.com/-X0XZpirnxZg/XUpt3NgxhYI/AAAAAAAAVAI/p8uSifE8-uY4_Ue3B37MOA1mfMvfmd_ZwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "240-18 Seoksu-dong, Manan-gu, Anyang, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jamsil Hangang Park",
+            "rating": 4.4,
+            "explain": "Park and beach volleyball",
+            "mapy": 37.5179593,
+            "mapx": 127.081933,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcTsKkq8JDeL2XZeDl4JokldAgLCQBF8khCY4gqH1e3cXXHy_8LqmGuFXb4YUhz667To6TNsSHdxnBlWfA",
+            "address": "65 Hangaram-ro, Jamsil 2(i)-dong, Songpa-gu, Seoul, South Korea",
+            "category": "Outdoors Nightview"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yeonjudae",
+            "rating": 4.5,
+            "explain": "Mountaineering",
+            "mapy": 37.4447771,
+            "mapx": 126.96465400000001,
+            "imagelink": "https://lh6.googleusercontent.com/-jrZGFtYF8oo/XawXoY0mXFI/AAAAAAAAAN8/5NvbG3UQj4c1wuzDvcUzCs5yJOnE7JwdwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "62 Jahadong-gil, Jungang-dong, Gwacheon-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc0b0\ub4e4\uc18c\ub9ac \uc218\ubaa9\uc6d0",
+            "rating": 3.8,
+            "explain": "Arboretum",
+            "mapy": 37.650557299999996,
+            "mapx": 127.1011574,
+            "imagelink": "https://lh4.googleusercontent.com/-6CwhaFasRUo/WhQkoeuytII/AAAAAAAAAB0/OefJOfifG3cQVbD8CJo8XVZZwJU_Mt3FQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "48-31 Buramsan-ro 59beon-gil, Byeollae-dong, Namyangju-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Incheon Grand Park",
+            "rating": 4.4,
+            "explain": "Autumn leaf color and park",
+            "mapy": 37.456711,
+            "mapx": 126.75791100000001,
+            "imagelink": "https://lh4.googleusercontent.com/-oO2RvYxHleU/XQze6piPe-I/AAAAAAAADMA/gHHW9IPRy1oiOwKcBRgt0mMLW-4IDl6SwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "\uc0b0180 Jangsu-dong, Namdong-gu, Incheon, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Battleship Park",
+            "rating": 4.2,
+            "explain": "Park",
+            "mapy": 37.55362969999999,
+            "mapx": 126.8972943,
+            "imagelink": "https://lh6.googleusercontent.com/-TATc2vpDqmE/Wq-CUPGecxI/AAAAAAAAAOQ/PlOi-8FiOFgAQSFLx26u6om-XplpdbZAQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Maponaru-gil, Mangwon 1(il)-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 77,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gwangmyeong Cave",
+            "rating": 4.2,
+            "explain": "Cave",
+            "mapy": 37.426494399999996,
+            "mapx": 126.86648429999998,
+            "imagelink": "https://lh6.googleusercontent.com/-D7vDRakPjj8/XcbPZsreqsI/AAAAAAACQb8/Lrei693tMvQQ6po2OsiCaB8guSu_UUC_wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "142 Gahak-ro 85(palsibo)beon-gil, Hagon-dong, Gwangmyeong-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 78,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ubd80\ucc9c\uc790\uc5f0\uc0dd\ud0dc\ubc15\ubb3c\uad00",
+            "rating": 4.3,
+            "explain": "Park",
+            "mapy": 37.504816999999996,
+            "mapx": 126.81657,
+            "imagelink": "https://lh6.googleusercontent.com/-RuXWzkbBJyk/Xd-_Er4KtwI/AAAAAAAAIFc/CRtZA5yQwYAds7weNVCCQh0etau4xIo7wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "660 Gilju-ro, Chunui-dong, Bucheon-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors History"
+        }
+    },
+    {
+        "pk": 79,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc96c\ub77c\ub9ac\uc6c0 \uc77c\uc0b0\uc810",
+            "rating": 3.7,
+            "explain": "Zoo and walrus",
+            "mapy": 37.689879,
+            "mapx": 126.85464499999999,
+            "imagelink": "https://lh5.googleusercontent.com/-w0jH-0aeSiI/XGwLcsx7FrI/AAAAAAAAL70/S4PGkNKLbykSP4KoELSdnyfr82dPcQw7ACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "290 Gwansan-dong, Deokyang-gu, Goyang-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 80,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yangjaecheon",
+            "rating": 4.6,
+            "explain": "River, autumn leaf color, and park",
+            "mapy": 37.4702778,
+            "mapx": 127.03083329999998,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/UPmQ449t4VJVxOG_vfKJvKgsFJMF-pSqzxGJZ44R7TkOjiLXmgNj_Osjvu0WRtnYPJRKwJsJfYXBbdz5-OP_mbOQ4Zt5_3PRDrVraudUtp8u4dxYSRNVuEhGmMX8wiefodE0bmEDwpto-yQwBdYaZcgUSg8kvyM55ts=w464-h260-n-k-no",
+            "address": "Yangjaecheon, Yangjae 1(il)-dong, Seoul",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 81,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yongdo Arboretum",
+            "rating": 3.7,
+            "explain": "Garden",
+            "mapy": 37.4191319,
+            "mapx": 126.82650079999999,
+            "imagelink": "https://lh4.googleusercontent.com/-wsLzM9KKkk0/XWo2JCJX_vI/AAAAAAAAFZM/Mw-8aKCOOtkC8Bh2DbinfzyuyllFjsvMgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "32 Batdwi-gil, Maehwa-dong, Siheung-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 82,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Eungbongsan (Seoul)",
+            "rating": 4.4,
+            "explain": "Mountain, park, rock climbing, and climbing",
+            "mapy": 37.548176899999994,
+            "mapx": 127.0298261,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcTZNiqQzym1wBf2ZnOBE2e5xVkLp898Z9Yh2lYGXvs3wNAOCx1ubdAFa8qY_r67o3pcDZp1tDSwPHJ09w",
+            "address": "Eungbongsan (Seoul), Eungbong-dong, Seoul",
+            "category": "Outdoors Art&Culture"
+        }
+    },
+    {
+        "pk": 83,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Suraksan",
+            "rating": 4.3,
+            "explain": "Scenic peak with temples & waterfalls",
+            "mapy": 37.696493,
+            "mapx": 127.0822334,
+            "imagelink": "https://lh6.googleusercontent.com/proxy/1R5hFIa3sBjItW3FaNcKvyjRg5vq-Dc60EZN6azgJngDwl2pRWEmubmsLdDLND-cuh-f7MSzyTsl34bq5GbE4zn7-0zURdZwzBA9oCeqw0h8bgefv-AY3I0f2RQwhSSZgT8NcBGSla1qrt-r1QI13WfonNWWD59pK3I=w464-h260-n-k-no",
+            "address": "Suraksan, Byeollae-myeon, Namyangju-si",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 84,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yanghwa Bridge",
+            "rating": 4.2,
+            "explain": "Park",
+            "mapy": 37.543675,
+            "mapx": 126.904366,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcSRUa2B_vWySR96FmuvJjzjbrxSkKnz_nqY0O2bM_14fTXujnMdXakIIXbfUc499rn0GJbKWROMoVj_Mg",
+            "address": "Dangsan-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "Outdoors Nightview"
+        }
+    },
+    {
+        "pk": 85,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Banpo Bridge",
+            "rating": 4.3,
+            "explain": "Two-level bridge & rainbow water feature",
+            "mapy": 37.5156865,
+            "mapx": 126.99606969999999,
+            "imagelink": "https://lh4.googleusercontent.com/proxy/TVUuJaIEEjqDQfU2D_VxBtgNEgXxqPK4lcs-rToTlmaA0KqR9zDdOjtjlAcVVuIwopEK8gBABSEpZqKtncL46B0qJzhrS_peNvqY_xL5sox2zPIUeGaRpK4tMxjZDoWgEJBF8LXuhE8ihNZOFdX4E9WZ69A=w464-h260-n-k-no",
+            "address": "Banpo 2(i)-dong, Seoul, South Korea",
+            "category": "Outdoors Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 86,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yanghwa Hangang Riverside Park",
+            "rating": 4.3,
+            "explain": "Riverside green space with a bike path",
+            "mapy": 37.5383005,
+            "mapx": 126.90226499999999,
+            "imagelink": "https://lh5.googleusercontent.com/-0eY-sjW04U8/XWFx0cVtrzI/AAAAAAAAqUw/1AYXUeWaOpEJhKqzxsquINOyfEGHurIfgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "221 Nodeul-ro, Dangsan 2(i)-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "Outdoors Nightview"
+        }
+    },
+    {
+        "pk": 87,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Maebong Mountain Park",
+            "rating": 4.4,
+            "explain": "Park",
+            "mapy": 37.5443195,
+            "mapx": 127.0074453,
+            "imagelink": "https://lh6.googleusercontent.com/--lJEfnscG0g/WeRk7IrRmmI/AAAAAAAAST8/ulONlA0BYi8AUZ0Cwfj4J-fy6PAHwMbVgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "\uc0b051 Sindang-dong, Jung-gu, Seoul, South Korea",
+            "category": "Outdoors Nightview Sunrise"
+        }
+    },
+    {
+        "pk": 88,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "LetsRun Park Seoul",
+            "rating": 3.9,
+            "explain": "Large venue for live horse racing",
+            "mapy": 37.4473604,
+            "mapx": 127.0156347,
+            "imagelink": "https://lh3.googleusercontent.com/-7d76se_jRW8/XAUZyt6wMzI/AAAAAAAAgnE/VoV920qD_HgxaYg54-BiXZWI85CKpmFrQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "107 Gyeongmagongwon-daero, Gwacheon-dong, Gwacheon-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 89,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bucheon Central Park",
+            "rating": 4.4,
+            "explain": "Park",
+            "mapy": 37.5001419,
+            "mapx": 126.7653702,
+            "imagelink": "https://lh6.googleusercontent.com/-VqqFJK8ekPE/Xa5M68HNl4I/AAAAAAAAAUw/BjDkGmXbJ5I-aYhGY8lKvKn4m28rO2TUwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "162 Sohyang-ro, Jung-dong, Wonmi-gu, Bucheon-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 90,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Sebitseom",
+            "rating": 4.1,
+            "explain": "Park",
+            "mapy": 37.5116807,
+            "mapx": 126.99471940000001,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcQ_7Yel31v8Fpg8nDh9YZFendVm3-_P6iITrGKU8VNIzNWEIFkfqLBsiYrUtIdtdJVn6XjbGCU4X694xA",
+            "address": "Seoul, Banpo 2(i)-dong, \uc138\ube5b\ub465\ub465\uc12c",
+            "category": "Outdoors Kind-friendly"
+        }
+    },
+    {
+        "pk": 91,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seosomun Park",
+            "rating": 4.5,
+            "explain": "Park",
+            "mapy": 37.560642200000004,
+            "mapx": 126.9690479,
+            "imagelink": "https://lh6.googleusercontent.com/-77NJT1QYW3k/XdFEZR2RcwI/AAAAAAABpvI/w5gcXFvyCoQWnrctvD5sqr__IsadEipDwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "5 Chilpae-ro, Jungnim-dong, Jung-gu, Seoul, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 92,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "One Mount (Snow Park & Water Park)",
+            "rating": 3.9,
+            "explain": "Water park and park",
+            "mapy": 37.66434520000001,
+            "mapx": 126.7545858,
+            "imagelink": "https://lh5.googleusercontent.com/-_AqT4MHz-CE/WOg8V0eQTkI/AAAAAAAAFr0/MrlXyInzGYQsX2h4Ym-tAz8VsKfHJcQmwCLIB/w464-h260-n-k-no/",
+            "address": "1050-64 Daehwa-dong, Ilsanseo-gu, Goyang-si, Gyeonggi-do, South Korea",
+            "category": "Outdoors"
+        }
+    },
+    {
+        "pk": 93,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gyeonghuigung",
+            "rating": 4.3,
+            "explain": "Historic palace with an adjacent museum",
+            "mapy": 37.5712378,
+            "mapx": 126.96816880000002,
+            "imagelink": "https://lh6.googleusercontent.com/proxy/wH77kcSY0cwj1uPlEPrjR1GdXZb7dkek9x5SB9hkaxD7_HgkByO5E-CDGa39_MrPiez6kwy1t0aUgaZsiDdnq6VPLeSI65FJcXlJfScMetaSNIWhxsxK0E5JSqusqs6Yzi32UQ28sAGPhEnFAyhf8ScMahw=w464-h260-n-k-no",
+            "address": "45 Saemunan-ro, Sajik-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 94,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gwanghwamun",
+            "rating": 4.5,
+            "explain": "Imposing gate at Gyeongbokgung Palace",
+            "mapy": 37.57593689999999,
+            "mapx": 126.97681570000002,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/DCWfMc_cDWmENgQkrYGcpc1UDa7keloBT6L_VFgmWyzBoZLDOF51iNR3I-MdsmD3utMvHJaP9Y1nLGdqd454wRrxk02mJqWTbdCSQl5fVD2jZYVYQPtQ039hP42F8d3OpIZfNEIgWtIA8_mCS3iBW1eYk2YmMfLZeq32hkz8_VQb=w464-h260-n-k-no",
+            "address": "161 Sajik-ro, Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 95,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Myeongdong Cathedral",
+            "rating": 4.6,
+            "explain": "Gothic-style, 19th-century cathedral",
+            "mapy": 37.563177,
+            "mapx": 126.9873604,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/NeiiJOZVPoIZebN59Vb0CHrbnc9j-lFhlOW10wtPVyCMw5yxGE9nqvjuf4NpcPHlDaL7WVEfX1edoUx5Fza3U24BUxKOeVoZ16E1Ts91IpEZGAsWQN-Z66UJw3duT56A7aAFsRqrve-eS-Izn063tQGZAnQ=w464-h260-n-k-no",
+            "address": "74 Myeongdong-gil, Jeodong 1(il)-ga, Jung-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 96,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Unhyeongung",
+            "rating": 4.3,
+            "explain": "Royal & political palace residence",
+            "mapy": 37.576034,
+            "mapx": 126.987052,
+            "imagelink": "https://lh4.googleusercontent.com/proxy/jrG3OUsT4M0MN6hKsC44i4Ez1RKwkJYLhA1oH9ay8dCBztN8F06xRqLmPiR9_IAPxy5Q31HDA8CfR7SdogJPLy6G9TChPtMgbgXGYEvaBijaCxQJdz6Khd_CECseOeO5DW0RgHChU6EGZBWwWVbf7fcWmSwuf63MsI3ia2QkyHxn=w464-h260-n-k-no",
+            "address": "464 Samil-daero, Unni-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 97,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Blue House",
+            "rating": 3.5,
+            "explain": "Official presidential office & residence",
+            "mapy": 37.5866076,
+            "mapx": 126.97481100000002,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcQOOr-IPHIK3tgSam208bQT8XG6zSx4e87Y6ravHf-ihtoMadIR8ZsOcMHMf5RiVnrlO0rwtzZlC2_E_Q",
+            "address": "1 Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 98,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Geunjeongjeon",
+            "rating": 4.7,
+            "explain": "Palace and architecture",
+            "mapy": 37.5785225,
+            "mapx": 126.9769845,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcRKPpWlB9ptZki0hhVQD0W_gR94nW7nRcElryM1c_IO20XaD7EDR9hV8Hv_KqmXAXkyYFE5mzbvNq_kbA",
+            "address": "37 Samcheong-ro, Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 99,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gyeonghoeru Pavilion (\uacbd\ud68c\ub8e8)",
+            "rating": 4.7,
+            "explain": "Palace and architecture",
+            "mapy": 37.5797205,
+            "mapx": 126.9759146,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcROVKqlBeCKqpeWM6439AaTfebHr--5oEP1gQuFYbLTt0E_OnkaONnDUH1wxkrUaw-rtPzGjAbr7irtQQ",
+            "address": "161 Sajik-ro, Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 100,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "War Memorial of Korea",
+            "rating": 4.6,
+            "explain": "War exhibitions, vehicles & monuments",
+            "mapy": 37.5366059,
+            "mapx": 126.97713970000001,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/ewA0HLuXictU8KUepG7UdnE5ufEWU3IMICkmZhaaMUGQ3wKKNKGrOYLyjubr-zt6DaOIdyUKa2hUQ2f9fXWQL4Ns6bD8YBSfhpNoCcW0LiszE2m0k42HXOuWHqe6YClYtYhdM6pBynDCha5q4xxOFwFcKKU=w464-h260-n-k-no",
+            "address": "29 Itaewon-ro, Namyeong-dong, Yongsan-gu, Seoul, South Korea",
+            "category": "History Kind-friendly SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 101,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "National Palace Museum of Korea",
+            "rating": 4.5,
+            "explain": "Collection of Joseon Dynasty artifacts",
+            "mapy": 37.57657929999999,
+            "mapx": 126.9750965,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcTbuz62jKmaplhV7ukh1EGxSO-qEh4KeIGr1OyXsIoA02RJxj_sKL0px35jEH7Gbbn9G0KqbS2tOt9QVA",
+            "address": "12 Hyoja-ro, Cheongun-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 102,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Injeongjeon",
+            "rating": 4.7,
+            "explain": "Palace",
+            "mapy": 37.5794592,
+            "mapx": 126.9910284,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcRgNSE9kYHv0IoN31X0gwHv2Az6nJpT5AyUyT_qOVoCHDfaJ1q3gxEuLw0sVyhdzI7tJ9pcYtpf1sMVDQ",
+            "address": "99 Yulgok-ro, Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 103,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hyangwonjeong",
+            "rating": 4.5,
+            "explain": "Palace and autumn leaf color",
+            "mapy": 37.58233,
+            "mapx": 126.9770149,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcQuYWCjCnPuRTtZaxBSm4HgF6nAER8WDqz30sr0Ib4cbpDlGWn5NmJNsCzYfm7wq5AN0Sr_DEohF3keww",
+            "address": "161 Sajik-ro, Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 104,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Changdeokgung Palace and Huwon",
+            "rating": 4.6,
+            "explain": "Historic palace with a large garden",
+            "mapy": 37.5793982,
+            "mapx": 126.9910617,
+            "imagelink": "https://lh6.googleusercontent.com/proxy/FVHeDWIDMXLB7k0_1Jtw4JiBcjd14iwKsTVkzeYZD_FmvY7JsfhHvAlWxFJmdDKAIZmOKJpdj8pr9NiT_iJuNDbBlt3Za6rhaDeDyZs1IYNb_kh0MZOeuMBQcv4_sJjT88041AaDTTblj1bttB3Kfma3dZSIIw=w464-h260-n-k-no",
+            "address": "99 Yulgok-ro, Jongno 1(il).2(i).3(sam).4(sa), Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture Nightview"
+        }
+    },
+    {
+        "pk": 105,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Nagseonjae",
+            "rating": 4.6,
+            "explain": "Palace",
+            "mapy": 37.4560549,
+            "mapx": 127.2060135,
+            "imagelink": "https://lh3.googleusercontent.com/-6Vj9ItoRRH0/XaQJicHXboI/AAAAAAAA9og/ZXbnFWbCRRs2YwDYSvdWpXwXHnO0P33nACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "194-1 Buldang-ri, Jungbu-myeon, Gwangju-si, Gyeonggi-do, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 106,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Namsangol Hanok Village",
+            "rating": 4.2,
+            "explain": "Tours of houses built in Joseon Dynasty",
+            "mapy": 37.559315000000005,
+            "mapx": 126.994477,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcR_sxd_dsEDOtyLxBLfQb7szgDPJ6OoeKCOzlRRr7wFiybmHeejOxVyq4yLUC5tQtCfWgDdlQ-ShzJ-Tw",
+            "address": "28 Toegye-ro 34-gil, Pil-dong, Jung-gu, Seoul, South Korea",
+            "category": "History Art&Culture Kind-friendly Nightview SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 107,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Donhwamun",
+            "rating": 4.5,
+            "explain": "Palace and architecture",
+            "mapy": 37.57783920000001,
+            "mapx": 126.9899125,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcTT1SfPJVcqrcmIz3RCDLMpNgy6jYLCTMYHJnlbD8t5tnYh7TOJGmaHHP58jfTN_h0zTpFpve5VFq4SgA",
+            "address": "Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 108,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hanboknam Gyeongbokgung Hanbok Rental",
+            "rating": 4.7,
+            "explain": "Palace",
+            "mapy": 37.57619680000001,
+            "mapx": 126.97329280000001,
+            "imagelink": "https://lh3.googleusercontent.com/-nvhDLXFkusI/WQBb7YMeozI/AAAAAAAAAUA/qEMCYLMdBg8vucVyDYO-00_yvnHPGnALgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "133-5 Sajik-ro, Sajik-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture Nightview"
+        }
+    },
+    {
+        "pk": 109,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Wongudan",
+            "rating": 4.0,
+            "explain": "Picturesque shrine & ritual site",
+            "mapy": 37.5650657,
+            "mapx": 126.97968829999999,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcTqNTrQc5oTrmmWfBXSkxwCIzNODuZv7IVZ1i_rppNS6_P1-w6ziWF2TAFuSp0brqkS-ol7ZWBrorwsDQ",
+            "address": "112 Sogong-ro, Euljiro 1(il)-ga, Jung-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 110,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bukhansanseong",
+            "rating": 4.4,
+            "explain": "Time-tested fortress completed in 1711",
+            "mapy": 37.6469557,
+            "mapx": 126.97324180000001,
+            "imagelink": "https://lh6.googleusercontent.com/-aEQHp-MF2Bw/XZ2fCyknwbI/AAAAAAAAA2U/XXnc2Tfd2MAIkZV6Mny05M8xFaqMtaTowCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Gyeonggi-do, Goyang-si, Deokyang-gu, \ubd81\ud55c\ub3d9 \uc0b01-1",
+            "category": "History Art&Culture Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 111,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Pungnaptoseong",
+            "rating": 3.8,
+            "explain": "Archaeological site, history, and historic site",
+            "mapy": 37.539055,
+            "mapx": 127.121723,
+            "imagelink": "https://lh5.googleusercontent.com/-5Of5wvFiLvs/WXfsrWB0eLI/AAAAAAADihE/PAXGGsmrHSE_9wBroF8Wa8uC1Bnmi5lSACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Pungnap 1(il)-dong, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 112,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Sajeongjeon",
+            "rating": 4.6,
+            "explain": "Palace",
+            "mapy": 37.5790885,
+            "mapx": 126.97704399999999,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcQ4ivtkMUBrAJ4T9IJZe7X4R5SDxOe4CQ8qv-OVEaQcUPdNjHWvbjz4ioD_Lw67kOLFFHsFEaYVykeaDg",
+            "address": "1-56 Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 113,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Heungnyemun Gate",
+            "rating": 4.5,
+            "explain": "Palace",
+            "mapy": 37.5768542,
+            "mapx": 126.97685890000001,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcQt6e_jvMZzQAsxflwTDcTOL7lqPSLTCXQUlt0Ivtvz1FSvUfWEB6Tnpi1Ock9WrqIhpLWxviiY0Og0sw",
+            "address": "Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 114,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jagyeongjeon Chamber",
+            "rating": 4.3,
+            "explain": "Palace",
+            "mapy": 37.580283,
+            "mapx": 126.9780818,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcQd0ICvqHtA3qhXzxbEt3AN6KGvGiv07JuVsOQLN0Ab0FWrN29qXyFLNiNxXq0FA_btSVYd9HFa9emigg",
+            "address": "Cheongun-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 115,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Anglican Cathedral",
+            "rating": 4.6,
+            "explain": "Cathedral and architecture",
+            "mapy": 37.5671299,
+            "mapx": 126.9760517,
+            "imagelink": "https://lh5.googleusercontent.com/-xgYwSe_EQqE/XTuss-WgSxI/AAAAAAABPvc/TTyIwDVkOUM-vxL_3ZeAocoY7wDabBQNgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "15 Sejong-daero 21-gil, Jeong-dong, Jung-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 116,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Donggureung",
+            "rating": 4.3,
+            "explain": "Tomb, historic site, history, and monument",
+            "mapy": 37.6201143,
+            "mapx": 127.1279811,
+            "imagelink": "https://lh5.googleusercontent.com/-PkT8nB5PSik/XB71iUWfq8I/AAAAAAAAbTQ/brQYn21iKV8dTVSo9AlIKzqN_6RFAdCcQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "197 Donggureung-ro, Inchang-dong, Guri-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 117,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jongmyo Shrine",
+            "rating": 4.4,
+            "explain": "Shrine to Joseon dynasty kings & queens",
+            "mapy": 37.574583000000004,
+            "mapx": 126.994143,
+            "imagelink": "https://lh4.googleusercontent.com/proxy/kX1VVMi8PpGFxujYwzoSjFUSp_UJTW2GbnEdku0vIxcqdfahEEQxgYnUg_r0nTrmKvaN0emBE7Cpe4FoFSb5PooltocKdVlWHBovJU_YpKQYhdfBqHiN2jRdcQUAgpf5qBsJPvr2wgFA1N3a2X8J1Tar9g0=w464-h260-n-k-no",
+            "address": "157 Jong-ro, Hunjeong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 118,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Daehanmun",
+            "rating": 4.4,
+            "explain": "Palace",
+            "mapy": 37.565029200000005,
+            "mapx": 126.9765362,
+            "imagelink": "https://lh5.googleusercontent.com/-Db9bx7KzWhw/WKg-GR_yX0I/AAAAAAAAD4A/geE4lGVc-FIOwM7_cvTyEcrIfiGq9SPYwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "99 Sejong-daero, Taepyeongno 2(i)-ga, Jung-gu, Seoul, South Korea",
+            "category": "History Art&Culture Nightview"
+        }
+    },
+    {
+        "pk": 119,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Huijeongdang",
+            "rating": 3.5,
+            "explain": "Palace and history",
+            "mapy": 37.579709799999996,
+            "mapx": 126.99229140000001,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcRjR4g7r15F7_ARMwI8zSl0iGXk37D_I1t6ZJKziX2QFbjQmZieQANoxLnwIVsCadDL7yRu6Q_bnlpobg",
+            "address": "Jongno 1(il)-ga, Jongno-gu, Seoul, South Korea",
+            "category": "History Art&Culture"
+        }
+    },
+    {
+        "pk": 120,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Sajikdan",
+            "rating": 4.1,
+            "explain": "Historic site",
+            "mapy": 37.5756092,
+            "mapx": 126.9676291,
+            "imagelink": "https://lh4.googleusercontent.com/-DIjI48cvHTU/Wafo3bV_3eI/AAAAAAAAWLU/ovzVoIsMOBMIUk7huyX1FDMsyxmGBSP5wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "1-28 Sajik-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 121,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Daejojeon",
+            "rating": 4.3,
+            "explain": "Palace, historic site, and architecture",
+            "mapy": 37.5801564,
+            "mapx": 126.99236950000001,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcRKuwYnQlEc7zKg4l3gNfv20XnmC9gnF6ZT3ZRiQ7LrXtuvmDISluKNPH5wR-F5_GmEdXYRkvvOazKzKw",
+            "address": "99 Yulgok-ro, Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 122,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Achasanseong",
+            "rating": 4.3,
+            "explain": "Archaeological site, castle, history, and historic site",
+            "mapy": 37.5544541,
+            "mapx": 127.10293970000001,
+            "imagelink": "https://lh3.googleusercontent.com/-D0XRWDp_iTU/WizZlqhZ-QI/AAAAAAAALus/vmmAv96q6IUcJNNsPXncAqqrt0uJSQ3tACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, Gwangjin-gu, Walkerhill-ro, 117",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 123,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Seokchon-dong Ancient Tombs",
+            "rating": 4.2,
+            "explain": "Tomb, archaeological site, history, and historic site",
+            "mapy": 37.503583299999995,
+            "mapx": 127.1022852,
+            "imagelink": "https://lh4.googleusercontent.com/-SFFEUn__jwU/Xb_REBMdRCI/AAAAAAAAsDg/c48-dfdrGa8N8wa0-wtv8wxoEGgDXA3swCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "61-6 Seokchon-dong, Songpa-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 124,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Myeongjeongjeon",
+            "rating": 4.7,
+            "explain": "Palace",
+            "mapy": 37.578729900000006,
+            "mapx": 126.9949033,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcSNcwlGgg0qelLsdgcXQebRa5H0WnIIaoDiXBF_XkRTdBCIAwpqthFfewdUhqmZ5PR9LBNL_UudbfEOog",
+            "address": "185 Changgyeonggung-ro, Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 125,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Uileung",
+            "rating": 4.4,
+            "explain": "Tomb and historic site",
+            "mapy": 37.6038317,
+            "mapx": 127.0575466,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcRa6hMC3G7ZVaX2YdtXxQooJHQU72VmK-tzxr66c13viId6hzudGCthrNiN9BkNAvJsDz3e9oIrShmJcw",
+            "address": "\uc0b01-5 Seokgwan-dong, Seongbuk-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 126,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Honghwamun Gate",
+            "rating": 4.5,
+            "explain": "Palace",
+            "mapy": 37.578826899999996,
+            "mapx": 126.99632949999999,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcS3rbAvGJfRB9lrnwPCVp6q8uuhtHOcaWQtRtVEpl1SaUhrHX84MlOiy8aPAO943pu3bwuV3F6vOuB-vw",
+            "address": "185 Changgyeonggung-ro, Ihwa-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 127,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jungmyeongjeon Hall",
+            "rating": 4.6,
+            "explain": "Palace, history, architecture, historic site, and monument",
+            "mapy": 37.5665903,
+            "mapx": 126.97252560000001,
+            "imagelink": "https://lh3.googleusercontent.com/-VQzGfk-vWAE/XXmyxy4zcCI/AAAAAAAAKhU/0j_Be7YBKhMPP31vw355gEN38-FVokDIQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "41-11 Jeongdong-gil, Sogong-dong, Jung-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 128,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yeongyeongdang",
+            "rating": 4.6,
+            "explain": "Palace",
+            "mapy": 37.58330000000001,
+            "mapx": 126.99234140000002,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcRiMXaLRgWy3jHcv99oTXs-YGaYvYi62OqkSQq6X142k9-aX8MXLKOr5mr-R_GwiiABLy2AgfHYcbT1bw",
+            "address": "53-2 Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 129,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Saleung",
+            "rating": 4.1,
+            "explain": "Historic site and tomb",
+            "mapy": 37.64725869999999,
+            "mapx": 127.19743570000001,
+            "imagelink": "https://lh6.googleusercontent.com/-EQlt9V50sRk/XWSJuYZS5FI/AAAAAAAAYFQ/pxjvJNrxEVIm3_zuJYfT3QfTrX0dZt9lgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "108 Saneung-ri, Jingeon-eup, Namyangju-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 130,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Heonilleung",
+            "rating": 4.2,
+            "explain": "Tomb and historic site",
+            "mapy": 37.46434,
+            "mapx": 127.08230900000001,
+            "imagelink": "https://lh5.googleusercontent.com/-mgxCRhAkkao/XVAHOLw7otI/AAAAAAABQhc/1u0L-FV-P58iQIHlUuTmQqMyyEk5glmzgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uc11c\ucd08\uad6c \ud5cc\uc778\ub989\uae38 36-10",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 131,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seonjeongneung",
+            "rating": 4.4,
+            "explain": "Park & burial grounds with tombs",
+            "mapy": 37.507002899999996,
+            "mapx": 127.0522301,
+            "imagelink": "https://lh5.googleusercontent.com/proxy/EjmAcQKyddBXaQQ2C9o8tqFKnsUc06m0aB1IlyT6ng2go5n96CY4dDM3fuW8AysyTfrnFZx4p8liOA4gSoY35PLzL8Y-DF-mLaJrJ2e7MO1t4e2Iz7w4Vu1ka5Z5zEq_AhIkFcEdv5fthXgN0Nflezy8Qkg=w464-h260-n-k-no",
+            "address": "1 Seolleung-ro 100-gil, Samseong-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "History Kind-friendly"
+        }
+    },
+    {
+        "pk": 132,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hamnyeongjeon",
+            "rating": 4.1,
+            "explain": "Palace",
+            "mapy": 37.565905,
+            "mapx": 126.9759152,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcRRr-9Bu7rY5iTmHxb2oAwpZD95r1p2OGZrFxeloyMGrcxPMl4HxS2-LQuCPK4ly1o483xgN-GUSSQ-aA",
+            "address": "5-1 Sogong-dong, Jung-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 133,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uad6c \ub7ec\uc2dc\uc544\uacf5\uc0ac\uad00",
+            "rating": 4.0,
+            "explain": "Historic site",
+            "mapy": 37.567963,
+            "mapx": 126.97143700000001,
+            "imagelink": "https://lh4.googleusercontent.com/-7uHu1qJGVCo/W40rgI5e-aI/AAAAAAAAFCY/BCaYG_MyYlgChyWTHWDtEnogp2QaR64UwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "15-1 Jeong-dong, Jung-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 134,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Baekje Museum",
+            "rating": 4.3,
+            "explain": "Museum, archaeological site, and history",
+            "mapy": 37.515419,
+            "mapx": 127.1206369,
+            "imagelink": "https://lh4.googleusercontent.com/-oeECH0tWTTU/XRjME_PB8iI/AAAAAAAAJnc/F99-Yt3i224fF4VC4_mMy2lbx6tvxqvWQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "71 Wiryeseong-daero, Oryun-dong, Songpa-gu, Seoul, South Korea",
+            "category": "History Museums"
+        }
+    },
+    {
+        "pk": 135,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bosingak",
+            "rating": 4.2,
+            "explain": "Joseon-era belfry used for timekeeping",
+            "mapy": 37.5697987,
+            "mapx": 126.98371670000002,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcS96RBEVErEmmfFUgXBtpUD93YywI-M0Z471zhdqTwQlyPbCpe5VHSV-VROqtmuE2iQVGc_vptGgF7M9g",
+            "address": "54 Jong-ro, Gwancheol-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Kind-friendly"
+        }
+    },
+    {
+        "pk": 136,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seosamneung (Seosamleung)",
+            "rating": 4.2,
+            "explain": "History and historic site",
+            "mapy": 37.6636815,
+            "mapx": 126.8687821,
+            "imagelink": "https://lh3.googleusercontent.com/-oebxwWqn2yI/XAczdHkA_xI/AAAAAAAACvI/cTsx1CHrnA02Dnb4mOTOlPpKsqud_eVsgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Wondang-dong, Deokyang-gu, Goyang-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 137,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seonjeongjeon",
+            "rating": 5.0,
+            "explain": "Art and palace",
+            "mapy": 37.5796724,
+            "mapx": 126.99169599999999,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcRCFU2tXB1Pg0UfhdXITNGmkMj1-udlBnN27rH1naOTGufUxE1ijwt5AZZ2lydB9ehVUswb_nY_PZX3jg",
+            "address": "99 Yulgok-ro, Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 138,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jeoldu-san",
+            "rating": 4.4,
+            "explain": "Shrine, archaeological site, chapel, history, and historic site",
+            "mapy": 37.5440895,
+            "mapx": 126.9118507,
+            "imagelink": "https://lh5.googleusercontent.com/-CeGxqXvZoOE/Xed4ZLJQ2EI/AAAAAAAAmHc/_B_TS4guc8oyPQl4HN6wnVRSeStNW-KEgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "6 Tojeong-ro, Hapjeong-dong, Mapo-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 139,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Geonchunmun",
+            "rating": 4.2,
+            "explain": "Palace",
+            "mapy": 37.5780446,
+            "mapx": 126.97929440000001,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcRrsOLD89LMJ0WGKFvSjjkkXpuUGIagYR5TBw6v-j9QEjBshOOh2sCp_lOrjKNhaeYEPbAeYIeY56y0PA",
+            "address": "Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 140,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jeongneung",
+            "rating": 4.4,
+            "explain": "Tomb and historic site",
+            "mapy": 37.507002899999996,
+            "mapx": 127.0522301,
+            "imagelink": "https://lh6.googleusercontent.com/-2yOcIUYOKWg/W33zpxJMqJI/AAAAAAAAju8/4NBFqmyu7A4I6DaPMot2jB2lbp2k3tCiQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "1 Seolleung-ro 100-gil, Samseong-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 141,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Injeongmun Gate",
+            "rating": 4.3,
+            "explain": "Palace",
+            "mapy": 37.5788067,
+            "mapx": 126.99111740000001,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcQ7nSYjHHvRJRcff-3UX-ooAgJSqpQeA-gLh6EF2E4ZWP9vVwTF8_pCDUC9ZWlX5IkrdUP7Jo6D3G6KfQ",
+            "address": "Jongno 1(il)-ga, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 142,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jeongdong Jeil Church",
+            "rating": 4.6,
+            "explain": "Christianity, history, historic site, and gothic architecture",
+            "mapy": 37.5654378,
+            "mapx": 126.972357,
+            "imagelink": "https://lh4.googleusercontent.com/-CJrwgDv5E20/XUmlkxluVsI/AAAAAAAA5yA/ePbRRs5EOWk_uqMkGWxz5_ypdJy03GfCgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "46 Jeongdong-gil, Jeong-dong, Jung-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 143,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Ujeongchongguk",
+            "rating": 3.9,
+            "explain": "Historic site and history",
+            "mapy": 37.5743849,
+            "mapx": 126.982602,
+            "imagelink": "https://lh3.googleusercontent.com/-Hszn7CJ6hmI/XY94Pk7OzyI/AAAAAAAALn0/fHXqbBioTjQXjXvaDnVb9Lx1OY6LwO6YACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "59 Ujeongguk-ro, Gyeonji-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 144,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uace0\uad6c\ub824\ub300\uc7a5\uac04\ub9c8\uc744",
+            "rating": 4.0,
+            "explain": "Drama, archaeological site, and history",
+            "mapy": 37.5605386,
+            "mapx": 127.11100230000001,
+            "imagelink": "https://lh3.googleusercontent.com/-M1vTUyzZjSU/XZK4tLFmtxI/AAAAAAAAADk/_v9PDAau2soJYjzXYsupHEjtJ9V4Nx4-gCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "41 Uminae-gil, Gyomun 1(il)-dong, Guri-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 145,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Munmyo",
+            "rating": 4.2,
+            "explain": "Shrine, historic site, and history",
+            "mapy": 37.5858494,
+            "mapx": 126.99608710000001,
+            "imagelink": "https://lh3.googleusercontent.com/-W03Oooa1Yyc/Wm71I2OeP4I/AAAAAAABEfc/w2folo23W78iE2p6JCKD7p4e6xPuEr5_gCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "53 Myeongnyun 3(sam)ga, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 146,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ucc3d\uacbd\uad81 \uc625\ucc9c\uad50",
+            "rating": 5.0,
+            "explain": "Palace",
+            "mapy": 37.580257700000004,
+            "mapx": 126.9947258,
+            "imagelink": "https://lh5.googleusercontent.com/-kgq9mhclxfc/XJhimlt2CcI/AAAAAAAC2Hw/Zc3r9eJhWAs4wtCi7aduhS5CXcmMGI3tQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "2-1 Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 147,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hongneung",
+            "rating": 4.4,
+            "explain": "Tomb, historic site, mausoleum, and history",
+            "mapy": 37.593532700000004,
+            "mapx": 127.04396229999999,
+            "imagelink": "https://lh6.googleusercontent.com/-2phhS9omx80/XU6wmiWA4rI/AAAAAAAAo0o/lP_NOZ3myS4O1hfRqF9UqR5z2FaQDb_7QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "57 Hoegi-ro, Cheongnyangri-dong, Dongdaemun-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 148,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jangleung",
+            "rating": 4.4,
+            "explain": "Tomb, history, and historic site",
+            "mapy": 37.612877600000004,
+            "mapx": 126.71116740000001,
+            "imagelink": "https://lh6.googleusercontent.com/-bwbzdIOjOzY/XWHt6CdGo9I/AAAAAAAARQU/7T478EdGpk4_TTfQsbUPNiakoozM--e5gCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "\uc0b0141-1 Pungmu-dong, Gimpo-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 149,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Dongshipjagak",
+            "rating": 4.2,
+            "explain": "Palace and history",
+            "mapy": 37.576089200000006,
+            "mapx": 126.9793858,
+            "imagelink": "https://lh3.googleusercontent.com/-llETew_ixg8/W_RU6WbWjcI/AAAAAAAApm4/RqcNnYZ4iTQGYqKZ8MD8qlKE89B4jMbUgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "1 Samcheong-ro, Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 150,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Achasan Borugun",
+            "rating": 4.2,
+            "explain": "Archaeological site and historic site",
+            "mapy": 37.5736131,
+            "mapx": 127.1029331,
+            "imagelink": "https://lh5.googleusercontent.com/--EHV4a548oA/XeNQ_XR7OwI/AAAAAAABXBw/KWyluZsSPLQ4rAQAaAzbvBV97uOL5XoSgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Gyomun 1(il)-dong, Gwangjin-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 151,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Taeleung",
+            "rating": 4.6,
+            "explain": "Tomb, autumn leaf color, and historic site",
+            "mapy": 37.6361392,
+            "mapx": 127.0977053,
+            "imagelink": "https://lh4.googleusercontent.com/-oMZIZGbfmWA/Xc-3ZPLJ61I/AAAAAAAALMY/bzcEBKe_THwy64Y3Cs6VEjpBJxlwkasAwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Gongneung-dong, Nowon-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 152,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uace0\uac15\uc120\uc0ac\uc720\uc801\uacf5\uc6d0",
+            "rating": 4.0,
+            "explain": "Archaeological site",
+            "mapy": 37.5242593,
+            "mapx": 126.81756969999999,
+            "imagelink": "https://lh4.googleusercontent.com/-UMuOCXdU2Lk/WuQRoMExKBI/AAAAAAAALeM/ggwmREUGc3A068HoHbpoqYIlaQP8MObNwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Gogang-dong, Ojeong-gu, Bucheon-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 153,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gwangtonggyo Bridge",
+            "rating": 4.5,
+            "explain": "Historic site, history, and shopping",
+            "mapy": 37.5691135,
+            "mapx": 126.9811645,
+            "imagelink": "https://lh5.googleusercontent.com/-CWzCvRRWzoc/XWEUHshFAzI/AAAAAAAAUoo/KroVIhPSCOg4aHVhrD-7N5FYbA20wJZsgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "55-2 Seorin-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Nightview"
+        }
+    },
+    {
+        "pk": 154,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc11c\uc6b8 \uc120\uc7a0\ub2e8\uc9c0",
+            "rating": 3.7,
+            "explain": "Historic site and history",
+            "mapy": 37.593531899999995,
+            "mapx": 126.99946670000001,
+            "imagelink": "https://lh5.googleusercontent.com/--3-R0f6FCCY/XVQGLMwte3I/AAAAAAAAPoY/SUHYjOBt9Kw5QNXAUcjvy0zZ56gMv1fIQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "64-1 Seongbuk-dong, Seongbuk-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 155,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Bangidong Ancient Tombs",
+            "rating": 4.0,
+            "explain": "Tomb, historic site, and archaeological site",
+            "mapy": 37.5077945,
+            "mapx": 127.1187908,
+            "imagelink": "https://lh6.googleusercontent.com/-lFl7pa6IfVA/WhfLBAETjpI/AAAAAAAAFck/Lj0BCTDUb_oEEIf3vbk8m9cb17BnkdrlACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "219 Ogeum-ro, Bangi 1(il)-dong, Songpa-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 156,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Mongchon Museum of History",
+            "rating": 4.2,
+            "explain": "Archaeological site and history",
+            "mapy": 37.523868,
+            "mapx": 127.1243,
+            "imagelink": "https://lh3.googleusercontent.com/-YhlSBVyWsVI/VpIVzJByaLI/AAAAAAAA1eQ/bVFv7oGqgfYg7vYAUtvtLwPPTJMUC3TcwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "424 Olympic-ro, Bangi-dong, Songpa-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 157,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hongjimun Gate and Tangchundaeseong Fortress",
+            "rating": 3.9,
+            "explain": "Historical place",
+            "mapy": 37.5987292,
+            "mapx": 126.9566074,
+            "imagelink": "https://lh5.googleusercontent.com/-rQdUUXAiVYo/XP45gH_mQ7I/AAAAAAAAQEw/9ly-FNVHvSwM-FXvx4ZoWybdxiKK0n1hQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "\uc0b0 4 Hongje-dong, Seodaemun-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 158,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uac80\ub2e8\uc120\uc0ac\ubc15\ubb3c\uad00(Geomdan Prehistory Museum)",
+            "rating": 4.0,
+            "explain": "Museum and prehistory",
+            "mapy": 37.5943875,
+            "mapx": 126.6986072,
+            "imagelink": "https://lh4.googleusercontent.com/-Vy1D8tQaMJI/WnXKfB4bsZI/AAAAAAAACIs/F9JXernTK7MnHZqNy81iPSPG-zlBCCKlwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, \uc778\ucc9c \uc11c\uad6c \uc6d0\ub2f9\ub3d9 76\ube14\ub7ed 1\ub86f\ud2b8",
+            "category": "History Museums"
+        }
+    },
+    {
+        "pk": 159,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Chunghyeon Museum",
+            "rating": 4.1,
+            "explain": "Museum and archaeological site",
+            "mapy": 37.4335436,
+            "mapx": 126.87801090000002,
+            "imagelink": "https://lh6.googleusercontent.com/-IFowXFXtpIc/XTwkQwosb6I/AAAAAAAALwE/Nf3MHL6YQwAATyCMWZ1SDCchOU_BF_GzgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "5-6 Ori-ro 347beon-gil, Soha-dong, Gwangmyeong-si, Gyeonggi-do, South Korea",
+            "category": "History Museums"
+        }
+    },
+    {
+        "pk": 160,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Statue of King Sejong",
+            "rating": 4.6,
+            "explain": "Huge statue of a 15th-century king",
+            "mapy": 37.5728359,
+            "mapx": 126.9768862,
+            "imagelink": "https://t2.gstatic.com/images?q=tbn:ANd9GcQbV4fap9N2F6JqWJlN81WuHIm6ZJafQ89Hrx-SNwBZC2Jn-tSPEKDNl4JnN000o79RTBqLWdzPRsBECw",
+            "address": "172 Sejong-daero, Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 161,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc885\ubb18\uc815\uc804",
+            "rating": 4.6,
+            "explain": "Historic site and history",
+            "mapy": 37.574874799999996,
+            "mapx": 126.99392560000001,
+            "imagelink": "https://lh6.googleusercontent.com/-XfEJGUTU_Zw/W9Rf3TFpyaI/AAAAAAAATiE/Pi-f7KQTwW0Jlq6rxzv_LOqj7ErlEsKNgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "1-2 Hunjeong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 162,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Cheonggyecheon Ruins",
+            "rating": 4.6,
+            "explain": "Historic site",
+            "mapy": 37.5688124,
+            "mapx": 126.9831356,
+            "imagelink": "https://lh6.googleusercontent.com/-nFzi1fs7Ksc/WUDuWCmqwFI/AAAAAAAAqX4/YuibWS7eXjg-Uq-uRqWhETQMjMGfROkjACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "270-1 Gwancheol-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 163,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bukhansan Monument",
+            "rating": 4.3,
+            "explain": "Monument and history",
+            "mapy": 37.625113299999995,
+            "mapx": 126.9562065,
+            "imagelink": "https://lh6.googleusercontent.com/-e6PN46Ao0bY/W2Ina59GgII/AAAAAAAAFaA/H_Rt__vIjEcNd61_YfzaY_l3zBTQOaJtgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "\uc0b03-35 Gugi-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Nightview"
+        }
+    },
+    {
+        "pk": 164,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jongchinbu",
+            "rating": 3.4,
+            "explain": "Monument",
+            "mapy": 37.5830318,
+            "mapx": 126.9812692,
+            "imagelink": "https://lh5.googleusercontent.com/-63bSw8-ZUJI/W15sZ09PKSI/AAAAAAAAJY8/i4C_-AhascovR5cpNrVUq9FGkvZBJflAQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "30 Samcheong-ro, Palpan-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 165,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Heunginjimun",
+            "rating": 4.3,
+            "explain": "Historic gate of the Fortress Wall",
+            "mapy": 37.571138899999994,
+            "mapx": 127.0095452,
+            "imagelink": "https://lh5.googleusercontent.com/proxy/3Meg79Sls1FjU1ZzrJjvwEeYVfv0lpv5JVaq9b_BHaC-nwZQQ2Hbdm64K6FWYk1kffoJQhkrpJB-KVR0X6ICvXCLlNiQ15eQxyG1L2FqnovLNN1IqapzbZerprI1M7QSFL9z8cv46ksRcSi0-icMl05G5pY=w464-h260-n-k-no",
+            "address": "288 Jong-ro, Jongno 5(o).6(yuk)ga-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Kind-friendly"
+        }
+    },
+    {
+        "pk": 166,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "One Mount",
+            "rating": 3.8,
+            "explain": "Theme park with winter/summer activities",
+            "mapy": 37.66434599999999,
+            "mapx": 126.75438,
+            "imagelink": "https://lh4.googleusercontent.com/-kav-3QBc2pg/WnJtQUIq-SI/AAAAAAAAAMc/jBa6VHzw8Zsr6gHwOKUzkqV6REMdLPrdQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "300 Hallyuwoldeu-ro, Daehwa-dong, Ilsanseo-gu, Goyang-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 167,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Ginkgo jangsudong",
+            "rating": 4.1,
+            "explain": "Monument",
+            "mapy": 37.460405200000004,
+            "mapx": 126.76968729999999,
+            "imagelink": "https://lh3.googleusercontent.com/-x0RBlfyXx90/WptXNEDvXzI/AAAAAAAAo14/AqViNKLVJUkIZzM8BgpVAIKakjjvUOCowCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "63-2 Jangsu-dong, Namdong-gu, Incheon, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 168,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "National Assembly Building",
+            "rating": 3.4,
+            "explain": "Dome-topped government building",
+            "mapy": 37.5318046,
+            "mapx": 126.9141547,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcR1Ipi29-MoeUmwfDQHSjV5w8_JXOERIpCjbuJFEAyS8fBxMh5_RMlmrgvQVZN6-1eBXH8EqipDaLk6hQ",
+            "address": "1 Uisadang-daero, Yeoeuido-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 169,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Kidzania Seoul",
+            "rating": 4.3,
+            "explain": "Career-themed amusement park for kids",
+            "mapy": 37.511227399999996,
+            "mapx": 127.0979024,
+            "imagelink": "https://lh5.googleusercontent.com/-T4zfGGnLOOU/WwJnIDvZ7FI/AAAAAAACrRI/Y5ABXsYZU3ouOKaXiPyAUtf5IMio3sA8QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "240 Olympic-ro, Jamsil 3(sam)-dong, Songpa-gu, Seoul, South Korea",
+            "category": "History Kind-friendly"
+        }
+    },
+    {
+        "pk": 170,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seongsu Bridge",
+            "rating": 3.9,
+            "explain": "Rebuilt cantilever road bridge",
+            "mapy": 37.5370472,
+            "mapx": 127.0349351,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcQOFZPuT-nETjTFgAa5l5D_7jozXvsvdRMRhRpxqhj3WUCFVA_slStWVZCxxJBP8o8IB9Gq7ShiFBTiEg",
+            "address": "Oksu-dong, Seoul, South Korea",
+            "category": "History Nightview"
+        }
+    },
+    {
+        "pk": 171,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jamsil Sports Complex",
+            "rating": 4.2,
+            "explain": "Sports complex",
+            "mapy": 37.5148406,
+            "mapx": 127.07311240000001,
+            "imagelink": "https://lh4.googleusercontent.com/-7-zQjs7-pDA/XBbm3PtSIsI/AAAAAAAKBXA/niFwrC2JQg86NKGYaFFN4itIA24nCc_-QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "10 Jamsil-dong, Songpa-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 172,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Acha Ecological Park",
+            "rating": 4.2,
+            "explain": "Park and autumn leaf color",
+            "mapy": 37.5518658,
+            "mapx": 127.1007676,
+            "imagelink": "https://lh6.googleusercontent.com/-YHZu8M10U2U/Xb1BSx0t_bI/AAAAAAAAN9w/-g-GArw8OkI-jHlZTnTfVwPbpQ_SV0EJwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, Gwangjin-gu, Gwangjang-dong, 370",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 173,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ubc30\ub2e4\uace8\ud14c\ub9c8\ud30c\ud06c",
+            "rating": 3.9,
+            "explain": "Amusement park and water park",
+            "mapy": 37.630796200000006,
+            "mapx": 126.84767250000002,
+            "imagelink": "https://lh5.googleusercontent.com/-jFkIpqpnvew/XRn7rmw8W6I/AAAAAAAACZU/cJQs1QYCEgwkAilCxNw5AHWWc4TEqn21gCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Gyeonggi-do, Goyang-si, Deokyang-gu, Hwajeong 2(i)-dong, \ubc30\ub2e4\uace8\uae38 131",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 174,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Geonwonneung",
+            "rating": 4.5,
+            "explain": "Tomb",
+            "mapy": 37.6245305,
+            "mapx": 127.1306197,
+            "imagelink": "https://lh3.googleusercontent.com/-35EUK40mMJg/XWZca-RZ7yI/AAAAAAAAE7I/e0AdFtHvq_M41JJhCYlpOoMHg72r7ywmwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "\uc0b04-2 Inchang-dong, Guri-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 175,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc5d0\ubc84\ub79c\ub4dc",
+            "rating": 5.0,
+            "explain": "Theme park",
+            "mapy": 37.2939104,
+            "mapx": 127.20256640000001,
+            "imagelink": "https://lh3.googleusercontent.com/-VvHDcNdwLGY/XdFoxcsay8I/AAAAAAAAEwM/RQaziJflJ0EYerZSyR3BZeVm4ygq6nF3ACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "199 Everland-ro, Pogog-eup, Cheoin-gu, Yongin-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 176,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ud14c\uc9c0\uc6c0 \ud14c\ub514\ubca0\uc5b4 \ud14c\ub9c8\ud30c\ud06c (\uc11c\uc6b8\uc810)",
+            "rating": 4.0,
+            "explain": "Bear and museum",
+            "mapy": 37.5716999,
+            "mapx": 127.01518529999998,
+            "imagelink": "https://lh5.googleusercontent.com/-7ra8XXrTGaY/W5C7ODgeLlI/AAAAAAAAALE/gjw9dKYFKhYjcKfVlCuBqm0EBYb0eoTYQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "19 Jibong-ro, Changsin 1(il)-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History Museums"
+        }
+    },
+    {
+        "pk": 177,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc548\ud130\uc0dd\ud0dc\uacf5\uc6d0",
+            "rating": 3.5,
+            "explain": "Park and wetland",
+            "mapy": 37.4592961,
+            "mapx": 126.8698111,
+            "imagelink": "https://lh4.googleusercontent.com/-tBfOuXlJUr0/WwE3eavAUiI/AAAAAAACLEk/sz6511M1MU4qRad3FFHkz4P_tu7uIUOGQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "27 Anjae-ro 1beon-gil, Haan 1(il)-dong, Gwangmyeong-si, Gyeonggi-do, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 178,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uad6d\ubb34\ucd1d\ub9ac\uacf5\uad00",
+            "rating": 3.0,
+            "explain": "Government office",
+            "mapy": 37.5844518,
+            "mapx": 126.98142790000001,
+            "imagelink": "https://lh5.googleusercontent.com/-nO6MmAFQBo8/XGNf9fLt4pI/AAAAAAAA__w/ydcN3CjqEaUz8ipPRb8LcADy2S3SDwISQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "95 Samcheong-ro, Samcheong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 179,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "40th Anniversary Monument of Gojong\u2019s Enthronement",
+            "rating": 4.0,
+            "explain": "Historical place",
+            "mapy": 37.570451,
+            "mapx": 126.97771940000001,
+            "imagelink": "https://lh3.googleusercontent.com/-LG0w6sLMJlE/Wvy7UOCjggI/AAAAAAABnl4/kfyG0T2QUls7sz6-mrh1zoZaS-4iCRizACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "142-3 Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "History"
+        }
+    },
+    {
+        "pk": 180,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Museum of History",
+            "rating": 4.4,
+            "explain": "Exhibits on the history of the city",
+            "mapy": 37.570483700000004,
+            "mapx": 126.97056740000001,
+            "imagelink": "https://lh4.googleusercontent.com/-_p_Twvu3dBg/WjhAxx0SQ7I/AAAAAAAAbko/npUk-x1DkUwLzUTYtRc8E4KpD4s2x8QggCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "55 Saemunan-ro, Sajik-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums Kind-friendly"
+        }
+    },
+    {
+        "pk": 181,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Alive Museum",
+            "rating": 4.2,
+            "explain": "Museum, art, and art museum",
+            "mapy": 37.5718407,
+            "mapx": 126.98720859999999,
+            "imagelink": "https://lh3.googleusercontent.com/-aw_GGnCXHGw/XSqI5NghvtI/AAAAAAAAFbo/BA-RZ2ExSKIHm34lYx-AFQo2uYNdd6fIQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "12 Insadong-gil, Insa-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums Art&Culture"
+        }
+    },
+    {
+        "pk": 182,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Kimchi Field Museum",
+            "rating": 4.1,
+            "explain": "Museum",
+            "mapy": 37.573575,
+            "mapx": 126.984875,
+            "imagelink": "https://lh4.googleusercontent.com/-povZD1hk5Lo/VTnxNojjiBI/AAAAAAAAAq0/y0NfM58nGvwKID6UzzciHdbPQf2025NcQCJkC/w464-h260-n-k-no/",
+            "address": "35-4 Insadong-gil, Gwanhun-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums Kind-friendly"
+        }
+    },
+    {
+        "pk": 183,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Daelim Museum",
+            "rating": 4.2,
+            "explain": "Photography exhibits in a modern space",
+            "mapy": 37.577459000000005,
+            "mapx": 126.97334099999999,
+            "imagelink": "https://lh6.googleusercontent.com/-kCr3Flghzhk/XTGLUAgk2nI/AAAAAAAAj8E/UIXR0aHKLbcs2tCXFDgiIcoLIPt3Eld3QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, Jongno-gu, \ud1b5\uc758\ub3d9 35-1 \ub300\ub9bc\ubbf8\uc220\uad00",
+            "category": "Museums Art&Culture"
+        }
+    },
+    {
+        "pk": 184,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ub7ec\ube0c\ubba4\uc9c0\uc5c4 Love Museum",
+            "rating": 4.5,
+            "explain": "Museum and art museum",
+            "mapy": 37.553478000000005,
+            "mapx": 126.921645,
+            "imagelink": "https://lh3.googleusercontent.com/-VdmQkTj4SZc/VmZ6eWypu6I/AAAAAAAAAGA/caT0ob2Pd2IXRbXbcy_7YAdhNT8uTGFcgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "\ud64d\uc775\ub85c 3\uae38 20 \uc11c\uad50\ud504\ub77c\uc790 B1 \ub7ec\ube0c\ubba4\uc9c0\uc5c4, B1 floor, Seogyo Plaza 20 Hongikro 3gil, Mapogu, Seoul, Mapo-gu, Seoul, South Korea",
+            "category": "Museums Kind-friendly"
+        }
+    },
+    {
+        "pk": 185,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Lotte World Folk Museum",
+            "rating": 4.1,
+            "explain": "Museum with culture & history exhibits",
+            "mapy": 37.5111826,
+            "mapx": 127.0977372,
+            "imagelink": "https://lh5.googleusercontent.com/-J6TvVhspHVc/XZ7EOLDDXZI/AAAAAAAAXoY/T1mNkVuYL28oERwgPjc90y4latqs1zuHACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "40-1 Jamsil-dong, Songpa-gu, Seoul, South Korea",
+            "category": "Museums Kind-friendly"
+        }
+    },
+    {
+        "pk": 186,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Korea Furniture Museum",
+            "rating": 4.6,
+            "explain": "Array of traditional furniture & houses",
+            "mapy": 37.6001592,
+            "mapx": 126.99343529999999,
+            "imagelink": "https://lh5.googleusercontent.com/-tlioZ9KwVuo/XTw7RHpgJII/AAAAAAABvrc/ipwoL42M0kwkWpIVFjFUvDJo01nzDKnHQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "121 Daesagwan-ro, Seongbuk-dong, Seongbuk-gu, Seoul, South Korea",
+            "category": "Museums Kind-friendly"
+        }
+    },
+    {
+        "pk": 187,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Coex Aquarium",
+            "rating": 4.3,
+            "explain": "Penguins, marine mammals & Korean fish",
+            "mapy": 37.513131,
+            "mapx": 127.0582827,
+            "imagelink": "https://lh3.googleusercontent.com/-ZSw5kcN25B4/XTME4L8ylOI/AAAAAAAAHRQ/N-k0D-iHHmsgLmECsSGPQsMEFnrNWj7tgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "513 Yeongdong-daero, Samseong 1(il)-dong, Gangnam-gu, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc South Korea",
+            "category": "Museums Kind-friendly"
+        }
+    },
+    {
+        "pk": 188,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bank of Korea Money Museum",
+            "rating": 4.4,
+            "explain": "Money museum in former bank building",
+            "mapy": 37.562057700000004,
+            "mapx": 126.98056329999999,
+            "imagelink": "https://lh3.googleusercontent.com/-6WioJOh4iv0/WVBXJrA-QgI/AAAAAAADO6A/37jGHmWE_5sfPX0BeiTWbahhYwzpTbyuACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "39 Namdaemunno 5(o)-ga, Jung-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 189,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Cheonggyecheon Museum",
+            "rating": 4.2,
+            "explain": "Museum for Cheonggyecheon Stream",
+            "mapy": 37.5712861,
+            "mapx": 127.0350222,
+            "imagelink": "https://lh5.googleusercontent.com/-JJRrfXKa6uc/XZwYlEZ_zxI/AAAAAAAAWdI/8UjbJxwadZMmZckmXPY83eYl_ES0PVVqQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "530 Cheonggyecheon-ro, Majang-dong, Seongdong-gu, Seoul, South Korea",
+            "category": "Museums SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 190,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seodaemun Prison History Hall",
+            "rating": 4.6,
+            "explain": "Prison history museum in 1908 jail",
+            "mapy": 37.574271,
+            "mapx": 126.956071,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcR7l5a_N9_pDrIbtgq5pE5kxgetE6rg7k1HMrJHjjydZNGfBWjIrfqQqxJ6ZMRqWjMFKT83lpQPrRKmXw",
+            "address": "251 Tongil-ro, Hyeonjeo-dong, Seodaemun-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 191,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul City Wall Museum",
+            "rating": 4.2,
+            "explain": "Museum",
+            "mapy": 37.5728449,
+            "mapx": 127.0084993,
+            "imagelink": "https://lh6.googleusercontent.com/-uhq_FScevFc/XbPUiNbO78I/AAAAAAAATLY/je9JRJfKMtwgF5NG20jRYCeIVnBfJJKAACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "283 Yulgok-ro, Jongno 5(o).6(yuk)ga-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 192,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Donuimun Museum Village",
+            "rating": 4.3,
+            "explain": "Museum",
+            "mapy": 37.5687866,
+            "mapx": 126.968511,
+            "imagelink": "https://lh5.googleusercontent.com/-ZfAzLzii-hg/XN0k5cnejwI/AAAAAAAAjN4/6tp0Axn_jI0XnUPRWW5D0NNtBVWAv_PyACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "14-3 Songwol-gil, Sinmunno 2(i)-ga, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 193,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Horim Museum",
+            "rating": 4.1,
+            "explain": "Museum, art, and art museum",
+            "mapy": 37.5226523,
+            "mapx": 127.03621509999998,
+            "imagelink": "https://lh5.googleusercontent.com/-0s-Bs68c_k8/WkzzytErJeI/AAAAAAABz-I/8ZsHK57JwwkJF79X-stkc92LQka-uyEGQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "651-24 Sinsa-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 194,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "The Museum of Agriculture",
+            "rating": 4.1,
+            "explain": "Museum",
+            "mapy": 37.5667013,
+            "mapx": 126.9682205,
+            "imagelink": "https://lh4.googleusercontent.com/-uB81bROPIKg/XY9vh2ZybMI/AAAAAAAALh4/w8eY19cx0aMq6DHBUtZjYIKZqSKHjQatQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "75-1 Chungjeongno 1(il)-ga, Jung-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 195,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Lock Museum",
+            "rating": 2.0,
+            "explain": "Museum",
+            "mapy": 37.5798597,
+            "mapx": 127.0045505,
+            "imagelink": "https://lh6.googleusercontent.com/-3eDrd4aw-1Y/WPBgjpeNVtI/AAAAAAAAMe0/v7LMiU2Yn6QXhrbFNEoCOL4XfFhCoCrfgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "187-4 Dongsung-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 196,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Heojun Museum",
+            "rating": 4.1,
+            "explain": "Museum",
+            "mapy": 37.567845,
+            "mapx": 126.85095600000001,
+            "imagelink": "https://lh3.googleusercontent.com/-keOhZp08JBA/W4gbG8AdjAI/AAAAAAAAaWw/14C1FbtMzKAgqP2xIjirVKYLdNsSWb-XACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "87 Heojun-ro, Gayang-dong, Gangseo-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 197,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Figure Museum",
+            "rating": 4.2,
+            "explain": "Modern museum of action figures & toys",
+            "mapy": 37.52576129999999,
+            "mapx": 127.04037360000001,
+            "imagelink": "https://lh4.googleusercontent.com/-49NqJ5pfI0E/Wu6a_wKME-I/AAAAAAAA13A/xpGe7WNA_uMMjONlka-psovOIA20mSyWACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "3 Seolleung-ro 158-gil, Cheongdam-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 198,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "National Museum of Korea",
+            "rating": 4.6,
+            "explain": "Modern home of Korea's cultural exhibits",
+            "mapy": 37.5238506,
+            "mapx": 126.9804702,
+            "imagelink": "https://lh4.googleusercontent.com/proxy/pploy4MV0US6VQQTz_pCa3YOH9JB2qkTvcmntFHsqEE-mZVBGZQvDWreOZCPWaG2IWS87G9PMTzgSlzBqud3mh7ZkQnpfP-7FFUYGRdaPIybxjUjwSqWrD3BqZoW91rIIudUloFiQkp1p2dIrgPeYRF7ySDkN08wgejLA63y3eoe=w464-h260-n-k-no",
+            "address": "137 Seobinggo-ro, Seobinggo-dong, Yongsan-gu, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc South Korea",
+            "category": "Museums Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 199,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Tteok Museum",
+            "rating": 3.8,
+            "explain": "Museum of Korean food & rice cakes",
+            "mapy": 37.5748578,
+            "mapx": 126.990624,
+            "imagelink": "https://lh3.googleusercontent.com/-eoAOoCtBR5Y/WuagndLC45I/AAAAAAAAAO0/YVMOhBe3o5YaobZ5g7lsqk9MgLZJRP7DQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "71 Donhwamun-ro, Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 200,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Han Sang Soo Embroidery Museum",
+            "rating": 3.9,
+            "explain": "Museum",
+            "mapy": 37.5937657,
+            "mapx": 127.000837,
+            "imagelink": "https://lh4.googleusercontent.com/-2J3QtzdGUaY/W4uxJy2a-HI/AAAAAAAL_8U/vKItKiQ2jlISpw8udbo_3Qfo12gZs_8rgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "4-10 Seongbuk-ro 16-gil, Seongbuk-dong, Seongbuk-gu, Seoul, South Korea",
+            "category": "Museums Nightview"
+        }
+    },
+    {
+        "pk": 201,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Yangnyeongsi Herb Medicine Museum",
+            "rating": 4.2,
+            "explain": "Museum",
+            "mapy": 37.5802298,
+            "mapx": 127.0371534,
+            "imagelink": "https://lh5.googleusercontent.com/-X9Bd17ZPSns/W0wvhxP7xmI/AAAAAAAArp8/lsGyLRvQYyciaT6LnGrm400Q9Cc1jcy5wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "26 Yangnyeongjungang-ro, Jegi-dong, Dongdaemun-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 202,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "The Korean National Police Heritage Museum",
+            "rating": 4.1,
+            "explain": "Museum",
+            "mapy": 37.5689839,
+            "mapx": 126.96965279999999,
+            "imagelink": "https://lh6.googleusercontent.com/-D4SNw6FyO3k/V1z3fWegShI/AAAAAAABWQU/FgKjcQHhgQ07XE-YvAs_wGu69GVcp5GDgCJkC/w464-h260-n-k-no/",
+            "address": "41 Saemunan-ro, Sajik-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 203,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Baek in-Je House",
+            "rating": 4.5,
+            "explain": "Museum, concert, and architecture",
+            "mapy": 37.580642,
+            "mapx": 126.9840665,
+            "imagelink": "https://lh6.googleusercontent.com/-Fj3zIiYW7JI/XdgYhhr-HMI/AAAAAAAAPRk/Yt73CdJo1-s-eZDyrqSvTS5utPSI4C0aQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "16 Bukchon-ro 7-gil, Gahoe-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 204,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seogpajeong",
+            "rating": 4.4,
+            "explain": "Art museum, autumn leaf color, and art",
+            "mapy": 37.5949557,
+            "mapx": 126.96245729999998,
+            "imagelink": "https://lh6.googleusercontent.com/-XututFv_Qbo/XX5E5N_qsQI/AAAAAAAAbDQ/gWBPoDkYN6w9WWAi_KHm5oPZhiBU49pFQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Buam-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums Art&Culture"
+        }
+    },
+    {
+        "pk": 205,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uc218\ub3c4\ubc15\ubb3c\uad00",
+            "rating": 4.1,
+            "explain": "Museum",
+            "mapy": 37.53846970000001,
+            "mapx": 127.04281499999999,
+            "imagelink": "https://lh6.googleusercontent.com/-ZCH4n5zT7Yw/W8sTNHufM4I/AAAAAAAAAk8/WuP7w_lOSFMAVdc89K77L_ITAY38VrXJwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "27 Wangsimni-ro, Seongsu-dong 1(il)-ga, Seongdong-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 206,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "War and Women\u2019s Human Rights Museum",
+            "rating": 4.7,
+            "explain": "Museum and history",
+            "mapy": 37.560053700000005,
+            "mapx": 126.91484709999999,
+            "imagelink": "https://lh6.googleusercontent.com/-RAuaLkp7qHc/XVpJSlw__FI/AAAAAAAAGC8/AOqxSq-qrdUOpjO1S_LFFLWtSqa-Q69FACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "20 World cup buk-ro 11-gil, Seongsan 1(il)-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 207,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Owl Museum",
+            "rating": 3.8,
+            "explain": "Museum",
+            "mapy": 37.587032,
+            "mapx": 126.98291299999998,
+            "imagelink": "https://lh3.googleusercontent.com/-DIkCkYaXTVg/XQ8j6H_NJ0I/AAAAAAAADtU/mEczjhWukdEC2F0rx4zKpNhtnmaY2eTXwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "27-21 Samcheong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 208,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "The Children\u2019s Museum of the National Folk Museum of Korea",
+            "rating": 4.3,
+            "explain": "Museum and children's museum",
+            "mapy": 37.58169960000001,
+            "mapx": 126.97896899999999,
+            "imagelink": "https://lh5.googleusercontent.com/-cq7jCKzZRqY/XZsj2LAn9hI/AAAAAAAATyw/bJlR8y4uC1gFBVQ3OHqkOybpBEIL6cyKwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "1-1 Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 209,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Museum of Korean Buddhist Art",
+            "rating": 4.5,
+            "explain": "Museum, buddhism, and art",
+            "mapy": 37.580838799999995,
+            "mapx": 126.9889125,
+            "imagelink": "//www.google.com/maps/vt/data=6-WWpPQzmvCSOa40UBGssbGAhmnsS33Amt950_AIE_bgMRLbaBwEFdgE9laJwjQkVbG0HaES_7NBQ0qMfsjj1-ARDTJhrvXMLA",
+            "address": "108-4 Wonseo-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 210,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bukchon Museum Old Fragrance",
+            "rating": 4.0,
+            "explain": "Museum",
+            "mapy": 37.584449400000004,
+            "mapx": 126.9829963,
+            "imagelink": "https://lh4.googleusercontent.com/-KZ2JXNMq9cE/Xe0vANY-0II/AAAAAAAASzg/8by8cbLbvcYc36kjvzq80Zu-fewPFxX2ACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "21 Samcheong-ro 4-gil, Samcheong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 211,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "ARA Modern Art Museum",
+            "rating": 4.2,
+            "explain": "Museum, art, and art museum",
+            "mapy": 37.573411,
+            "mapx": 126.9836125,
+            "imagelink": "https://lh6.googleusercontent.com/-don0rdaxFBM/WI17-f8mpII/AAAAAAAAze0/VNAcUflOHU8rK2oBdGLKTKxJ6J-YsasXgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "26 Insadong 9-gil, Jongno 1(il).2(i).3(sam).4(sa), Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 212,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uccad\uc554\ubbfc\uc18d\ubc15\ubb3c\uad00",
+            "rating": 3.6,
+            "explain": "Museum",
+            "mapy": 37.722654,
+            "mapx": 126.94680149999999,
+            "imagelink": "https://lh6.googleusercontent.com/-WNYvxMaHxl0/WuZ9tZW9LJI/AAAAAAAAABg/I2K6wCq62Cs9bPuwaHLzhfh6DtQzpw-tgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "36-3 Iryeong-ri, Jangheung-myeon, Yangju-si, Gyeonggi-do, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 213,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "World Jewellery Museum",
+            "rating": 3.6,
+            "explain": "Museum",
+            "mapy": 37.5809498,
+            "mapx": 126.9818021,
+            "imagelink": "https://lh5.googleusercontent.com/-S3tjbA4dRvE/XOo-_k-kpjI/AAAAAAAABEY/biSNgKpLm7Yo3aHHws3E849LW8FEtZdPQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "75-3 Hwa-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 214,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "63 Seaworld",
+            "rating": 4.1,
+            "explain": "Aquarium",
+            "mapy": 37.51945429999999,
+            "mapx": 126.93984009999998,
+            "imagelink": "https://lh3.googleusercontent.com/-WZcCyYR_cZo/Xdacff5XixI/AAAAAAADxx4/Yoe6VK2g1Aga4y-Qqpk9u_b8RTOJA2zagCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "50 63-ro, Yeoeuido-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "Museums Kind-friendly"
+        }
+    },
+    {
+        "pk": 215,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Paper Art Museum",
+            "rating": 3.4,
+            "explain": "Museum, art, and art museum",
+            "mapy": 37.559619500000004,
+            "mapx": 127.00616140000001,
+            "imagelink": "https://lh6.googleusercontent.com/-V0cDaHt7Nbo/XAYQkKLDsTI/AAAAAAAAYg4/YmNzQhitdmo8IX8rYJ_vlTYmoo76dmkPwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "166 Jangchungdan-ro, Jangchung-dong, Jung-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 216,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ub458\ub9ac\ubba4\uc9c0\uc5c4",
+            "rating": 4.1,
+            "explain": "Museum",
+            "mapy": 37.652254799999994,
+            "mapx": 127.0276957,
+            "imagelink": "https://lh4.googleusercontent.com/-1094DhmhfkU/XY8HU4r00qI/AAAAAAABFyA/CdzalODmyUUy3mt-GlzmGpXa2i9A-b53gCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "6 Sirubong-ro 1-gil, Ssangmun-dong, Dobong-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 217,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "The National Folk Museum of Korea",
+            "rating": 4.5,
+            "explain": "Museum for Korean customs & culture",
+            "mapy": 37.5816456,
+            "mapx": 126.97899479999998,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/QH99Zu0g6H0i5WPii17sOlMCHfpTw4OwH3_rJJ3vpOrL1-NsYvZ9N66TSlVMbYXKDEJkx9zOJOKKzpLDDpKpwiiLcgzqHNOkL_ZZjnWnm9mUPRdwY4cJOu41GngT7c8jY3hkszrdMq3T_q2VIuS0LMVl6L4=w464-h260-n-k-no",
+            "address": "37 Samcheong-ro, Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "Museums Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 218,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ud55c\uad6d\uc601\ud654\ubc15\ubb3c\uad00",
+            "rating": 4.2,
+            "explain": "Museum",
+            "mapy": 37.5803928,
+            "mapx": 126.8899596,
+            "imagelink": "https://lh4.googleusercontent.com/-sOHeGajr_oQ/WWmcOT8rTQI/AAAAAAAASV0/aBc0KjPAvKU-pl51pDDmdPZlqjWbYD9oQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "400 World cup buk-ro, Sangam-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 219,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Presseum",
+            "rating": 3.9,
+            "explain": "Museum, history, and art",
+            "mapy": 37.569831799999996,
+            "mapx": 126.9776433,
+            "imagelink": "https://lh5.googleusercontent.com/-SzEJaBhYcOk/XZnrNYYqxJI/AAAAAAABY6A/jcmxK7jn88M-Xrl57ws6U8t8qVdY8MgjwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "152 Sejong-daero, Jongno 1(il).2(i).3(sam).4(sa), Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 220,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bucheon Bow Museum",
+            "rating": 3.8,
+            "explain": "Museum",
+            "mapy": 37.500873,
+            "mapx": 126.79737790000001,
+            "imagelink": "https://lh5.googleusercontent.com/-rpl_m_DWNXU/W_eM7H1uT4I/AAAAAAAB_e4/A32xikWnWU4vL57PqoV5vXqoeLQ2AwYYwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "8 Chunui-dong, Wonmi-gu, Bucheon-si, Gyeonggi-do, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 221,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ubc30\uc7ac\ud559\ub2f9\uc5ed\uc0ac\ubc15\ubb3c\uad00",
+            "rating": 4.2,
+            "explain": "Museum and history",
+            "mapy": 37.56397949999999,
+            "mapx": 126.972609,
+            "imagelink": "https://lh3.googleusercontent.com/-LogmVSXrRTI/XcE-3OmaUFI/AAAAAAACfoM/hSVlyIZ1N18i8ZaZ5SXlmpd3HGw6yOjFgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uc911\uad6c \uc11c\uc18c\ubb38\ub85c11\uae38 19 (\uc815\ub3d9) \ubc30\uc7ac\uc815\ub3d9\ube4c\ub529 \ub3d9\uad00",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 222,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bukchon Asian Cultural Art Museum",
+            "rating": 4.3,
+            "explain": "Museum, art, and art museum",
+            "mapy": 37.5838383,
+            "mapx": 126.98355179999999,
+            "imagelink": "https://lh5.googleusercontent.com/-hkOaLXlzBSA/WbA_wQCaG6I/AAAAAAAASGY/n3tfA9R3XjI6OFlvlE7J6eOcmohpZzuJgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "76 Bukchon-ro 11-gil, Samcheong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 223,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Korean Manhwa Museum",
+            "rating": 4.1,
+            "explain": "Museum",
+            "mapy": 37.508369,
+            "mapx": 126.7416,
+            "imagelink": "https://lh5.googleusercontent.com/--bzmc3Yi4Co/Xa7IyVN4myI/AAAAAAACBf4/HfbkeGfvqj0ZO3Hg3jFGty58adaneyKNACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Sang-dong, Bucheon, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 224,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Kim Koo Museum",
+            "rating": 4.3,
+            "explain": "Museum",
+            "mapy": 37.5442482,
+            "mapx": 126.95917730000001,
+            "imagelink": "https://lh3.googleusercontent.com/-RZpgNw3uoBA/XaaX8vzc-YI/AAAAAAAAAIA/mhIr3Ckmhk0j1-ofRpWdhx3mJqdVjiGkACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "26 Imjeong-ro, Hyochang-dong, Yongsan-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 225,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ud504\ub77c\uc6c0 \uc545\uae30\ubc15\ubb3c\uad00",
+            "rating": 3.9,
+            "explain": "Museum",
+            "mapy": 37.5684972,
+            "mapx": 127.22695829999999,
+            "imagelink": "https://lh3.googleusercontent.com/-W3f155y8O_M/XGu-v58xpOI/AAAAAAAAGoI/SVBjpu1k03oT6abPtb1D2m2S88A-NQq2QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "504-13 Dogok-ri, Wabu-eup, Namyangju-si, Gyeonggi-do, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 226,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Museum of Gugak",
+            "rating": 5.0,
+            "explain": "Museum and music",
+            "mapy": 37.4777592,
+            "mapx": 127.0083043,
+            "imagelink": "https://lh6.googleusercontent.com/-6jW0ZrUWT-0/XahKuhPFvnI/AAAAAAAAMQs/xC7-iLTLJK8XtKPSUpVWlKpP07bYfcBpACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, Seocho-gu, Seocho-dong, Nambusunhwan-ro, 2364 \uad6d\ub9bd\uad6d\uc545\uc6d0",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 227,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hwajeong Museum",
+            "rating": 4.2,
+            "explain": "Museum, buddhism, art, and art museum",
+            "mapy": 37.6045564,
+            "mapx": 126.96596389999999,
+            "imagelink": "https://lh5.googleusercontent.com/-Ha1X6om4vAE/WkjPHG-g6aI/AAAAAAAAMTs/u_BRAdTrVcE-mWjc_Gpb1_Rwcz1LjewsgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "3 Pyeongchang 8-gil, Pyeongchang-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 228,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Culture Station Seoul 284",
+            "rating": 4.4,
+            "explain": "Art museum and art",
+            "mapy": 37.5558351,
+            "mapx": 126.971732,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcQtjdAiN_wGuh70RQISmJk7miGeYtZHVYGb4e4fFhfZNqsYajHtiHv6QNCBS7NKj6Vi2ehjHazukmVhQQ",
+            "address": "1 Tongil-ro, Bongnaedong 2(i)-ga, Jung-gu, Seoul, South Korea",
+            "category": "Museums Art&Culture"
+        }
+    },
+    {
+        "pk": 229,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul National University Museum",
+            "rating": 3.9,
+            "explain": "Museum, art, and history",
+            "mapy": 37.4663799,
+            "mapx": 126.949614,
+            "imagelink": "https://lh6.googleusercontent.com/-jfugjrvJYcI/XFAXsWVBhqI/AAAAAAAAEdQ/_s7bP-V90g0-dN9alC2TGGezgxmiAISDACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, Sillim-dong, \uc11c\uc6b8\ub300\ud559\uad50 \ubbf8\uc220\uad00",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 230,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Lotte World Aquarium",
+            "rating": 4.2,
+            "explain": "Beluga whale, aquarium, and shopping",
+            "mapy": 37.5134998,
+            "mapx": 127.1050225,
+            "imagelink": "https://lh6.googleusercontent.com/-zA5KdAXU3Pg/XU-3VDgSNGI/AAAAAAAAgo0/eerhhlAzwcEOmz9PFbL569qkZWEMJ4WRwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Jamsil 6(yuk)-dong, Songpa-gu Seoul South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 231,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Korea Museum of Modern Costume",
+            "rating": 3.8,
+            "explain": "Museum",
+            "mapy": 37.57542309999999,
+            "mapx": 127.00549440000002,
+            "imagelink": "//www.google.com/maps/vt/data=4ev1JjJbNXm9_31bdRX1KGBXwxbYC_P35iPyedPz80BFERUIa61dWHTaN3QJ-HUIjFdAGle4M5odFFd_lR_yIYGRXltkBPctCw",
+            "address": "55-1 Chungsin-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 232,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\u30bd\u30a6\u30eb\u5efa\u7bc9\u535a\u7269\u9928 Donuimun Museum Village",
+            "rating": 4.3,
+            "explain": "Museum",
+            "mapy": 37.5689364,
+            "mapx": 126.969003,
+            "imagelink": "https://lh3.googleusercontent.com/-Yu5KYss-eTY/XRhTRvrQrFI/AAAAAAAABHc/wIkOmTRWkKgObVBRWBWzKh9prRJAkiTgQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "-ga, 32-1 Sinmunno 2(i)-ga, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 233,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc720\ub7fd\uc790\uae30\ubc15\ubb3c\uad00",
+            "rating": 3.6,
+            "explain": "Museum",
+            "mapy": 37.502095000000004,
+            "mapx": 126.79829440000002,
+            "imagelink": "https://lh3.googleusercontent.com/-8WLCqqV-Srs/WYaPTsrbPGI/AAAAAAAAAjw/pj_Li2QhE90lqwBRQtVoXOlgMPiPAK-xQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "8 Chunui-dong, Wonmi-gu, Bucheon-si, Gyeonggi-do, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 234,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Rice Museum",
+            "rating": 4.0,
+            "explain": "Museum",
+            "mapy": 37.5748578,
+            "mapx": 126.990624,
+            "imagelink": "https://lh3.googleusercontent.com/-JKz8TMWNEdk/V72DWIOL0wI/AAAAAAAAQfw/0twm-PAxyxsig60rjWHCt9gyogxp-n9HQCLIB/w464-h260-n-k-no/",
+            "address": "71 Donhwamun-ro, Waryong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 235,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Miho Museum",
+            "rating": 3.8,
+            "explain": "Museum",
+            "mapy": 34.914865999999996,
+            "mapx": 136.016165,
+            "imagelink": "https://lh3.googleusercontent.com/-OPGyiboIb2s/XbP7b6Ek7KI/AAAAAAAAEd0/35SrkHFUR1wOW3GnAJ-RHolX9yCZkF88wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "\u6843\u8c37-300 Shigarakicho Tashiro, Koka, Shiga 529-1814, Japan",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 236,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ubd80\ucc9c\uc218\uc11d\ubc15\ubb3c\uad00",
+            "rating": 4.2,
+            "explain": "Museum",
+            "mapy": 37.5015673,
+            "mapx": 126.7990999,
+            "imagelink": "https://lh6.googleusercontent.com/-4ftrW-YD3Rw/XA3kYeBPneI/AAAAAAAAA90/40oFSF1WlFY13j9K0mgC3Bqlb_9nXoEoQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "8 Chunui-dong, Wonmi-gu, Bucheon-si, Gyeonggi-do, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 237,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Museum of Korea Straw and Plants Handicraft",
+            "rating": 3.9,
+            "explain": "Museum and handicraft",
+            "mapy": 37.584883000000005,
+            "mapx": 126.9999176,
+            "imagelink": "https://lh6.googleusercontent.com/-y7EbT2sNV7k/XbP-9e4UVPI/AAAAAAAAFyo/Zrd0tojWQ3UxOVwNp-f44TCnPMZqeMUlQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "45 Sungkyunkwan-ro 4-gil, Hyehwa-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums Nightview"
+        }
+    },
+    {
+        "pk": 238,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Woori Bank Museum",
+            "rating": 3.9,
+            "explain": "Museum",
+            "mapy": 37.5593365,
+            "mapx": 126.98171809999998,
+            "imagelink": "https://lh5.googleusercontent.com/-sOWf39sp93Y/XbQ0wOPMCvI/AAAAAAAADcQ/soV7tvypXUk7hcxXijuuVQ4A_8OwRf6eQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "51 Sogong-ro, Hoehyeon-dong, Jung-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 239,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc804\uae30\ubc15\ubb3c\uad00",
+            "rating": 3.8,
+            "explain": "Museum",
+            "mapy": 37.485618200000005,
+            "mapx": 127.02802890000001,
+            "imagelink": "https://lh4.googleusercontent.com/-SmQYAvKBmgI/XEKPTS9EfsI/AAAAAAAAHUs/O05R868v1XQbN1MrY0CcMFPwcWVXbCU3ACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "60 Hyoryeong-ro 72-gil, Seocho-dong, Seocho-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 240,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Shinhan Museum (Korea Museum of Financial History)",
+            "rating": 4.1,
+            "explain": "Museum and history",
+            "mapy": 37.568562299999996,
+            "mapx": 126.97635849999999,
+            "imagelink": "https://lh4.googleusercontent.com/-InFkpcmkjGY/XRH3toiKvwI/AAAAAAABodQ/Q3fJi1s2e9EJSFh7yYCJWbufYDtm1seRwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "135-5 Sejong-daero, Myeong-dong, Jung-gu, Seoul, South Korea",
+            "category": "Museums Nightview"
+        }
+    },
+    {
+        "pk": 241,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uacbd\ud76c\ub300\ud559\uad50 \uc790\uc5f0\uc0ac\ubc15\ubb3c\uad00",
+            "rating": 4.2,
+            "explain": "Museum",
+            "mapy": 37.597632899999994,
+            "mapx": 127.05522890000002,
+            "imagelink": "https://lh4.googleusercontent.com/-QdzB9a_Unxw/XZwl6OK6m6I/AAAAAAAAK8A/31cySp1cYA47TjtmTFT-EsB1kYc4lHjRgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "26 Kyungheedae-ro, Imun-dong, Dongdaemun-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 242,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ubd80\ucc9c\uad50\uc721\ubc15\ubb3c\uad00",
+            "rating": 4.6,
+            "explain": "Museum",
+            "mapy": 37.502595,
+            "mapx": 126.79835,
+            "imagelink": "//www.google.com/maps/vt/data=zTpIBJlj0qItB6Em0EB1WrHM8WkBLcCp-Cy0c8gUnLCndkU18U4VkFgu2YrhHdDfBKTbtRvrwExDwqSOiRjz8oHUq-Q3mPJB8A",
+            "address": "482 Sosa-ro, Chunui-dong, Bucheon-si, Gyeonggi-do, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 243,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Samseong Museum of Publishing",
+            "rating": 3.6,
+            "explain": "Museum",
+            "mapy": 37.608673700000004,
+            "mapx": 126.9570825,
+            "imagelink": "https://lh4.googleusercontent.com/-N0tincvswnQ/XPuMpnIlZHI/AAAAAAAAD98/3y9UrOjEV5s524zuLnNQhAEicj_fnJ6OgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "2-2 Bibong-gil, Pyeongchang-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 244,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc720\uae08\uc640\ub2f9\ubc15\ubb3c\uad00 YooGeum Museum",
+            "rating": 4.2,
+            "explain": "Museum",
+            "mapy": 37.5936628,
+            "mapx": 126.9625094,
+            "imagelink": "https://lh4.googleusercontent.com/-fMh-t_jE2h4/XU5ru3Br9iI/AAAAAAAAIGo/HzMwKOuYCZIEgJGq0lAyz7TRbUITow4CwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "Buam-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 245,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "The Abraham Park Kenneth Vine Collection",
+            "rating": 4.1,
+            "explain": "Museum",
+            "mapy": 37.4919273,
+            "mapx": 126.8440382,
+            "imagelink": "https://lh4.googleusercontent.com/-14JZmX2lwiA/WjjEvs2FbZI/AAAAAAAACdc/htNq-lDBB4I4QblM4A71Cgyh3eM0b9QXACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "44 Oryu-ro 8ra-gil, Oryu 2(i)-dong, Guro-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 246,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ub3d9\ub9bc\ub9e4\ub4ed\ubc15\ubb3c\uad00",
+            "rating": 4.0,
+            "explain": "Museum",
+            "mapy": 37.581771200000006,
+            "mapx": 126.9855943,
+            "imagelink": "https://lh6.googleusercontent.com/-3-q27sAPC3A/WRJpP9_pINI/AAAAAAABDrQ/zAm3IH0IXVEDlrWThXJfyel5kX7pCHfqQCLIB/w464-h260-n-k-no/",
+            "address": "10 Bukchon-ro 12-gil, Gahoe-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 247,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc99d\uad8c\ubc15\ubb3c\uad00",
+            "rating": 4.0,
+            "explain": "Museum",
+            "mapy": 37.6384464,
+            "mapx": 126.78596840000002,
+            "imagelink": "https://lh5.googleusercontent.com/-QO757Ikitnw/XD8M_Za3uFI/AAAAAAAAzjk/pSbuCKs1938AlC-FKgPRLoVnw3BsNaXPQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "358-8 Hosu-ro, Baekseok 2(i)-dong, Ilsandong-gu, Goyang-si, Gyeonggi-do, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 248,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gimdaljin Art materials Museum",
+            "rating": 4.0,
+            "explain": "Museum",
+            "mapy": 37.6000164,
+            "mapx": 126.9566332,
+            "imagelink": "https://lh3.googleusercontent.com/-QJ2_lHAh04Y/VNVG-vZpmJI/AAAAAAAAAAc/oN96XsvAa9os83O1wNFo3CBZLcwLAsVcACJkC/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, Jongno-gu, \ud64d\uc9c0\ub3d9 44",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 249,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc560\ubcf4\ubc15\ubb3c\uad00",
+            "rating": 4.0,
+            "explain": "Museum",
+            "mapy": 37.4503753,
+            "mapx": 126.76703,
+            "imagelink": "https://lh5.googleusercontent.com/-xtkpG2ToZE4/XWzgSNYOSaI/AAAAAAAAAJk/6wsIvlwwHsQ0b6RqUTwoRhGKZyw99aU5QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "71 Manuigol-ro, Unyeon-dong, Namdong-gu, Incheon, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 250,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ucc3d\uc870\uc790\uc5f0\uc0ac\ubc15\ubb3c\uad00",
+            "rating": 2.8,
+            "explain": "Museum",
+            "mapy": 37.433648100000006,
+            "mapx": 126.78613090000002,
+            "imagelink": "https://lh5.googleusercontent.com/-EsJ_O3b2HC4/WdaqSkOeHjI/AAAAAAAAJt4/A1ssbrkoVc8g3RXRdUm6d8m5AY6dWA60ACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "4 Dumun-ro 71beon-gil, Sincheon-dong, Siheung-si, Gyeonggi-do, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 251,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uad11\uace0\ubc15\ubb3c\uad00",
+            "rating": 3.8,
+            "explain": "Museum",
+            "mapy": 37.5160955,
+            "mapx": 127.0995355,
+            "imagelink": "https://lh3.googleusercontent.com/-rX5tAOk6Wb8/XbUF19UX7MI/AAAAAAAAQFU/hiwCo8iR3VM7KednTv9WUezjIdRHwtZiwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, Songpa-gu, Jamsil 6(yuk)-dong, \uc62c\ub9bc\ud53d\ub85c35\uae38 137",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 252,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ucd98\uc6d0\ub2f9\ud55c\ubc29\ubc15\ubb3c\uad00",
+            "rating": 4.4,
+            "explain": "Museum",
+            "mapy": 37.5717844,
+            "mapx": 126.99032930000001,
+            "imagelink": "//www.google.com/maps/vt/data=EVzOEKILMdV-bDo0seCQz0G9yAqwGCpqFuomXEnhMSvBeYyU6JCynrH5EWCMbyFFRV-ZWEC_kszZoV7jeXglNboERlSubUesFg",
+            "address": "78 Donui-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 253,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Namyangju History Museum",
+            "rating": 3.6,
+            "explain": "Museum",
+            "mapy": 37.5463678,
+            "mapx": 127.244399,
+            "imagelink": "https://lh4.googleusercontent.com/-OCqD7LBmHAs/VMo2wT_rdHI/AAAAAAAAAAs/vfZGkx4wllgKEOcDnO4mvYwznSJelfa1QCJkC/w464-h260-n-k-no/",
+            "address": "South Korea, Gyeonggi-do, Namyangju-si, \uc640\ubd80\uc74d \ud314\ub2f9\ub85c 121",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 254,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc27c\ubc15\ubb3c\uad00",
+            "rating": 4.3,
+            "explain": "Museum and art",
+            "mapy": 37.5994636,
+            "mapx": 126.9556636,
+            "imagelink": "https://lh3.googleusercontent.com/-OYjt_7AC5BA/Wph4pv3WgaI/AAAAAAAA1hg/9pRDaUUkKS4W9dBSnZHgYHoarBVbJiLZQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "209-17 Segeomjeong-ro, Hongji-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 255,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ubc15\ub178\uc218\uac00\uc625",
+            "rating": 3.8,
+            "explain": "Art museum",
+            "mapy": 37.5812828,
+            "mapx": 126.966748,
+            "imagelink": "https://lh5.googleusercontent.com/-eyGFmVGD-Hw/WG_Ax2wHYoI/AAAAAAAAXeg/WZ3m5vfCMBcKwi-MAeythCwmx9j6soxrwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "168-2 Ogin-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 256,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "AquaPlanet ILSAN",
+            "rating": 4.1,
+            "explain": "Large aquarium with diving performances",
+            "mapy": 37.6633627,
+            "mapx": 126.75530829999998,
+            "imagelink": "https://lh3.googleusercontent.com/-7SbazH-MUOY/XQ3U1lZOusI/AAAAAAAAKvE/sFtzgdHVTVsIdbWCeLsELHUJ_udkBMwIACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "282 Hallyuwoldeu-ro, Daehwa-dong, Ilsanseo-gu, Goyang-si, Gyeonggi-do, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 257,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ud638\ub9bc\ubc15\ubb3c\uad00 \uc2e0\ub9bc\ubcf8\uad00",
+            "rating": 3.5,
+            "explain": "Museum",
+            "mapy": 37.4808747,
+            "mapx": 126.91696,
+            "imagelink": "https://lh3.googleusercontent.com/-ewbNLbWyIuw/Ww-zIDvwKAI/AAAAAAAAiYY/Fjidh9Z92owbueRW7EfWD8_nTujicVxmQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "53 Nambusunhwan-ro 152-gil, Sillim-dong, Gwanak-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 258,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ud0c4\ud5c8\uae30\ub150\ubc15\ubb3c\uad00",
+            "rating": 4.4,
+            "explain": "Museum",
+            "mapy": 37.47899829999999,
+            "mapx": 127.10295459999999,
+            "imagelink": "https://lh4.googleusercontent.com/-4U3C9g4faPQ/W4KN9_AXQDI/AAAAAAAAFRA/KI9nbJpBdLgi8cGoCJXvnVY_ZniTLPlnwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "13-51 Bamgogae-ro 14-gil, Jagok-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 259,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gallery Won",
+            "rating": 4.3,
+            "explain": "Art museum",
+            "mapy": 37.527513,
+            "mapx": 127.0459085,
+            "imagelink": "https://lh3.googleusercontent.com/-HuZcrRMa2qQ/Xdkfw-x6mCI/AAAAAAABD1M/ontis1tJQm41OhtptxbqUyJcH0tLjJ6RwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "101-5 Cheongdam-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 260,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Nanji Residency",
+            "rating": 4.2,
+            "explain": "Art museum and art",
+            "mapy": 37.5689698,
+            "mapx": 126.87879450000001,
+            "imagelink": "https://lh5.googleusercontent.com/-K8nphzBcKCg/WuApnyond_I/AAAAAAAA_rM/T4OuTHlECpomRsY-hdkVVyiL0YXs40NqACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "108-1, Haneulgongwon-ro,, Mapo-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 261,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "D Project space",
+            "rating": 4.5,
+            "explain": "Art museum and art",
+            "mapy": 37.5347116,
+            "mapx": 127.009922,
+            "imagelink": "https://lh6.googleusercontent.com/-zis4B2ZF4E8/WS1SxvrQEUI/AAAAAAAAjQU/pSHsML1mHY8R8s7GmVr0G1OYiQ8aVuXBACLIB/w464-h260-n-k-no/",
+            "address": "28 Hannam-daero 18-gil, Hannam-dong, Yongsan-gu, Seoul, South Korea",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 262,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Konkuk University Museum",
+            "rating": 4.2,
+            "explain": "Museum",
+            "mapy": 37.5423945,
+            "mapx": 127.0756472,
+            "imagelink": "https://lh3.googleusercontent.com/-Mk56OiUmrus/XaEe4RgoOHI/AAAAAAAAMrU/xGowgssxMpQ-dVzt9sygBlwMdoUCijw_wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc \uad11\uc9c4\uad6c \uc544\ucc28\uc0b0\ub85c 263 (\ud654\uc591\ub3d9)",
+            "category": "Museums"
+        }
+    },
+    {
+        "pk": 263,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Museum of Art",
+            "rating": 4.2,
+            "explain": "Art museum, museum, and art",
+            "mapy": 37.5640253,
+            "mapx": 126.9737793,
+            "imagelink": "https://lh4.googleusercontent.com/proxy/pE2_2UpzIGt6vf716oHpzrsExt3clhF5_nIXoVVsY8WtNUCxXHrWkcbokp3k__HD3xWA1qQawYTKXWbkpQ5WLu0N5pmBCu98EaBr7J8Ngx56dlbfYboLipCi24bCAHML8vuETrLnyCK4EhVq6PnfIYWVawgexrI-Avtn9I2SMYH4=w464-h260-n-k-no",
+            "address": "61 Deoksugung-gil, Seosomun-dong, Jung-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 264,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bongeunsa",
+            "rating": 4.5,
+            "explain": "Buddhist temple & Maitreya Buddha statue",
+            "mapy": 37.514852000000005,
+            "mapx": 127.05737659999998,
+            "imagelink": "https://lh3.googleusercontent.com/proxy/KYMPvTAHXr4m7HwQ7YFKhzNxLofPAHfYswAYcIeTn1IP5QnO6fUf023N3FgX0y7oG5MY-aUpY4RjzzGsnu1DjCx6CPYE7RNytIo4TRCF6ZUDfrIJdz7KUM-p0aoRaWsGCN4y2yBruu0fB06byfMiIC4ubI8=w464-h260-n-k-no",
+            "address": "531 Bongeunsa-ro, Samseong 1(il)-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 265,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Jogyesa",
+            "rating": 4.4,
+            "explain": "Main Buddhist temple & grand main hall",
+            "mapy": 37.5743716,
+            "mapx": 126.98264979999999,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcRHWu5HFU-5mIntZUnB4X9BKO3MmFQD-Oe3v5MMP3IAkRMhwHFdhL9U2_qfM_ocYAvj5vDiW36GtttDKw",
+            "address": "55 Ujeongguk-ro, Gyeonji-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 266,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Leeum, Samsung Museum of Art",
+            "rating": 4.4,
+            "explain": "Sleek art museum with audio guides",
+            "mapy": 37.538121999999994,
+            "mapx": 126.998579,
+            "imagelink": "https://lh3.googleusercontent.com/-WnCtFmhA27U/Xc-U5LbDFxI/AAAAAAABJvM/zCyEglpluiIaHQcFJ64WumsScAudPeAsgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "60-16 Itaewon-ro 55-gil, Hannam-dong, Yongsan-gu, Seoul, South Korea",
+            "category": "Art&Culture Local-favorites"
+        }
+    },
+    {
+        "pk": 267,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Yeouido",
+            "rating": 3.8,
+            "explain": "Island",
+            "mapy": 37.5175402,
+            "mapx": 126.93453079999999,
+            "imagelink": "https://t0.gstatic.com/images?q=tbn:ANd9GcTPcaxaomon5ni938xk98N5Hl4Gwv7K04sCcozSWRtQ3oQAkra7MJfvuSF8r57g3DCbUPIrZEazKZEZKA",
+            "address": "Yeoui-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 268,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Starfield Library",
+            "rating": 4.6,
+            "explain": "Library",
+            "mapy": 37.5099631,
+            "mapx": 127.0602751,
+            "imagelink": "https://lh6.googleusercontent.com/-GknSqwUajRg/XR1agDG2RvI/AAAAAAAAePg/38dciU4IryoLM7MSVXRM4HG77fW0G2A5wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "955-9 Daechi-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 269,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gansong Art Museum",
+            "rating": 3.9,
+            "explain": "Art museum, painting, museum, and art",
+            "mapy": 37.5936152,
+            "mapx": 126.99685579999999,
+            "imagelink": "https://lh3.googleusercontent.com/-BCnjzECptDY/XJW7eu9e5cI/AAAAAAAAGL4/_Qxryv_lOyQBmAkpketIBWX2sNyml1YKwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "97-1 Seongbuk-dong, Seongbuk-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 270,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Sejong Center",
+            "rating": 4.4,
+            "explain": "Center for Korean performing arts",
+            "mapy": 37.572525399999996,
+            "mapx": 126.9756429,
+            "imagelink": "https://lh5.googleusercontent.com/-T_46gAe-oGU/XStCmKFSxBI/AAAAAAADeJ0/wLWqUYcfo44ZjzIKzUenH6oOl5ig9Z2wQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "175 Sejong-daero, Sejongno, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 271,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "National Museum of Modern and Contemporary Art - Seoul",
+            "rating": 4.5,
+            "explain": "Indoor-outdoor art exhibitions",
+            "mapy": 37.565895899999994,
+            "mapx": 126.9736922,
+            "imagelink": "https://lh3.googleusercontent.com/-GE3Y2HA2upw/Xe_PFDk6nII/AAAAAAABXxA/Jq1-x3D0gz8rdqsBOoG7rhS420tVhWLuACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, Jung-gu, Sejong-daero, 99",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 272,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Starfield COEX Mall",
+            "rating": 4.2,
+            "explain": "Huge underground mall with an aquarium",
+            "mapy": 37.51168500000001,
+            "mapx": 127.05933940000001,
+            "imagelink": "https://lh4.googleusercontent.com/proxy/7qttDY1-VtWApcIAicdonw2xBWWFPUcnXVLcxVOQ8b_nLFLQDIBum0QqOzv86u9K2I5gA8cGHJmSNF8xUsp4eWkXINGsbQdAs7WZdr_uK9NDgRdbdJDU1WlKZm54hJAyFwLhmJHwh8PmbwNBmJHiHmRJHdWzTqhBBTn-AfXhI1P3=w464-h260-n-k-no",
+            "address": "513 Yeongdong-daero, Samseong 1(il)-dong, Gangnam-gu, Seoul, South Korea",
+            "category": "Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 273,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hangaram Arts Center Museum",
+            "rating": 4.4,
+            "explain": "Art museum, museum, and art",
+            "mapy": 37.480379299999996,
+            "mapx": 127.0142462,
+            "imagelink": "https://lh4.googleusercontent.com/-3WfTtc771wI/XXndCv51ZhI/AAAAAAABy_g/68Tj5nJl6v8D1lqCT-qqbWmjIyaV8muyACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "2406 Nambusunhwan-ro, Seocho-dong, Seocho-gu, Seoul, South Korea",
+            "category": "Art&Culture Nightview"
+        }
+    },
+    {
+        "pk": 274,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Ilmin Museum of Art",
+            "rating": 4.1,
+            "explain": "Art museum featuring modern Korean works",
+            "mapy": 37.56978400000001,
+            "mapx": 126.97766399999999,
+            "imagelink": "https://lh6.googleusercontent.com/-Or9qpDofi10/WQyu2TF5dBI/AAAAAAAAYB8/BNmL2QW8f4klsjuWqmis6cMNobqWnA6wQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "152 Sejong-daero, Sejongno, \uad6c Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 275,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Kukje Gallery",
+            "rating": 4.2,
+            "explain": "Uniquely designed gallery for modern art",
+            "mapy": 37.5807256,
+            "mapx": 126.98043429999998,
+            "imagelink": "https://lh3.googleusercontent.com/-1ufrsyYaJwI/XYW6c-3NFuI/AAAAAAACxeA/A4Wv6UXdis0ZouE60AvFHCzOZM2JUkrPwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "54 Samcheong-ro, Sogyeok-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 276,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "D Museum",
+            "rating": 4.2,
+            "explain": "Unique museum with modern art exhibits",
+            "mapy": 37.5371914,
+            "mapx": 127.01143700000002,
+            "imagelink": "https://lh6.googleusercontent.com/-IoJ2RAbTZ_0/VqMzAdS4v1I/AAAAAAAAAdU/Cg-x1Dg45eUHOX4VgDYiuCsWzRHwUNbyACJkC/w464-h260-n-k-no/",
+            "address": "5-6 Dokseodang-ro 29-gil, Hannam-dong, Yongsan-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 277,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Kumho Museum of Art",
+            "rating": 4.0,
+            "explain": "Art museum, museum, and art",
+            "mapy": 37.577422399999996,
+            "mapx": 126.97988570000001,
+            "imagelink": "https://lh4.googleusercontent.com/-MU07H57Emro/V2afsiBVZXI/AAAAAAABzD0/56yYrSL3m-UQ-dpUw5JX9LrrgqYFcNKcwCJkC/w464-h260-n-k-no/",
+            "address": "18 Samcheong-ro, Samcheong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 278,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Art Sonje Center",
+            "rating": 4.2,
+            "explain": "Sleek museum of contemporary art",
+            "mapy": 37.5794981,
+            "mapx": 126.98197250000001,
+            "imagelink": "https://lh3.googleusercontent.com/-gROu6RT5jfg/UpgE9itJewI/AAAAAAAAABk/VvME_6S8cYA5m-_DWXECyqSDZ-G9n6m4ACJkC/w464-h260-n-k-no/",
+            "address": "87 Yulgok-ro 3-gil, Samcheong-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 279,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bukchon Hanok Village",
+            "rating": 4.3,
+            "explain": "Heritage village with 600-year history",
+            "mapy": 37.5824075,
+            "mapx": 126.9836531,
+            "imagelink": "https://lh5.googleusercontent.com/proxy/TLL0NgIfM77p7h6ZKmVYysIuFKluIROWAOc_SQkfg6kEID6h-8_XojF3cZHCsZ3kqyArB77S8aGlHucpTIziY-0fUWlXA4Zx8iIkAoyu5p4QXIG-wyk2PRURpQ-1pejh7v3k9QgiRF--8ExjUSKK-thF-3s=w464-h260-n-k-no",
+            "address": "South Korea, Seoul, Jongno-gu, Gahoe-dong, \uacc4\ub3d9\uae38 37",
+            "category": "Art&Culture Kind-friendly Nightview"
+        }
+    },
+    {
+        "pk": 280,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Dongdaemun Design Plaza",
+            "rating": 4.3,
+            "explain": "Space-age venue with a design center",
+            "mapy": 37.566725,
+            "mapx": 127.009506,
+            "imagelink": "https://lh6.googleusercontent.com/proxy/pbuwfzjMsQMnjq8UtEMphN4bVmFByut-HMjs3teQ47jHtxaCuqxjHuhMvUr2LUeSzUqPrf2bNhIUxhdf2LGEzoYk-AtCoT3vr79r3iEliUzb4XJBZcrdxO2NC40Z6QMEAESenXXWWwcSx8wbzSGgAxWCfxY=w464-h260-n-k-no",
+            "address": "281 Eulji-ro, Euljiro 7(chil)-ga, Jung-gu, Seoul, South Korea",
+            "category": "Art&Culture Kind-friendly Local-favorites SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 281,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "63 Building",
+            "rating": 4.2,
+            "explain": "Landmark skyscraper & entertainment area",
+            "mapy": 37.5193776,
+            "mapx": 126.94021029999999,
+            "imagelink": "https://lh5.googleusercontent.com/proxy/_7XIQepKIhmgm9ZuDvzcwzq6yo4elhC4kQABjzVv4LZkdzysLztNUQgYFv5gU-gWStFZwObIFvFoZUuRp5oPplKaeck-jDnKjnvnZvWdM04E0YhXVDDWTxEqluaUgJa0s7tS6dF1A6rX1F8xfV65-y4SvyHNPDXa7iuPWru4Fcfo=w464-h260-n-k-no",
+            "address": "50 63-ro, Yeoeuido-dong, Yeongdeungpo-gu, Seoul, South Korea",
+            "category": "Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 282,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Savina Museum",
+            "rating": 4.1,
+            "explain": "Art museum, museum, and art",
+            "mapy": 37.6301511,
+            "mapx": 126.92934960000001,
+            "imagelink": "https://lh3.googleusercontent.com/-hh5r7Odwik8/XJIgKkwt8WI/AAAAAAAAAcg/62U8TU6gVxgNjCokSADMEImYRZQ61XpRACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "93 Jingwan1-ro, Jingwan-dong, Eunpyeong-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 283,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Whanki Museum",
+            "rating": 4.4,
+            "explain": "Art museum, museum, and art",
+            "mapy": 37.5944125,
+            "mapx": 126.96633829999999,
+            "imagelink": "https://lh5.googleusercontent.com/-Hh_QTyVuQK0/XOEsCQakf4I/AAAAAAAAHOA/V2Y8JapsTpQpotuj98zHuajBQR7TDh2uACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "63 Jahamun-ro 40-gil, Buam-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture Nightview"
+        }
+    },
+    {
+        "pk": 284,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seongnam Arts Center",
+            "rating": 4.3,
+            "explain": "Opera house, musical theatre, art, opera, and theatre",
+            "mapy": 37.4031543,
+            "mapx": 127.1320346,
+            "imagelink": "https://lh4.googleusercontent.com/-lTC5B4vRVnA/XY_9oVtLRjI/AAAAAAAA0Sw/K0m2vfRpX1EEzLNT-ioeFj-spGNXMN_kACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "808 Seongnam-daero, Yatap 3(sam)-dong, Bundang-gu, Seongnam-si, Gyeonggi-do, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 285,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Sungkok Art Museum",
+            "rating": 4.2,
+            "explain": "Art museum, museum, and art",
+            "mapy": 37.5731157,
+            "mapx": 126.9697643,
+            "imagelink": "https://lh6.googleusercontent.com/-kczNG87rkfA/WS2h057TZKI/AAAAAAAAAX4/bCXbrWKPkjYHAFePMJPCYtDl-zbDxZOiQCLIB/w464-h260-n-k-no/",
+            "address": "42 Gyeonghuigung-gil, Sajik-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 286,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Chungmu Art Center",
+            "rating": 4.2,
+            "explain": "Art, theatre, music, and musical theatre",
+            "mapy": 37.566016499999996,
+            "mapx": 127.01465300000001,
+            "imagelink": "https://lh3.googleusercontent.com/-tcqdIEQRgT0/XRXj-8MslEI/AAAAAAAAfps/SkSEkZpfr88rpMlj38P9NUhwTRCRMfGmQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc Jung-gu, Heungin-dong, \ud1f4\uacc4\ub85c",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 287,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Lotte Tower",
+            "rating": 4.4,
+            "explain": "Huge skyscraper with an observation deck",
+            "mapy": 37.5129907,
+            "mapx": 127.10273219999999,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcTX2zKiVUyLnOnEfXUZJA4fss5bIrk_0fHXp3BPbLQmfTuN6JWtt0GbhSWH_Vl-5D3miKdvbLkXO7PuFg",
+            "address": "300 Olympic-ro, Jamsil 6(yuk)-dong, Songpa-gu, Seoul, South Korea",
+            "category": "Art&Culture Nightview"
+        }
+    },
+    {
+        "pk": 288,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "SOMA Museum of Art",
+            "rating": 4.2,
+            "explain": "Museum, art, and art museum",
+            "mapy": 37.5166362,
+            "mapx": 127.1182537,
+            "imagelink": "https://lh6.googleusercontent.com/-G72Qj12ZFfI/XWz7E3zL72I/AAAAAAAAIrM/iXCPHCHh0Ss2nb2CAUXMUaGJUzhPAVoKwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "424 Olympic-ro, Oryun-dong, Songpa-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 289,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Myeongdong NANTA Theatre",
+            "rating": 4.5,
+            "explain": "Theatre",
+            "mapy": 37.563452500000004,
+            "mapx": 126.98372090000001,
+            "imagelink": "https://lh4.googleusercontent.com/-ujY7xuRlkWY/Xe1cXs4zE8I/AAAAAAAAg-w/6YCkNGCrgYwxtLWoIimuNRdl11-nK8UKgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, Jung-gu, Myeongdong 2(i)-ga, Myeongdong-gil, 26 \uc720\ub124\uc2a4\ucf54\ud68c\uad00",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 290,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Trickeye Museum Seoul",
+            "rating": 4.2,
+            "explain": "Optical illusion & 3D museum",
+            "mapy": 37.553565500000005,
+            "mapx": 126.9217263,
+            "imagelink": "https://lh6.googleusercontent.com/-TvBIcaKAqXM/Xape39Zk6CI/AAAAAAAAoXk/eEHUtTCx6qsJDEsfEb8uv0oHrxT4vE02gCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "20 Hongik-ro 3-gil, Seogyo-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Art&Culture Kind-friendly"
+        }
+    },
+    {
+        "pk": 291,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Universal Arts Center",
+            "rating": 4.2,
+            "explain": "Art, musical theatre, theatre, ballet, and music",
+            "mapy": 37.550816,
+            "mapx": 127.08793200000001,
+            "imagelink": "https://lh3.googleusercontent.com/-Mo1FL6b1fkQ/WFpuj9sRdmI/AAAAAAAADG4/ktzcfRCZSGgaYNTfT2nDEwrfSLJat2CLgCLIB/w464-h260-n-k-no/",
+            "address": "664 Cheonho-daero, Gueui-dong, Gwangjin-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 292,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Museum",
+            "rating": 4.2,
+            "explain": "Art museum and art",
+            "mapy": 37.5238506,
+            "mapx": 126.9804702,
+            "imagelink": "https://lh4.googleusercontent.com/-DpZqc6lEDQ8/XBnLg-ZNLyI/AAAAAAAAAAg/fjZskeOxKj0orxkbej8m64XByQQE5RYNwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "137 Seobinggo-ro, Seobinggo-dong, Yongsan-gu, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 293,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uac00\ub098\uc544\ud2b8\uc13c\ud130 Gana Art Center",
+            "rating": 4.0,
+            "explain": "Established gallery for contemporary art",
+            "mapy": 37.6121861,
+            "mapx": 126.97509720000001,
+            "imagelink": "https://lh6.googleusercontent.com/-HnKOMlEIdXA/V_NED3HbLFI/AAAAAAAAMic/c_D-NrroFmwDhe9u74s-86gj-tWfn8RMACLIB/w464-h260-n-k-no/",
+            "address": "97 Pyeongchang-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 294,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc544\ub974\ucf54\ubbf8\uc220\uad00",
+            "rating": 4.3,
+            "explain": "Art and art museum",
+            "mapy": 37.580433299999996,
+            "mapx": 127.0031889,
+            "imagelink": "https://lh4.googleusercontent.com/-Epf5uB0t8Fc/XRnzFJwTCAI/AAAAAAAAIe8/lNkIuEPWD2o5bgIXD7sUD_f31Prq5PRJACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "3 Dongsung-gil, Ihwa-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 295,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bongwonsa",
+            "rating": 4.4,
+            "explain": "Buddhist temple in a scenic setting",
+            "mapy": 37.571990899999996,
+            "mapx": 126.94740300000001,
+            "imagelink": "https://t3.gstatic.com/images?q=tbn:ANd9GcQgkohgBiM61k_40LraSJEI4hGQ7NEc51mbmOtHCvd7B3ePlPk4AslXEA0Hgfps8MMFnban0NE4YA2tqQ",
+            "address": "\uc0b0 1\ubc88\uc9c0 Bongwon-dong, Seodaemun-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 296,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Hongdae Free Market",
+            "rating": 4.0,
+            "explain": "Outdoor vendors with art & craft items",
+            "mapy": 37.5521258,
+            "mapx": 126.92297169999999,
+            "imagelink": "https://lh5.googleusercontent.com/-o_R0PAYN-24/Wv1pCtTz0PI/AAAAAAAAVsk/M9ZhYo_RiuQL8czFjo4DmTeGsys9tcGHACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "19-3 Wausan-ro 21-gil, Seogyo-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Art&Culture Market SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 297,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc11c\uc6b8\uc2dc\ub9bd \ubd81\uc11c\uc6b8\ubbf8\uc220\uad00",
+            "rating": 4.2,
+            "explain": "Art museum and art",
+            "mapy": 37.6407938,
+            "mapx": 127.0667628,
+            "imagelink": "https://lh3.googleusercontent.com/-rQ1vSmx0Yy8/WrIvv4QatuI/AAAAAAABcvQ/wUJpNA5Yx8EGL20LhtRiGyMMxRbaDMxkgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "1238 Dongil-ro, Junggye 2(i).3(sam)-dong, Nowon-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 298,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Museum of Art Nam-seoul",
+            "rating": 4.3,
+            "explain": "Art museum and art",
+            "mapy": 37.4760469,
+            "mapx": 126.9794457,
+            "imagelink": "https://lh4.googleusercontent.com/-MHazUzjN2UM/XXZF52WJnVI/AAAAAAABsw4/3aKyR5QigFoHjS9V11-xSfnJ43XdUVNvACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "1059-13 Namhyeon-dong, Gwanak-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 299,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Plaza",
+            "rating": 4.2,
+            "explain": "Ice skating",
+            "mapy": 37.5655906,
+            "mapx": 126.9780251,
+            "imagelink": "https://lh6.googleusercontent.com/--TJQFBUbOQc/XSWbue05AzI/AAAAAAAAAP0/3RpTDPPJlI8GuERGiJqgEaePao_1F6W7wCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "110 Sejong-daero, Euljiro 1(il)-ga, Jung-gu, Seoul, South Korea",
+            "category": "Art&Culture Kind-friendly SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 300,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Arario Museum",
+            "rating": 4.5,
+            "explain": "Museum, art, and art museum",
+            "mapy": 37.5776464,
+            "mapx": 126.98854879999999,
+            "imagelink": "https://lh5.googleusercontent.com/-MMPu9j6nha8/WHH48riJ0KI/AAAAAAAA7Bw/dO-zhpKAVVQ-vNrlms3iz2PWKAzCWw-fwCLIB/w464-h260-n-k-no/",
+            "address": "South Korea, Seoul, \uc885\ub85c\uad6c Gahoe-dong, \uc728\uace1\ub85c 83",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 301,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ud1a0\ud0c8\ubbf8\uc220\uad00 : Total Museum of Contemporary Art",
+            "rating": 4.3,
+            "explain": "Art museum, museum, and art",
+            "mapy": 37.612222700000004,
+            "mapx": 126.9756747,
+            "imagelink": "https://lh5.googleusercontent.com/-rwh2i7WSgsk/W3lD68FVdRI/AAAAAAAA1NA/l-9Ft2NBx7cSoPHctpaa6myJqxRdhK1FACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "8 Pyeongchang 32-gil, Pyeongchang-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 302,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Kyungin Museum of Fine Art",
+            "rating": 4.3,
+            "explain": "Art museum and art",
+            "mapy": 37.5744158,
+            "mapx": 126.9854165,
+            "imagelink": "https://lh5.googleusercontent.com/-KR40q9kYGAo/WfbmnI1U6xI/AAAAAAALTX4/wlDD517t6UIJ8sZHDj533YIJVO4KV_TVgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "57-1 Gwanhun-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 303,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Insa Art Center",
+            "rating": 4.0,
+            "explain": "Art museum and art",
+            "mapy": 37.5738194,
+            "mapx": 126.9845894,
+            "imagelink": "https://lh3.googleusercontent.com/-f0ccMUE69Sg/XdIocd-ADLI/AAAAAAAAFGg/EmZOtWAVviYD8Fbnvo_2LOWQf1HqQozUACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "41-1 \uc778\uc0ac\ub3d9\uae38, Jongno 1(il).2(i).3(sam).4(sa), Jongno-gu, Seoul, South Korea",
+            "category": "Art&Culture"
+        }
+    },
+    {
+        "pk": 304,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Namdaemun Market",
+            "rating": 4.1,
+            "explain": "Sprawling traditional marketplace",
+            "mapy": 37.5591786,
+            "mapx": 126.97766920000001,
+            "imagelink": "https://lh5.googleusercontent.com/proxy/PG6YscZzRR9qvXA9iyKZy5wYwHE6Fgg8_hwknUhC182VyBOV4XniQPXiCMVq8tvATtE0PG4sOAePlD1AhpVAJ99ehH7NRFn9enYIuOC3l9FQHO1yRhEkSDw2wxYeBka6BMRheTpf8MvtUFMu9UmaZEgrMdQ=w464-h260-n-k-no",
+            "address": "21 Namdaemunsijang 4-gil, Hoehyeon-dong, Jung-gu, Seoul, South Korea",
+            "category": "Market Kind-friendly SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 305,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gwangjang Market",
+            "rating": 4.1,
+            "explain": "Enduring traditional food market",
+            "mapy": 37.5701527,
+            "mapx": 126.99934040000001,
+            "imagelink": "https://t1.gstatic.com/images?q=tbn:ANd9GcSWX2YGdR3FLPAwW4XiUS0Pq2e4kkv8mtVdpxNAODmKmxuXuP1JkWY2WMj7qSt420ZhMHZ5aAvgo8SMVg",
+            "address": "88 Changgyeonggung-ro, Jongno 4(sa)-ga, Jongno-gu, Seoul, South Korea",
+            "category": "Market Local-favorites SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 306,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gyeongdong Market",
+            "rating": 4.1,
+            "explain": "Market and shopping",
+            "mapy": 37.57973,
+            "mapx": 127.03854,
+            "imagelink": "https://lh3.googleusercontent.com/-lN-IhkUJ3QY/XJug3U3Pe8I/AAAAAAAAGQY/EBfvp9nX8DIHp10R_WNeTvK8stxdQ_OSwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "37\u00b034'47.0\"N 127\u00b002'18., 7 Yongdu-dong, Dongdaemun-gu, Seoul, South Korea",
+            "category": "Market Kind-friendly SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 307,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Garak Market",
+            "rating": 4.0,
+            "explain": "Wholesale provisions bazaar with seafood",
+            "mapy": 37.49285689999999,
+            "mapx": 127.1148684,
+            "imagelink": "https://lh5.googleusercontent.com/-9qk2Jwvwgqc/XL8KrpxfBxI/AAAAAAAA1sM/ALjEz08dbSoid7NecmzCScb6qgM-e475QCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "932 Yangjae-daero, Munjeong-dong, Songpa-gu, Seoul, South Korea",
+            "category": "Market Kind-friendly SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 308,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Noryangjin Fisheries Wholesale Market",
+            "rating": 3.8,
+            "explain": "Huge wholesale & retail fish market",
+            "mapy": 37.5152131,
+            "mapx": 126.9408624,
+            "imagelink": "https://lh5.googleusercontent.com/proxy/g678qWUVrs52p8QCmE1x61I1J00Qft_yhxyZDli2OcOoxRKqbq6B7_02KqD0VJX64O4DYKp0Pprx-KTK9hH0KFrqSAhHRCLBEmdufg3djeJuwgtpAMrHfAFPFC4kVX0_JtDJ1tEhTOBlAQuz89hPKQI4DuQ=w464-h260-n-k-no",
+            "address": "674 Nodeul-ro, Noryangjin-dong, Dongjak-gu, \uc11c\uc6b8\ud2b9\ubcc4\uc2dc South Korea",
+            "category": "Market SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 309,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Bangsan Market",
+            "rating": 4.0,
+            "explain": "Mall for craft supplies & wrapping paper",
+            "mapy": 37.5687294,
+            "mapx": 127.0008004,
+            "imagelink": "https://lh4.googleusercontent.com/-D4QmpjUgXNg/XJdr0SMxxCI/AAAAAAABvtk/wLT1gsbrfM4ySecidAFRDxFmh6EWwhcgACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "20 Dongho-ro 37-gil, Jugyo-dong, Jung-gu, Seoul, South Korea",
+            "category": "Market SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 310,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Gyeongdong market/Seoul Yang Nyeong market",
+            "rating": 4.0,
+            "explain": "Market and shopping",
+            "mapy": 37.579367700000006,
+            "mapx": 127.0388243,
+            "imagelink": "https://lh5.googleusercontent.com/-QNCGVMa6w8o/Ws7tcvk8Q5I/AAAAAAAAdLs/cUIBtQKj4_k-wbBHf5tIX5TiObTVrOEhQCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "1036 Jegi-dong, Dongdaemun-gu, Seoul, South Korea",
+            "category": "Market SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 311,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Dongjin market",
+            "rating": 3.8,
+            "explain": "Market and shopping",
+            "mapy": 37.5622222,
+            "mapx": 126.92666670000001,
+            "imagelink": "https://lh3.googleusercontent.com/-XtuIkaCv-C4/V4t8fhNTDJI/AAAAAAAAsyQ/Z8Ioq_ez_KAJGs_Q2-cFyMQ4qJtBCbgbwCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "198 Seongmisan-ro, Yeonnam-dong, Mapo-gu, Seoul, South Korea",
+            "category": "Market SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 312,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Tongin Market",
+            "rating": 3.8,
+            "explain": "Market and shopping",
+            "mapy": 37.5807168,
+            "mapx": 126.96998219999999,
+            "imagelink": "https://lh5.googleusercontent.com/-tgCp-9l1i4c/WSpyz74-j2I/AAAAAAABrI4/zn3meb_fJzYiwCfscDtR3-GDiKXwmUWGgCLIB/w464-h260-n-k-no/",
+            "address": "18 Jahamun-ro 15-gil, Tongin-dong, Jongno-gu, Seoul, South Korea",
+            "category": "Market SeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 313,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\ubc29\ud559\ub3d9\ub3c4\uae68\ube44\uc2dc\uc7a5",
+            "rating": 4.2,
+            "explain": "Market and shopping",
+            "mapy": 37.664468299999996,
+            "mapx": 127.0340446,
+            "imagelink": "https://lh6.googleusercontent.com/-B14-sWOjmA0/WInv3MH9ZCI/AAAAAAAAAS8/cQkLIsNIGD4Z9D8xa1g55ymnloEZ0npKwCLIB/w464-h260-n-k-no/",
+            "address": "632 Banghak 2(i)-dong, Dobong-gu, Seoul, South Korea",
+            "category": "Market"
+        }
+    },
+    {
+        "pk": 314,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "\uc11c\uc6b8 \uc911\uc559\uc2dc\uc7a5",
+            "rating": 3.8,
+            "explain": "Market and shopping",
+            "mapy": 37.5667491,
+            "mapx": 127.01979080000001,
+            "imagelink": "https://lh6.googleusercontent.com/-LYUmLKThZ-g/WlTp6ecYwII/AAAAAAAAScQ/VQlOocEbfuAqVMouLS4VlUY0zgu8ePFiACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "22 Toegye-ro 85-gil, Hwanghak-dong, Jung-gu, Seoul, South Korea",
+            "category": "Market"
+        }
+    },
+    {
+        "pk": 315,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Namsan Cable Car",
+            "rating": 4.1,
+            "explain": "Aerial tramway with panoramic views",
+            "mapy": 37.5565908,
+            "mapx": 126.9839744,
+            "imagelink": "https://lh6.googleusercontent.com/-tIZpMmwoink/WavkhTOR4nI/AAAAAAAARf0/vCIMRj4DQi06XYOU_GuhmSe6htNu6OTaACLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "83 Sopa-ro, Myeong-dong, Jung-gu, Seoul, South Korea",
+            "category": "Kind-friendlyNightviewSeoulFutureHeritage"
+        }
+    },
+    {
+        "pk": 316,
+        "model": "bike.Spot",
+        "fields": {
+            "name": "Seoul Children's Museum",
+            "rating": 4.5,
+            "explain": "Interactive museum for kids & toddlers",
+            "mapy": 37.550431,
+            "mapx": 127.0774945,
+            "imagelink": "https://lh5.googleusercontent.com/-affMh7YUmvA/XSr2fegjpLI/AAAAAAAAK3c/Ret0bWESyXAOh0HFXPwnQKvJQMWI7HrOgCLIBGAYYCw/w464-h260-n-k-no/",
+            "address": "216 Neungdong-ro, Neung-dong, Gwangjin-gu, Seoul, South Korea",
+            "category": "Kind-friendly"
+        }
+    }
+]

@@ -1,0 +1,190 @@
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>simpleMap</title>
+	<style>
+		.mPop {
+			border: 1px;
+			background-color: #FFF;
+			font-size: 12px;
+			border-color: #FF0000;
+			border-style: solid;
+			text-align: center;
+		}
+
+		/*공통사용 클래스*/
+		.mPopStyle {
+			border: 1px;
+			background-color: #FFF;
+			font-size: 12px;
+			border-color: #FF0000;
+			border-style: solid;
+			text-align: left;
+		}
+	</style>
+
+</head>
+
+<body onload="startMap()">
+	<div id="map_div">
+	<button id="recent">경로탐색</button>
+	</div>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://apis.openapi.sk.com/tmap/jsv2?version=1&appkey={{tkey}}"></script>
+
+	<script type="text/javascript">
+		// 1.initTmap() 정의 : onload되면 실행된다. 모든 변수, 함수는 얘 안에 있어야 하는 듯 싶다.(전역변수/로컬변수떄문에)
+		function startMap() {
+
+			if (navigator.geolocation) {
+				// watchPosition
+			navigator.geolocation.getCurrentPosition(function(pos){
+					initTmap(pos.coords.latitude, pos.coords.longitude);
+				
+			})
+			} else {
+				alert("이 브라우저에서는 Geolocation이 지원되지 않습니다.");
+			}
+		}
+		function initTmap(_lat, _lng) {
+
+			var map = new Tmapv2.Map("map_div", {
+				center: new Tmapv2.LatLng(_lat, _lng), // 지도 초기 좌표(후에, 현재 위치로 바뀔 예정)
+				width: "890px",
+				height: "400px",
+				zoom: 15,
+				httpsMode: true,
+			});
+
+			console.log(map);
+			const button = document.querySelector('#recent')
+			button.addEventListener('click', function () {
+				// 출발
+				addMarker(map, "llStart", _lng, _lat, 1);
+				
+				const Spots = "{{ spots|escapejs }}"
+				const spotData = JSON.parse(Spots);
+				let sub_lat;
+				let sub_lng;
+				let sum_location = 1000000000000000;
+				// 관광지 가장 가까운 위치로 일단 찾아보기
+				for (let i = 0; i < spotData.length;i++) {
+					if (sum_location > Math.abs(Number(spotData[i]['fields']['mapy'])-_lat)+Math.abs(Number(spotData[i]['fields']['mapx'])-_lng)){
+						sum_location = Math.abs(Number(spotData[i]['fields']['mapy'])-_lat)+Math.abs(Number(spotData[i]['fields']['mapx'])-_lng);
+						sub_lng = spotData[i]['fields']['mapx'];
+						sub_lat = spotData[i]['fields']['mapy'];
+					}
+				}
+				// 도착
+				addMarker(map, "llEnd", sub_lng, sub_lat, 2);
+				var prtcl;
+				var headers = {};
+				headers["appKey"] = "{{tkey}}";
+				$.ajax({
+					type: "POST",
+					headers: headers,
+					url: "https://apis.openapi.sk.com/tmap/routes/pedestrian?version=1&format=json",
+					async: false,
+					contentType: "application/json",
+					data: JSON.stringify({
+						"reqCoordType": "WGS84GEO",
+						"resCoordType": "WGS84GEO",
+						"startName": "출발",
+						"startX": _lng,
+						"startY": _lat,
+						"startTime": "201711121314",
+						"endName": "도착",
+						"endX": sub_lng,
+						"endY": sub_lat,
+						"searchOption": "0",
+					}),
+					success: function (response) {
+
+						prtcl = response;
+						var style_red = {
+							fillColor: "#FF0000",
+							fillOpacity: 0.2,
+							strokeColor: "#FF0000",
+							strokeWidth: 3,
+							strokeDashstyle: "solid",
+							pointRadius: 2,
+							title: "this is a red line"
+						};
+						/* -------------- Geometry.Point -------------- */
+						//경유지 최적화 결과 Line 그리기
+						drawData(map, prtcl);
+					},
+					error: function (request, status, error) {
+						console.log("code:" + request.status + "\n" + "message:" + request.responseText +
+							"\n" + "error:" + error);
+					}
+
+				});
+
+			})
+		}
+
+		// 2. 출발지와 도착지 마커찍기 (01_현재위치 - 관광지 좌표 입력 예정 또는 사용자가 검색한 위치 - 관광지 좌표 입력 예정)
+		function addMarker(map, status, lon, lat, tag) {
+			var markerLayer;
+			switch (status) {
+				case "llStart":
+					imgURL = 'http://tmapapis.sktelecom.com/upload/tmap/marker/pin_r_m_s.png';
+					break;
+				case "llPass":
+					imgURL = 'http://tmapapis.sktelecom.com/upload/tmap/marker/pin_b_m_p.png';
+					break;
+				case "llEnd":
+					imgURL = 'http://tmapapis.sktelecom.com/upload/tmap/marker/pin_r_m_e.png';
+					break;
+				default:
+			};
+			var marker = new Tmapv2.Marker({
+				position: new Tmapv2.LatLng(lat, lon), // 얘네는 Gpsy, Gpsx 순으로 입력해야함...
+				icon: imgURL,
+				map: map
+			});
+			// 출발
+		};
+
+		function drawData(map, data) {
+
+			routeData = data;
+			var resultStr = "";
+			var distance = 0;
+			var idx = 1;
+			var newData = [];
+			var equalData = [];
+			var pointId1 = "-1234567";
+			var ar_line;
+			var pointArray = [];
+
+			for (var i = 0; i < data.features.length; i++) {
+				var feature = data.features[i];
+				//배열에 경로 좌표 저장
+				if (feature.geometry.type === "LineString") {
+					ar_line = [];
+					for (var j = 0; j < feature.geometry.coordinates.length; j++) {
+						var startPt = new Tmapv2.LatLng(feature.geometry.coordinates[j][1], feature.geometry.coordinates[j][
+							0]);
+						ar_line.push(startPt);
+						pointArray.push(feature.geometry.coordinates[j]);
+					}
+					var polyline = new Tmapv2.Polyline({
+						path: ar_line,
+						strokeColor: "#ff0000",
+						strokeWeight: 6,
+						map: map
+					});
+				}
+			}
+		}
+		// 4. 검색 POI
+
+		
+	</script>
+</body>
+</html>

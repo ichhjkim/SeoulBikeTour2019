@@ -1,0 +1,372 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/material-kit.css' %}">
+    <title>Use Tmap</title>
+    <style>
+        #pac-input {
+            background-color: #fff;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            margin-left: 12px;
+            padding: 0 11px 0 13px;
+            text-overflow: ellipsis;
+            width: 400px;
+        }
+
+        #pac-input:focus {
+            border-color: #4d90fe;
+        }
+    </style>
+</head>
+
+<body onload="startMap()">
+    <div class="container">
+        <div class="col-xl-col-lg-col-md-col-sm">
+            <div class="alert alert-success" role="alert">출발지 선택</div>
+            <div id="departure" class="row">
+                <div class="col-lg-6">
+                    <div class="input-group form-group label-floating has-success">
+                        <button id="recentStart" type="button" class="btn btn-success btn-fab btn-fab-mini btn-round"><i class="material-icons">my_location</i></button>
+                        <input id="searchStart" class="controls form-control" type="text"
+                            placeholder="Enter a location">
+                    </div>
+                </div>
+            </div>
+            <p id="result"></p>
+            <div id="destination" stlye="position: relative;">
+                <h2>도착지 설정</h2>
+                <button id="nearEnd" class="btn btn-primary btn-round">가까운 관광치 추천</button>
+                <button id="categoryEnd"  class="btn btn-primary btn-round">카테고리 선택된 애들 중 가까운 관광지 추천</button>
+
+                <p>도착지 검색</p>
+                <input id="searchEndt" class="controls" type="text" placeholder="Enter a location">
+                <button id="bikeLocation" type="button" class="btn btn-success btn-fab btn-fab-mini btn-round"><i class="material-icons">directions_bike</i></button>
+            </div>
+
+            <div id="map_div">
+            </div>
+            <hr>
+            <div class="media position-relative row">
+            <div class="col-4">
+                <img src="{% static 'img/test.jpg' %}" class="w-25 p-3 h-10 mr-3" alt="..." >
+            </div>   
+            <div class="col-8">
+                <div class="media-body">
+                    <h5 class="mt-0">Media with stretched link</h5>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    <a href="#" class="stretched-link">Go somewhere</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://apis.openapi.sk.com/tmap/js?version=1&format=javascript&appKey={{tkey}}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/plugins/jquery.sharrre.js' %}"></script>
+    <script src="{% static 'js/core/jquery.min.js' %}"></script>
+    <script type="text/javascript">
+        // base의미 : 시작하자마자 실행되는 함수들 
+
+        // base0. 시작하자마자 실행하는 함수
+        function startMap() {
+
+            if (navigator.geolocation) {
+                // watchPosition
+                navigator.geolocation.getCurrentPosition(function (pos) {
+                    initTmap(pos.coords.longitude, pos.coords.latitude);
+                    spotOne(pos.coords.longitude, pos.coords.latitude);
+
+                })
+            } else {
+                alert("이 브라우저에서는 Geolocation이 지원되지 않습니다.");
+            }
+        }
+
+        // base1. 맵을 띄우는 함수
+        function initTmap(_lng, _lat) {
+
+            var map = new Tmap.Map({
+                div: 'map_div', // map을 표시해줄 div
+                width: '100%', // map의 width 설정
+                height: '400px',
+                language: "EN",
+                // map의 height 설정
+            });
+
+            map.setCenter(new Tmap.LonLat(_lng, _lat).transform("EPSG:4326", "EPSG:3857"), 15);
+
+            // 현재 위치 마커 생성
+            var markerLayer = new Tmap.Layer.Markers(); //마커 레이어 생성
+            map.addLayer(markerLayer); //map에 마커 레이어 추가
+
+            var lonlat = new Tmap.LonLat(_lng, _lat).transform("EPSG:4326", "EPSG:3857"); //좌표 설정
+            var size = new Tmap.Size(24, 38); //아이콘 크기 설정
+            var offset = new Tmap.Pixel(-(size.w / 2), -(size.h)); //아이콘 중심점 설정
+            var icon = new Tmap.Icon('http://tmapapis.sktelecom.com/upload/tmap/marker/pin_b_m_a.png', size,
+                offset); //마커 아이콘 설정
+
+            var marker = new Tmap.Marker(lonlat, icon); //마커 생성
+            markerLayer.addMarker(marker); //레이어에 마커 추가
+
+
+
+            // EventListener 
+            // 현재 위치기반으로 출발지 설정
+            var recentStart = document.querySelector('#recentStart');
+            var startPoint = recentStart.addEventListener('click', function () {
+                startMarker(map, _lng, _lat);
+                var nearEnd = document.querySelector('#nearEnd');
+                nearEnd.addEventListener('click', function () {
+                    distance(map, _lng, _lat);
+                });
+            });
+
+            // 사용자 검색위치기반 출발지 설정
+            google(map)
+
+            // 1-1. 가까운 관광지 추천
+
+
+            // 사용자 검색 위치 기반 도착지 설정
+
+
+
+
+        }
+
+        // 0단계, 출발지 마커 찍기
+        function startMarker(map, _lng, _lat) {
+            map.setCenter(new Tmap.LonLat(_lng, _lat).transform("EPSG:4326", "EPSG:3857"), 15);
+            var optionObj = {
+                position: "lt"
+            };
+
+            // 0.시작 마커 생성
+            var markerStartLayer = new Tmap.Layer.Markers("start"); //마커 레이어 생성
+            map.addLayer(markerStartLayer); //map에 마커 레이어 추가
+
+            var size = new Tmap.Size(24, 38); //아이콘 크기 설정
+            var offset = new Tmap.Pixel(-(size.w / 2), -size.h); //아이콘 중심점 설정
+            var icon = new Tmap.IconHtml('<img src=http://tmapapis.sktelecom.com/upload/tmap/marker/pin_r_m_s.png />',
+                size, offset); //마커 아이콘 설정
+            var marker_s = new Tmap.Marker(new Tmap.LonLat(_lng, _lat).transform("EPSG:4326", "EPSG:3857"),
+                icon); //설정한 좌표를 "EPSG:3857"로 좌표변환한 좌표값으로 설정합니다.
+            markerStartLayer.addMarker(marker_s); //마커 레이어에 마커 추가
+        };
+
+        // 1. 도착지 추천
+        //  1-1. 가까운 관광지로 추천
+        function distance(map, _lng, _lat) {
+
+            const Spots = "{{ spots|escapejs }}"
+            const spotData = JSON.parse(Spots);
+            var sub_lat;
+            var sub_lng;
+            var sum_location = 100000000000000000;
+            var picked_spot;
+            // 관광지 가장 가까운 위치로 일단 찾아보기
+            for (let i = 0; i < spotData.length; i++) {
+                if (sum_location > Math.abs(Number(spotData[i]['fields']['mapx']) - _lng) + Math.abs(Number(spotData[i][
+                        'fields'
+                    ]['mapy']) - _lat)) {
+                    sum_location = Math.abs(Number(spotData[i]['fields']['mapx']) - _lng) + Math.abs(Number(spotData[i][
+                        'fields'
+                    ]['mapy']) - _lat);
+                    sub_lng = spotData[i]['fields']['mapx'];
+                    sub_lat = spotData[i]['fields']['mapy'];
+                    picked_spot = spotData[i]['fields']['name']
+                }
+            }
+            endMarker(map, sub_lng, sub_lat);
+            connectPath(map, _lng, _lat, sub_lng, sub_lat)
+        };
+
+        // 1-2. 사용자가 선택한 도착지
+        function selectedEnd() {
+
+        }
+
+        // 1-3. 선택한 카데고리중 거리가 가까운 관광지 추천
+        function categoryEnd() {
+
+        }
+
+
+        // 2. 선택된 도착지 마커 찍기        
+        function endMarker(map, sub_lng, sub_lat) {
+
+            markerEndLayer = new Tmap.Layer.Markers("end"); //마커 레이어 생성
+            map.addLayer(markerEndLayer); //map에 마커 레이어 추가
+
+            var size = new Tmap.Size(24, 38); //아이콘 크기 설정
+            var offset = new Tmap.Pixel(-(size.w / 2), -size.h); //아이콘 중심점 설정
+            var icon = new Tmap.IconHtml('<img src=http://tmapapis.sktelecom.com/upload/tmap/marker/pin_r_m_e.png />',
+                size, offset); //마커 아이콘 설정
+            var marker_e = new Tmap.Marker(new Tmap.LonLat(sub_lng, sub_lat).transform("EPSG:4326", "EPSG:3857"),
+                icon); //설정한 좌표를 "EPSG:3857"로 좌표변환한 좌표값으로 설정합니다.
+            markerEndLayer.addMarker(marker_e); //마커 레이어에 마커 추가
+
+        };
+
+        // 3.경로 연결
+        function connectPath(map, _lng, _lat, sub_lng, sub_lat) {
+
+            var headers = {};
+            headers["appKey"] = "{{tkey}}"; //실행을 위한 키 입니다. 발급받으신 AppKey(appKey)를 입력하세요.
+            $.ajax({
+                method: "POST",
+                headers: headers,
+                url: "https://apis.openapi.sk.com/tmap/routes/pedestrian?version=1&format=xml", //보행자 경로안내 api 요청 url입니다.
+                async: false,
+                data: {
+                    //출발지 위경도 좌표입니다.
+                    startX: _lng,
+                    startY: _lat,
+                    //목적지 위경도 좌표입니다.\
+                    endX: sub_lng,
+                    endY: sub_lat,
+                    //출발지, 경유지, 목적지 좌표계 유형을 지정합니다.
+                    reqCoordType: "WGS84GEO",
+                    resCoordType: "EPSG3857",
+                    //각도입니다.
+                    //출발지 명칭입니다.
+                    startName: "출발지",
+                    //목적지 명칭입니다.
+                    endName: "도착지"
+                },
+                //데이터 로드가 성공적으로 완료되었을 때 발생하는 함수입니다.
+                success: function (response) {
+                    prtcl = response;
+
+                    // 결과 출력
+                    var innerHtml = "";
+                    var prtclString = new XMLSerializer().serializeToString(prtcl); //xml to String	
+                    xmlDoc = $.parseXML(prtclString),
+                        $xml = $(xmlDoc),
+                        $intRate = $xml.find("Document");
+
+                    var tDistance = "총 거리 : " + ($intRate[0].getElementsByTagName("tmap:totalDistance")[0]
+                        .childNodes[0].nodeValue / 1000).toFixed(1) + "km,";
+                    var tTime = " 총 시간 : " + ($intRate[0].getElementsByTagName("tmap:totalTime")[0]
+                        .childNodes[0].nodeValue / 60 / 3.26).toFixed(0) + "분";
+
+                    $("#result").text(tDistance + tTime + '(자전거 시간 기준)');
+
+                    prtcl = new Tmap.Format.KML({
+                        extractStyles: true,
+                        extractAttributes: true
+                    }).read(prtcl); //데이터(prtcl)를 읽고, 벡터 도형(feature) 목록을 리턴합니다.
+                    var routeLayer = new Tmap.Layer.Vector("route"); // 백터 레이어 생성
+                    //표준 데이터 포맷인 KML을 Read/Write 하는 클래스 입니다.
+                    //벡터 도형(Feature)이 추가되기 직전에 이벤트가 발생합니다.
+                    routeLayer.events.register("beforefeatureadded", routeLayer, onBeforeFeatureAdded);
+
+                    function onBeforeFeatureAdded(e) {
+                        var style = {};
+                        switch (e.feature.attributes.styleUrl) {
+                            case "#pointStyle":
+                                style.externalGraphic =
+                                    "http://topopen.tmap.co.kr/imgs/point.png"; //렌더링 포인트에 사용될 외부 이미지 파일의 url입니다.
+                                style.graphicHeight = 16; //외부 이미지 파일의 크기 설정을 위한 픽셀 높이입니다.
+                                style.graphicOpacity = 1; //외부 이미지 파일의 투명도 (0-1)입니다.
+                                style.graphicWidth = 16; //외부 이미지 파일의 크기 설정을 위한 픽셀 폭입니다.
+                                break;
+                            default:
+                                style.strokeColor = "#ff0000"; //stroke에 적용될 16진수 color
+                                style.strokeOpacity = "1"; //stroke의 투명도(0~1)
+                                style.strokeWidth = "5"; //stroke의 넓이(pixel 단위)
+                        };
+                        e.feature.style = style;
+                    }
+
+                    routeLayer.addFeatures(prtcl); //레이어에 도형을 등록합니다.
+                    map.addLayer(routeLayer); //맵에 레이어 추가
+
+                    map.zoomToExtent(routeLayer.getDataExtent()); //map의 zoom을 routeLayer의 영역에 맞게 변경합니다.
+                },
+                //요청 실패시 콘솔창에서 에러 내용을 확인할 수 있습니다.
+                error: function (request, status, error) {
+                    console.log("code:" + request.status + "\n" + "message:" + request.responseText + "\n" +
+                        "error:" + error);
+                }
+            });
+
+        };
+
+        // BASE. 검색시 구글 함수 실행
+        function google(map) {
+            var input = document.getElementById('searchStart');
+            var searchBox = new google.maps.places.SearchBox(input);
+            searchBox.addListener('places_changed', function () {
+                var places = searchBox.getPlaces();
+                if (places.length == 0) {
+                    return;
+                } else {
+                    if (!places[0].geometry) {
+                        console.log("Returned place contains no geometry");
+                        return
+                    } else {
+                        let place = places[0];
+                        if (place.geometry.viewport) {
+                            console.log(place.geometry.viewport.ka.g, place.geometry.viewport.pa.g);
+                            startMarker(map, place.geometry.viewport.ka.g, place.geometry.viewport.pa.g);
+                            var nearEnd = document.querySelector('#nearEnd');
+                            nearEnd.addEventListener('click', function () {
+                                distance(map, place.geometry.viewport.ka.g, place.geometry.viewport.pa
+                                    .g);
+                            });
+                        }
+                    }
+                }
+            });
+
+        }
+        // crousel 함수들
+        function spotOne(_lng, _lat) {
+            const Spots = "{{ spots|escapejs }}"
+            const spotData = JSON.parse(Spots);
+            var sub_lat;
+            var sub_lng;
+            var sum_location = 100000000000000000;
+            var spotLink;
+            // 관광지 가장 가까운 위치로 일단 찾아보기
+            for (let i = 0; i < spotData.length; i++) {
+                if (sum_location > Math.abs(Number(spotData[i]['fields']['mapx']) - _lng) + Math.abs(Number(spotData[i][
+                        'fields'
+                    ]['mapy']) - _lat)) {
+                    sum_location = Math.abs(Number(spotData[i]['fields']['mapx']) - _lng) + Math.abs(Number(spotData[i][
+                        'fields'
+                    ]['mapy']) - _lat);
+                    sub_lng = spotData[i]['fields']['mapx'];
+                    sub_lat = spotData[i]['fields']['mapy'];
+                    spotLink = spotData[i]['fields']['imagelink']
+                }
+            }
+
+
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{googlekey}}&libraries=places&callback=google&language=en"
+        async defer></script>
+</body>
+
+</html>

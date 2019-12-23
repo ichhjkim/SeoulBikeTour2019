@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <title>{% block title %}
+    {% endblock title %}</title>
+</head>
+<body>
+    <div id="map" style="width:1000px;height:800px;"></div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey={{ kakaokey }}&libraries=services,clusterer,drawing"></script>
+    <script>
+        // 장고모델을 js에서 불러와서 쓰기 - views.py에서 미리 serialize를 json으로 해줘야한다.
+        const djangoData = "{{ spots|escapejs }}"
+        const spotList = JSON.parse(djangoData)
+        
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(37.5663, 126.9779),
+            level: 4
+        };
+
+        var map = new kakao.maps.Map(container, options);
+        // 지형도 추가
+        map.addOverlayMapTypeId(kakao.maps.MapTypeId.TERRAIN);   
+
+        // 현재 위치
+        if (navigator.geolocation) {
+            // GeoLocation을 이용해서 접속 위치를 얻어옵니다
+            navigator.geolocation.getCurrentPosition(function(position) {
+                
+                var lat = position.coords.latitude, // 위도
+                    lon = position.coords.longitude; // 경도
+                var locPosition = new kakao.maps.LatLng(lat, lon), // 마커가 표시될 위치를 geolocation으로 얻어온 좌표로 생성합니다
+                    message = '<div style="padding:5px;">여기에 계신가요?!</div>'; // 인포윈도우에 표시될 내용입니다
+                
+                // 마커와 인포윈도우를 표시합니다
+                displayMarker(locPosition, message);
+                    
+            });
+            
+        } else { // HTML5의 GeoLocation을 사용할 수 없을때 마커 표시 위치와 인포윈도우 내용을 설정합니다
+            
+            var locPosition = new kakao.maps.LatLng(33.450701, 126.570667),    
+                message = 'geolocation을 사용할수 없어요..'
+                
+            displayMarker(locPosition, message);
+        }
+
+        // 지도에 마커와 인포윈도우를 표시하는 함수입니다
+        function displayMarker(locPosition, message) {
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({  
+                map: map, 
+                position: locPosition
+            }); 
+            
+            var iwContent = message, // 인포윈도우에 표시할 내용
+                iwRemoveable = true;
+
+            // 인포윈도우를 생성합니다
+            var infowindow = new kakao.maps.InfoWindow({
+                content : iwContent,
+                removable : iwRemoveable
+            });
+            
+            // 인포윈도우를 마커위에 표시합니다 
+            infowindow.open(map, marker);
+            
+            // 지도 중심좌표를 접속위치로 변경합니다
+            map.setCenter(locPosition);      
+        }    
+
+        //new kakao.maps.LatLng(37.499590490909185, 127.0263723554437),
+        // // 관광지 마커 리스트
+        // var tourSpotPositions = []
+        // // 따릉이 마커 리스트
+        // // 원칙적으로 따릉이 위치도 전부 장고 모델 단에 저장해두고, 불러와서 쓰는 것이 맞다.
+        // // 지금은 임시로 axios로 불러와서 쓰고 있지만..
+        // var bikeRentPositions = []
+        
+        // var markerImageSrc = 'http://t1.daumcdn.net/localimg/localimages/07/mapapidoc/category.png';  // 마커이미지의 주소입니다. 스프라이트 이미지 입니다
+        // tourSpotMarkers = [], // 관광지 마커 객체를 가지고 있을 배열입니다
+        // bikeRentMarkers = [] // 따릉이 마커 객체를 가지고 있을 배열입니다
+        // for (var i=0;i<spotList.length;i++){
+        //  tourSpotPositions.push(new kakao.maps.LatLng(spotList[i].fields.mapy, spotList[i].fields.mapx))
+        // }
+        
+        // createTourSpotMarkers(); // 관광지 마커를 생성하고 커피숍 마커 배열에 추가합니다
+        // createBikeRentMarkers(); // 따릉이 마커를 생성하고 편의점 마커 배열에 추가합니다
+        // changeMarker('tour'); // 지도에 관광지 마커가 보이도록 설정합니다   
+
+        var icon = new kakao.maps.MarkerImage(
+    'http://localimg.daum-img.net/localimages/07/2009/map/icon/blog_icon02_on.png',
+    new kakao.maps.Size(31, 35),
+    {
+        offset: new kakao.maps.Point(16, 34),
+        alt: "마커 이미지 예제",
+        shape: "poly",
+        coords: "1,20,1,9,5,2,10,0,21,0,27,3,30,9,30,20,17,33,14,33"
+    }
+);
+        // 관광지 마커 만들기
+        for (var i=0;i<spotList.length;i++){
+            var markerPosition  = new kakao.maps.LatLng(spotList[i].fields.mapy, spotList[i].fields.mapx); 
+            //console.log(spotList[i])
+                
+            var marker = new kakao.maps.Marker({
+                map: map,
+                position: markerPosition,
+                image : icon,
+            });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+
+            // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
+            var iwContent = `<div style="padding:5px;">${spotList[i].fields.name}</div>`, // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+            // 인포윈도우를 생성합니다
+            var infowindow = new kakao.maps.InfoWindow({
+                content : iwContent,
+                removable : iwRemoveable
+            });
+
+            (function(marker, infowindow) {
+                // click 이벤트는 그냥 'click'으로 등록
+                
+                // 마커에 mouseover 이벤트를 등록하고 마우스 오버 시 인포윈도우를 표시합니다 
+                kakao.maps.event.addListener(marker, 'mouseover', function() {
+                    infowindow.open(map, marker);
+                });
+
+                // 마커에 mouseout 이벤트를 등록하고 마우스 아웃 시 인포윈도우를 닫습니다
+                kakao.maps.event.addListener(marker, 'mouseout', function() {
+                    infowindow.close();
+                });
+
+                // 관광지를 클릭했을 때 이벤트 추가
+                kakao.maps.event.addListener(marker, 'click', function() {
+                    // 관광지에서 주변 따릉이들을 체크하는 알고리즘 세팅한다.
+                })
+            })(marker, infowindow);
+        }
+
+
+        // 따릉이 마커 만들기
+        axios.get('http://openapi.seoul.go.kr:8088/{{ seoulbikekey }}/json/bikeList/1/200/')
+        .then(function (response) {
+            const locations = response.data.rentBikeStatus.row
+            
+            for(var i=0; i< locations.length ; i++){
+                // 마커가 표시될 위치입니다 
+                var markerPosition  = new kakao.maps.LatLng(locations[i].stationLatitude, locations[i].stationLongitude); 
+                
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    map: map,
+                    position: markerPosition,
+                    clickable: true
+                });
+
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+
+                // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+                // 마커를 클릭했을 때 마커 위에 표시할 인포윈도우를 생성합니다
+                var iwContent = `<div style="padding:5px;">${locations[i].stationName} 현재 ${locations[i].parkingBikeTotCnt}대 이용가능</div>`, // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+                    iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
+
+                // 인포윈도우를 생성합니다
+                var infowindow = new kakao.maps.InfoWindow({
+                    content : iwContent,
+                    removable : iwRemoveable
+                });
+
+                (function(marker, infowindow) {
+                    // click 이벤트는 그냥 'click'으로 등록
+                    // 관광지를 클릭하게 되면. 주변 영역의 
+                    // 마커에 mouseover 이벤트를 등록하고 마우스 오버 시 인포윈도우를 표시합니다 
+                    kakao.maps.event.addListener(marker, 'mouseover', function() {
+                        infowindow.open(map, marker);
+                    });
+
+                    // 마커에 mouseout 이벤트를 등록하고 마우스 아웃 시 인포윈도우를 닫습니다
+                    kakao.maps.event.addListener(marker, 'mouseout', function() {
+                        infowindow.close();
+                    });
+                    // 따릉이를 클릭했을 때 이벤트 추가
+                    kakao.maps.event.addListener(marker, 'click', function() {
+                        //여기서 만든 알고리즘을 나중에 관광지에 붙이자.
+                    // var circle = new daum.maps.Circle({
+                    //         map: map,
+                    //         center : marker.getPosition(),
+                    //         radius: 800,
+                    //         strokeWeight: 2,
+                    //         strokeColor: '#FF00FF',
+                    //         strokeOpacity: 0.8,
+                    //         strokeStyle: 'dashed',
+                    //         fillColor: '#D3D5BF',
+                    //         fillOpacity: 0.5
+                    //     });
+                    var polyLineTmp;    // 두지점간 직선거리
+                    // var distanceArr = new Array();
+                    // var distanceStr = "";
+                    // var walkkTime = 0;
+                    // var walkHour = "", walkMin = "";
+                    let selectedBikeLocations = []
+                    for (var k=0;k<locations.length;k++) {
+                        polyLineTmp = new daum.maps.Polyline({
+                            map: map,
+                            path: [
+                                marker.getPosition(), new daum.maps.LatLng(locations[k].stationLatitude,locations[k].stationLongitude)
+                            ],
+                            strokeWeight: 2,   
+                            strokeColor: '#FF00FF',
+                            strokeOpacity: 0.8,
+                            strokeStyle: 'dashed'
+                        });
+
+                        var distance = polyLineTmp.getLength()
+                        if (distance > 500){
+                        }
+                        else{
+                            console.log(distance)
+                            selectedBikeLocations.push(k)
+                            // 여기 안에 들어간 친구들은 모두 반경 800m 이내이다.
+                            // 정렬을 통해서 추천 순서들을 정리해줄 수 있다.일단은 들어온 순서대로 계산한다고 치고. 
+                        }       
+                        polyLineTmp.setMap(null)
+                    }
+                    // 여기 bikelocations를 기준으로 3.3km 안의 관광지들을 찾아보자.
+                    console.log(selectedBikeLocations)
+                    var polyLineTmpForSpot;    
+                    for (var l=0;l<selectedBikeLocations.length;l++) {
+                        let index = selectedBikeLocations[l]
+                        for (var m=0;m<spotList.length;m++){            
+                            polyLineTmpForSpot = new daum.maps.Polyline({
+                                map: map,
+                                path: [
+                                    new daum.maps.LatLng(locations[index].stationLatitude,locations[index].stationLongitude)
+                                    , new daum.maps.LatLng(spotList[m].fields.mapy, spotList[m].fields.mapx)
+                                ],
+                                strokeWeight: 2,   
+                                strokeColor: '#FF00FF',
+                                strokeOpacity: 0.8,
+                                strokeStyle: 'dashed'
+                            });
+                            var distance = polyLineTmpForSpot.getLength()
+                            if (distance > 1500){
+                                polyLineTmpForSpot.setMap(null)
+                            }
+                            else{
+                                
+                            }
+                        }
+                    }
+                    })
+                })(marker, infowindow);
+            }
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
+        .finally(function () {
+            // always executed
+        });
+    </script>
+</body>
+</html>
