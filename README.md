@@ -23,7 +23,7 @@
 **정의진**
 
 - `algorithm`: 도착지 주변 따릉이 대여소 갯수, 도착지와 주변 따릉이 대여소 거리 기반으로 관광지 추천
-- `back-end`
+- `back-end[restful API]`
   - views.py:  서울 공공데이터 API를 바탕으로 따릉이 대여소 위치 정보, 실시간 잔여 따릉이 대수 data 수집
 - `front-end`
   - google map API 활용 auto searchbar 구현
@@ -37,6 +37,7 @@
 * `algorithm` : 출발지-도착지간 상대적 거리 계산, 구글 평점 높은 순으로 관광지 추천
 * `front-end`
   * 현재위치찾기 구현
+  * `restful API` JS로 받아오기
   * `jQuery` : `ajax`로 tmap 경로 Api 받아오기(post 형태)
   * HTML/CSS
 
